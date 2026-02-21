@@ -1,0 +1,133 @@
+{
+  "name": "FeatureCardNine",
+  "description": "Scroll-based timeline feature section with two animated phone frames and centered content.",
+  "constraints": {
+    "textRules": {
+      "title": {
+        "required": true,
+        "example": "Powerful Features",
+        "minChars": 2,
+        "maxChars": 35
+      },
+      "description": {
+        "required": true,
+        "example": "Everything you need to build amazing products",
+        "minChars": 5,
+        "maxChars": 250
+      },
+      "tag": {
+        "required": false,
+        "example": "Features",
+        "minChars": 2,
+        "maxChars": 30
+      }
+    },
+    "featureCardRules": {
+      "id": {
+        "required": true,
+        "example": "1",
+        "minChars": 1,
+        "maxChars": 3,
+        "note": "Feature identifier"
+      },
+      "title": {
+        "required": true,
+        "example": "Seamless Integration",
+        "minChars": 2,
+        "maxChars": 50
+      },
+      "description": {
+        "required": true,
+        "example": "Connect your tools and workflows effortlessly. Our platform integrates with your existing systems.",
+        "minChars": 10,
+        "maxChars": 300
+      }
+    },
+    "phoneMediaRules": {
+      "phoneOne": {
+        "imageSrc": {
+          "required": true,
+          "example": "/phone1.jpg",
+          "note": "Either imageSrc or videoSrc required for phoneOne (discriminated union)"
+        },
+        "videoSrc": {
+          "required": true,
+          "example": "/phone1.mp4",
+          "note": "Either imageSrc or videoSrc required for phoneOne (discriminated union)"
+        },
+        "imageAlt": {
+          "required": false,
+          "example": "First phone mockup",
+          "note": "Falls back to '[title] - Phone 1' if not provided"
+        },
+        "videoAriaLabel": {
+          "required": false,
+          "example": "First phone video",
+          "note": "Falls back to '[title] - Phone 1 video' if not provided"
+        }
+      },
+      "phoneTwo": {
+        "imageSrc": {
+          "required": true,
+          "example": "/phone2.jpg",
+          "note": "Either imageSrc or videoSrc required for phoneTwo (discriminated union)"
+        },
+        "videoSrc": {
+          "required": true,
+          "example": "/phone2.mp4",
+          "note": "Either imageSrc or videoSrc required for phoneTwo (discriminated union)"
+        },
+        "imageAlt": {
+          "required": false,
+          "example": "Second phone mockup",
+          "note": "Falls back to '[title] - Phone 2' if not provided"
+        },
+        "videoAriaLabel": {
+          "required": false,
+          "example": "Second phone video",
+          "note": "Falls back to '[title] - Phone 2 video' if not provided"
+        }
+      }
+    },
+    "itemRules": {
+      "minItems": 2,
+      "maxItems": 4,
+      "recommendedItems": "2-4",
+      "note": "Each feature takes 100vh height. Recommend 2-4 features to avoid excessive scroll."
+    }
+  },
+  "propsSchema": {
+    "features": "Array<{ id: number, title: string, description: string, phoneOne: ({ imageSrc: string, imageAlt?: string } | { videoSrc: string, videoAriaLabel?: string }), phoneTwo: ({ imageSrc: string, imageAlt?: string } | { videoSrc: string, videoAriaLabel?: string }) }>",
+    "showStepNumbers": "boolean (required - controls whether step number badges display)",
+    "title": "string",
+    "titleSegments?": "Array<{ type: 'text', content: string } | { type: 'image', src: string, alt?: string }> - For inline images in title",
+    "description": "string",
+    "tag?": "string",
+    "tagIcon?": "LucideIcon",
+    "tagAnimation?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "buttons?": "Array<{text: string, onClick?: () => void, href?: string}>",
+    "buttonAnimation?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "animationType": "'none' | 'opacity' | 'slide-up' | 'scale-rotate' | 'blur-reveal'",
+    "textboxLayout": "'default' | 'split' | 'split-actions' | 'split-description' | 'inline-image' (required - 'inline-image' uses titleSegments for rich text with images)",
+    "useInvertedBackground": "boolean",
+    "ariaLabel?": "string (default: 'Feature section')",
+    "className?": "string"
+  },
+  "usageExample": "<FeatureCardNine features={[{ id: 1, title: 'Seamless Integration', description: 'Connect your tools and workflows effortlessly', phoneOne: { imageSrc: '/phone1.jpg' }, phoneTwo: { imageSrc: '/phone2.jpg' } }]} showStepNumbers={true} title=\"Powerful Features\" description=\"Everything you need to build amazing products\" textboxLayout=\"default\" useInvertedBackground={false} />",
+  "do": [
+    "Use for feature showcases",
+    "Use for capability displays",
+    "Requires features[]",
+    "Requires titleSegments?[]",
+    "Requires buttons?[]"
+  ],
+  "dont": [
+    "Do not use less than 2 items",
+    "Do not use more than 4 items"
+  ],
+  "editRules": {
+    "textOnly": true,
+    "layoutLocked": true,
+    "styleLocked": true
+  }
+}

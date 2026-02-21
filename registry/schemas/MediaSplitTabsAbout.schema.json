@@ -1,0 +1,28 @@
+{
+  "name": "MediaSplitTabsAbout",
+  "propsSchema": {
+    "title": "string",
+    "description?": "string",
+    "tabs": "Array<{ id: string, label: string, description: string }> - Tab options for content switching",
+    "imageSrc?": "string",
+    "videoSrc?": "string",
+    "imageAlt?": "string",
+    "videoAriaLabel?": "string",
+    "imagePosition?": "'left' | 'right' (default: 'right')",
+    "mediaAnimation": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "useInvertedBackground": "boolean",
+    "ariaLabel?": "string (default: 'About section')",
+    "className?": "string",
+    "containerClassName?": "string",
+    "contentCardClassName?": "string",
+    "titleClassName?": "string",
+    "titleDescriptionClassName?": "string",
+    "tabsContainerClassName?": "string",
+    "tabClassName?": "string",
+    "activeTabClassName?": "string",
+    "tabIndicatorClassName?": "string",
+    "descriptionClassName?": "string",
+    "mediaCardClassName?": "string",
+    "mediaClassName?": "string"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "name": "FeatureHoverPattern",
+  "description": "CardStack feature section with interactive hover pattern effect revealing behind centered icons.",
+  "constraints": {
+    "textRules": {
+      "title": {
+        "required": true,
+        "example": "Powerful Features",
+        "minChars": 2,
+        "maxChars": 35
+      },
+      "description": {
+        "required": true,
+        "example": "Hover over each card to reveal the interactive pattern",
+        "minChars": 5,
+        "maxChars": 250
+      },
+      "tag": {
+        "required": false,
+        "example": "Features",
+        "minChars": 2,
+        "maxChars": 30
+      }
+    },
+    "buttonRules": {
+      "maxButtons": 2,
+      "structure": {
+        "text": "string - Button label",
+        "href": "string - Link destination (optional)",
+        "onClick": "() => void - Additional click handler (optional)",
+        "props": "Partial<ButtonPropsForVariant> - Additional button props (optional)"
+      },
+      "note": "Button variant is controlled by ThemeProvider's defaultButtonVariant."
+    },
+    "featureCardRules": {
+      "icon": {
+        "required": true,
+        "note": "LucideIcon displayed centered in the card"
+      },
+      "title": {
+        "required": true,
+        "example": "Fast Performance",
+        "minChars": 2,
+        "maxChars": 50
+      },
+      "description": {
+        "required": true,
+        "example": "Lightning-fast responses for your users.",
+        "minChars": 5,
+        "maxChars": 150
+      },
+      "button": {
+        "required": false,
+        "note": "Optional ButtonConfig for card-level action"
+      }
+    },
+    "hoverEffect": {
+      "desktop": "Mouse movement reveals radial gradient pattern with random character overlay",
+      "mobile": "Pattern activates when card enters viewport (20% threshold for pattern, 40% for icon)",
+      "note": "Pattern uses Framer Motion with useMotionValue for smooth tracking"
+    }
+  },
+  "propsSchema": {
+    "features": "FeatureCard[] (required) - Array with icon, title, description, optional button",
+    "carouselMode?": "'auto' | 'buttons' (default: 'buttons')",
+    "uniformGridCustomHeightClasses?": "string (default: 'min-h-85 2xl:min-h-95')",
+    "animationType": "CardAnimationType",
+    "title": "string",
+    "titleSegments?": "TitleSegment[]",
+    "description": "string",
+    "tag?": "string",
+    "tagIcon?": "LucideIcon",
+    "tagAnimation?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "buttons?": "ButtonConfig[]",
+    "buttonAnimation?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "textboxLayout": "TextboxLayout",
+    "useInvertedBackground": "InvertedBackground",
+    "ariaLabel?": "string (default: 'Feature section')",
+    "className?": "string",
+    "containerClassName?": "string",
+    "cardClassName?": "string",
+    "iconContainerClassName?": "string",
+    "iconClassName?": "string",
+    "textBoxTitleClassName?": "string",
+    "textBoxTitleImageWrapperClassName?": "string",
+    "textBoxTitleImageClassName?": "string",
+    "textBoxDescriptionClassName?": "string",
+    "cardTitleClassName?": "string",
+    "cardDescriptionClassName?": "string",
+    "gradientClassName?": "string",
+    "gridClassName?": "string",
+    "carouselClassName?": "string",
+    "controlsClassName?": "string",
+    "textBoxClassName?": "string",
+    "textBoxTagClassName?": "string",
+    "textBoxButtonContainerClassName?": "string",
+    "textBoxButtonClassName?": "string",
+    "textBoxButtonTextClassName?": "string",
+    "cardButtonClassName?": "string",
+    "cardButtonTextClassName?": "string"
+  },
+  "usageExample": "<ThemeProvider defaultButtonVariant=\"icon-arrow\" borderRadius=\"rounded\">\n  <FeatureHoverPattern\n    title=\"Powerful Features\"\n    description=\"Hover over each card to reveal the interactive pattern.\"\n    tag=\"Features\"\n    tagIcon={Sparkles}\n    textboxLayout=\"default\"\n    animationType=\"fade\"\n    useInvertedBackground=\"none\"\n    features={[\n      { icon: Zap, title: \"Fast Performance\", description: \"Lightning-fast responses.\" },\n      { icon: Shield, title: \"Secure\", description: \"Enterprise-grade security.\" },\n      { icon: Globe, title: \"Global\", description: \"Available worldwide.\" }\n    ]}\n  />\n</ThemeProvider>",
+  "do": [
+    "Use for feature showcases with visual engagement",
+    "Best for 2-6 features",
+    "Each feature requires an icon",
+    "Supports custom gradient colors via gradientClassName"
+  ],
+  "dont": [
+    "Do not use without icons for each feature",
+    "Do not use for simple text-only feature lists"
+  ],
+  "editRules": {
+    "textOnly": true,
+    "layoutLocked": true,
+    "styleLocked": true
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "name": "FooterCard",
+  "description": "Minimalist footer with card wrapper containing logo, divider, copyright, and optional social links.",
+  "constraints": {
+    "textRules": {
+      "copyrightText": {
+        "required": false,
+        "example": "© 2025 | Webild",
+        "minChars": 5,
+        "maxChars": 100,
+        "note": "Copyright text displayed at bottom left"
+      },
+      "logoText": {
+        "required": false,
+        "example": "Webild",
+        "minChars": 2,
+        "maxChars": 30,
+        "note": "Text used for SVG logo"
+      }
+    },
+    "socialLinksRules": {
+      "required": false,
+      "structure": {
+        "icon": "LucideIcon - Icon component",
+        "href": "string - Social profile URL",
+        "ariaLabel": "string - Accessibility label"
+      },
+      "note": "Optional array of social links. Only renders if provided and has length > 0."
+    },
+    "logoRules": {
+      "note": "Uses logoText for SVG text logo via FooterLogo component."
+    }
+  },
+  "propsSchema": {
+    "logoText?": "string (default: 'Webild')",
+    "copyrightText?": "string (default: '© 2025 | Webild')",
+    "socialLinks?": "Array<{ icon: LucideIcon, href: string, ariaLabel: string }> - Social media links",
+    "ariaLabel?": "string (default: 'Site footer')",
+    "className?": "string",
+    "logoLineHeight?": "number (default: 1.1)"
+  },
+  "usageExample": "<FooterCard logoText=\"Webild\" copyrightText=\"© 2025 | Webild\" socialLinks={[{ icon: Twitter, href: 'https://twitter.com/webild', ariaLabel: 'Twitter' }, { icon: Linkedin, href: 'https://linkedin.com/company/webild', ariaLabel: 'LinkedIn' }]} />",
+  "do": [
+    "Use for general use",
+    "Requires socialLinks?[]"
+  ],
+  "dont": [],
+  "editRules": {
+    "textOnly": true,
+    "layoutLocked": true,
+    "styleLocked": true
+  }
+}

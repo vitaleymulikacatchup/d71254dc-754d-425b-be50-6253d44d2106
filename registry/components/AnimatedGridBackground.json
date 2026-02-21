@@ -1,0 +1,24 @@
+{
+  "name": "AnimatedGridBackground",
+  "description": "Grid pattern with animated pulsing squares using Framer Motion.",
+  "constraints": {},
+  "propsSchema": {
+    "squareSize?": "number (default: 100)",
+    "numSquares?": "number (default: 50)",
+    "maxOpacity?": "number (default: 0.15)",
+    "className?": "string"
+  },
+  "usageExample": "<AnimatedGridBackground squareSize={100} numSquares={50} maxOpacity={0.15} />",
+  "do": [
+    "Use for feature showcases",
+    "Use for capability displays"
+  ],
+  "dont": [
+    "Do not use more than 4 items"
+  ],
+  "editRules": {
+    "textOnly": true,
+    "layoutLocked": true,
+    "styleLocked": true
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "name": "FeatureBorderGlow",
+  "description": "CardStack feature section with animated glowing border effect that follows cursor/scroll.",
+  "constraints": {
+    "textRules": {
+      "title": {
+        "required": true,
+        "example": "Powerful Features",
+        "minChars": 2,
+        "maxChars": 35
+      },
+      "description": {
+        "required": true,
+        "example": "Hover over each card to reveal the glowing border effect",
+        "minChars": 5,
+        "maxChars": 250
+      },
+      "tag": {
+        "required": false,
+        "example": "Features",
+        "minChars": 2,
+        "maxChars": 30
+      }
+    },
+    "buttonRules": {
+      "maxButtons": 2,
+      "structure": {
+        "text": "string - Button label",
+        "href": "string - Link destination (optional)",
+        "onClick": "() => void - Additional click handler (optional)",
+        "props": "Partial<ButtonPropsForVariant> - Additional button props (optional)"
+      },
+      "note": "Button variant is controlled by ThemeProvider's defaultButtonVariant."
+    },
+    "featureRules": {
+      "required": true,
+      "structure": {
+        "icon": "LucideIcon",
+        "title": "string",
+        "description": "string"
+      },
+      "note": "Array of feature cards. Each card displays icon at top, title and description below, with animated glowing border overlay."
+    },
+    "glowEffect": {
+      "desktop": "Border glow tracks mouse movement with conic gradient mask following cursor angle within 64px proximity",
+      "mobile": "Effect centers on viewport when card enters view on scroll",
+      "styling": "Uses CSS variables (accent, background-accent) for theme-aware colors. Border width 1.5px with 40deg spread."
+    }
+  },
+  "propsSchema": {
+    "features": "FeatureCard[] (required) - Array with icon, title, description",
+    "carouselMode?": "'auto' | 'buttons' (default: 'buttons')",
+    "uniformGridCustomHeightClasses?": "string (default: 'min-h-75 2xl:min-h-85')",
+    "animationType": "CardAnimationType",
+    "title": "string",
+    "titleSegments?": "TitleSegment[]",
+    "description": "string",
+    "tag?": "string",
+    "tagIcon?": "LucideIcon",
+    "tagAnimation?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "buttons?": "ButtonConfig[]",
+    "buttonAnimation?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "textboxLayout": "TextboxLayout",
+    "useInvertedBackground": "InvertedBackground",
+    "ariaLabel?": "string (default: 'Feature section')",
+    "className?": "string",
+    "containerClassName?": "string",
+    "cardClassName?": "string",
+    "iconContainerClassName?": "string",
+    "iconClassName?": "string",
+    "textBoxTitleClassName?": "string",
+    "textBoxTitleImageWrapperClassName?": "string",
+    "textBoxTitleImageClassName?": "string",
+    "textBoxDescriptionClassName?": "string",
+    "cardTitleClassName?": "string",
+    "cardDescriptionClassName?": "string",
+    "gridClassName?": "string",
+    "carouselClassName?": "string",
+    "controlsClassName?": "string",
+    "textBoxClassName?": "string",
+    "textBoxTagClassName?": "string",
+    "textBoxButtonContainerClassName?": "string",
+    "textBoxButtonClassName?": "string",
+    "textBoxButtonTextClassName?": "string"
+  },
+  "usageExample": "<ThemeProvider defaultButtonVariant=\"icon-arrow\" borderRadius=\"rounded\">\n  <FeatureBorderGlow\n    title=\"Powerful Features\"\n    description=\"Hover over each card to reveal the glowing border effect.\"\n    tag=\"Features\"\n    tagIcon={Sparkles}\n    textboxLayout=\"default\"\n    useInvertedBackground=\"none\"\n    animationType=\"fade\"\n    features={[\n      { icon: Zap, title: \"Fast Performance\", description: \"Lightning quick responses.\" },\n      { icon: Shield, title: \"Secure\", description: \"Enterprise-grade security.\" },\n      { icon: Globe, title: \"Global\", description: \"Available worldwide.\" }\n    ]}\n  />\n</ThemeProvider>",
+  "do": [
+    "Use for premium feature showcases with elegant visual polish",
+    "Best for 2-6 features",
+    "Each feature requires icon, title, and description",
+    "Use for modern landing pages"
+  ],
+  "dont": [
+    "Do not use for simple text-only feature lists",
+    "Do not use without icons for each feature"
+  ],
+  "editRules": {
+    "textOnly": true,
+    "layoutLocked": true,
+    "styleLocked": true
+  }
+}

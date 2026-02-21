@@ -1,0 +1,18 @@
+{
+  "name": "PlainBackground",
+  "description": "Simple solid background using theme background color.",
+  "constraints": {},
+  "propsSchema": {
+    "className?": "string"
+  },
+  "usageExample": "<PlainBackground />",
+  "do": [
+    "Use for general use"
+  ],
+  "dont": [],
+  "editRules": {
+    "textOnly": true,
+    "layoutLocked": true,
+    "styleLocked": true
+  }
+}

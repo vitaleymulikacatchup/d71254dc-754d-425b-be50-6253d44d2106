@@ -1,0 +1,109 @@
+{
+  "name": "FeatureBento",
+  "description": "Feature section with bento-style cards displaying interactive visualizations (globe, charts, 3D cards, map).",
+  "constraints": {
+    "textRules": {
+      "title": {
+        "required": true,
+        "example": "Our Features",
+        "minChars": 2,
+        "maxChars": 35
+      },
+      "description": {
+        "required": true,
+        "example": "Discover the tools and capabilities that make our platform powerful",
+        "minChars": 5,
+        "maxChars": 250
+      },
+      "tag": {
+        "required": false,
+        "example": "Features",
+        "minChars": 2,
+        "maxChars": 30
+      }
+    },
+    "buttonRules": {
+      "maxButtons": 2,
+      "structure": {
+        "text": "string - Button label",
+        "href": "string - Link destination (optional)",
+        "onClick": "() => void - Additional click handler (optional)",
+        "props": "Partial<ButtonPropsForVariant> - Additional button props (optional)"
+      },
+      "note": "Button variant is controlled by ThemeProvider's defaultButtonVariant."
+    },
+    "featureRules": {
+      "required": true,
+      "note": "Array of feature cards. Each card has title, description, optional button, and a bentoComponent type with its specific props."
+    },
+    "bentoComponentTypes": {
+      "globe": "3D rotating globe visualization",
+      "icon-info-cards": "Scrolling metric cards - requires items: BentoInfoItem[] with icon, label, value",
+      "animated-bar-chart": "Animated bar chart visualization",
+      "3d-stack-cards": "Three stacked notification cards - requires items: [Bento3DItem, Bento3DItem, Bento3DItem]",
+      "3d-task-list": "Rotated task list card - requires items: TaskItem[]",
+      "orbiting-icons": "Orbiting integration icons on rings - requires centerIcon and items: OrbitingItem[]",
+      "marquee": "Scrolling text/icon rows - requires centerIcon and variant ('text' with texts[] or 'icon' with icons[])",
+      "map": "World map with animated location markers",
+      "line-chart": "Area line chart with gradient fill",
+      "3d-card-grid": "3D card grid - requires items (4 items with name and icon) and centerIcon",
+      "phone": "Interactive phone mockup with notification animation - requires statusIcon, alertIcon, alertTitle, alertMessage, apps",
+      "chat": "Chat animation - requires aiIcon, userIcon, exchanges, placeholder",
+      "reveal-icon": "Icon reveal animation - requires icon",
+      "timeline": "Timeline visualization - requires heading, subheading, items (3), completedLabel",
+      "media-stack": "Three stacked images/videos that fan out on hover - requires items: [MediaStackItem, MediaStackItem, MediaStackItem]"
+    }
+  },
+  "propsSchema": {
+    "features": "FeatureCard[]",
+    "carouselMode?": "'auto' | 'buttons' (default: 'buttons')",
+    "animationType": "BentoAnimationType",
+    "title": "string",
+    "titleSegments?": "TitleSegment[]",
+    "description": "string",
+    "tag?": "string",
+    "tagIcon?": "LucideIcon",
+    "tagAnimation?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "buttons?": "ButtonConfig[]",
+    "buttonAnimation?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "textboxLayout": "TextboxLayout",
+    "useInvertedBackground": "InvertedBackground",
+    "ariaLabel?": "string (default: 'Feature section')",
+    "className?": "string",
+    "containerClassName?": "string",
+    "cardClassName?": "string",
+    "textBoxTitleClassName?": "string",
+    "textBoxTitleImageWrapperClassName?": "string",
+    "textBoxTitleImageClassName?": "string",
+    "textBoxDescriptionClassName?": "string",
+    "cardTitleClassName?": "string",
+    "cardDescriptionClassName?": "string",
+    "cardButtonClassName?": "string",
+    "cardButtonTextClassName?": "string",
+    "gridClassName?": "string",
+    "carouselClassName?": "string",
+    "controlsClassName?": "string",
+    "textBoxClassName?": "string",
+    "textBoxTagClassName?": "string",
+    "textBoxButtonContainerClassName?": "string",
+    "textBoxButtonClassName?": "string",
+    "textBoxButtonTextClassName?": "string"
+  },
+  "usageExample": "<ThemeProvider defaultButtonVariant=\"icon-arrow\" borderRadius=\"rounded\">\n  <FeatureBento\n    title=\"Our Features\"\n    description=\"Discover the tools that make our platform powerful.\"\n    tag=\"Features\"\n    tagIcon={Sparkles}\n    textboxLayout=\"default\"\n    useInvertedBackground=\"none\"\n    animationType=\"fade\"\n    features={[\n      { title: \"Global Reach\", description: \"Connect worldwide.\", bentoComponent: \"globe\" },\n      { title: \"Analytics\", description: \"Track metrics live.\", bentoComponent: \"line-chart\" },\n      { title: \"Location\", description: \"See your users.\", bentoComponent: \"map\" }\n    ]}\n  />\n</ThemeProvider>",
+  "do": [
+    "Use for showcasing features with interactive visualizations",
+    "Use appropriate bentoComponent for each feature type",
+    "Provide all required props for each bentoComponent type",
+    "Best for modern landing pages showcasing platform capabilities"
+  ],
+  "dont": [
+    "Do not use without proper items for bento types that require them",
+    "Do not use for simple text-only feature lists",
+    "Do not use the same bentoComponent type for multiple features - each feature should have a unique visualization"
+  ],
+  "editRules": {
+    "textOnly": true,
+    "layoutLocked": true,
+    "styleLocked": true
+  }
+}

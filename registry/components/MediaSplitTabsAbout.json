@@ -1,0 +1,91 @@
+{
+  "name": "MediaSplitTabsAbout",
+  "description": "Split-layout about section with interactive tabs, animated descriptions, and 60/40 grid with media.",
+  "constraints": {
+    "textRules": {
+      "title": {
+        "required": true,
+        "example": "Why Choose Us",
+        "minChars": 2,
+        "maxChars": 50
+      },
+      "description": {
+        "required": false,
+        "example": "We deliver excellence across every aspect of our work",
+        "minChars": 10,
+        "maxChars": 200
+      }
+    },
+    "tabRules": {
+      "minTabs": 2,
+      "maxTabs": 5,
+      "structure": {
+        "id": "string - Unique identifier",
+        "label": "string - Tab button text",
+        "description": "string - Description shown when tab is active"
+      },
+      "note": "First tab is selected by default. Tab indicator dot animates smoothly between tabs."
+    },
+    "mediaRules": {
+      "imageSrc": {
+        "required": false,
+        "example": "/team-photo.jpg",
+        "note": "Either imageSrc or videoSrc should be provided."
+      },
+      "videoSrc": {
+        "required": false,
+        "example": "/intro-video.mp4",
+        "note": "Either imageSrc or videoSrc should be provided."
+      },
+      "imageAlt": {
+        "required": false,
+        "example": "Team collaboration",
+        "note": "Alt text for image."
+      },
+      "videoAriaLabel": {
+        "required": false,
+        "example": "Introduction video",
+        "note": "ARIA label for video accessibility."
+      },
+      "imagePosition": {
+        "required": false,
+        "default": "right",
+        "options": [
+          "left",
+          "right"
+        ],
+        "note": "Position of media card relative to content card."
+      }
+    }
+  },
+  "propsSchema": {
+    "title": "string",
+    "description?": "string",
+    "tabs": "Array<{ id: string, label: string, description: string }> - Tab options for content switching",
+    "imageSrc?": "string",
+    "videoSrc?": "string",
+    "imageAlt?": "string",
+    "videoAriaLabel?": "string",
+    "imagePosition?": "'left' | 'right' (default: 'right')",
+    "mediaAnimation": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "useInvertedBackground": "boolean",
+    "ariaLabel?": "string (default: 'About section')",
+    "className?": "string"
+  },
+  "usageExample": "<MediaSplitTabsAbout title=\"Why Choose Us\" tabs={[{ id: 'collaboration', label: 'Deep Collaboration', description: 'We work side by side with your team, fostering open communication and shared accountability.' }, { id: 'expertise', label: 'Expertise', description: 'Our team brings decades of combined experience across industries.' }, { id: 'solutions', label: 'Tailored Solutions', description: 'Every challenge is unique. We craft custom strategies that align with your specific goals.' }]} imageSrc=\"/team-photo.jpg\" imageAlt=\"Team collaboration\" imagePosition=\"right\" useInvertedBackground={false} />",
+  "do": [
+    "Use for feature showcases",
+    "Use for capability displays",
+    "Use for about pages",
+    "Use for company information",
+    "Requires tabs[]"
+  ],
+  "dont": [
+    "Do not use more than 4 items"
+  ],
+  "editRules": {
+    "textOnly": true,
+    "layoutLocked": true,
+    "styleLocked": true
+  }
+}

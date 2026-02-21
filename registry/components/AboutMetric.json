@@ -1,0 +1,50 @@
+{
+  "name": "AboutMetric",
+  "description": "About section with centered animated title and metric cards in a responsive grid.",
+  "constraints": {
+    "textRules": {
+      "title": {
+        "required": true,
+        "example": "At Berco Inc. we redefine innovation by empowering businesses to reach their full potential",
+        "minChars": 20,
+        "maxChars": 300
+      }
+    },
+    "metricRules": {
+      "minMetrics": 2,
+      "maxMetrics": 4,
+      "structure": {
+        "icon": "LucideIcon - Icon component from lucide-react",
+        "label": "string - Descriptive label for the metric (required, e.g., 'Conversions', 'Partnered Brands')",
+        "value": "string - Metric value to display (required, e.g., '7,000+', '2018', '30+', '100M+')"
+      },
+      "note": "Provide 2-4 metrics for optimal layout. Grid automatically adjusts columns based on metric count (2 metrics = 2 cols, 3 metrics = 3 cols, 4 metrics = 4 cols). Import icons from lucide-react."
+    }
+  },
+  "propsSchema": {
+    "title": "string",
+    "metrics": "Array<{ icon: LucideIcon, label: string, value: string }>",
+    "metricsAnimation": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "useInvertedBackground": "boolean",
+    "ariaLabel?": "string (default: 'About metrics section')",
+    "className?": "string"
+  },
+  "usageExample": "// Wrap in ThemeProvider\nimport { TrendingUp, ShoppingCart, Users, Globe } from 'lucide-react';\n\n<ThemeProvider defaultButtonVariant=\"icon-arrow\" defaultTextAnimation=\"reveal-blur\" borderRadius=\"soft\" background=\"aurora\" cardStyle=\"glass-elevated\" primaryButtonStyle=\"gradient\" secondaryButtonStyle=\"glass\">\n  <AboutMetric \n    title=\"At Berco Inc. we redefine innovation by empowering businesses to reach their full potential\" \n    useInvertedBackground={false}\n    metrics={[\n      { icon: TrendingUp, label: 'Conversions', value: '7,000+' },\n      { icon: ShoppingCart, label: 'Ecommerce Since', value: '2018' },\n      { icon: Users, label: 'Partnered Brands', value: '30+' },\n      { icon: Globe, label: 'Global Impressions Generated Annually', value: '100M+' }\n    ]} \n  />\n</ThemeProvider>",
+  "do": [
+    "Use for feature showcases",
+    "Use for capability displays",
+    "Use for about pages",
+    "Use for company information",
+    "Use for statistics displays",
+    "Use for achievement showcases",
+    "Requires metrics[]"
+  ],
+  "dont": [
+    "Do not use more than 4 items"
+  ],
+  "editRules": {
+    "textOnly": true,
+    "layoutLocked": true,
+    "styleLocked": true
+  }
+}

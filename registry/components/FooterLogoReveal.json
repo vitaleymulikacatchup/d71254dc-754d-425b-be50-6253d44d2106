@@ -1,0 +1,37 @@
+{
+  "name": "FooterLogoReveal",
+  "description": "Minimalist footer with logo that reveals on scroll using fixed positioning and clip-path.",
+  "constraints": {
+    "textRules": {
+      "logoText": {
+        "required": false,
+        "example": "Webild",
+        "minChars": 2,
+        "maxChars": 30,
+        "note": "Text used for SVG logo"
+      }
+    },
+    "logoRules": {
+      "note": "Uses logoText for SVG text logo via FooterLogo component."
+    },
+    "revealEffectRules": {
+      "note": "Component uses fixed positioning and clip-path for scroll reveal effect. Requires page content above footer to trigger scroll. ResizeObserver dynamically updates footer height for responsive reveal."
+    }
+  },
+  "propsSchema": {
+    "logoText?": "string (default: 'Webild')",
+    "logoLineHeight?": "number (default: 1.1)",
+    "ariaLabel?": "string (default: 'Site footer')",
+    "className?": "string"
+  },
+  "usageExample": "<FooterLogoReveal logoText=\"Webild\" />",
+  "do": [
+    "Use for general use"
+  ],
+  "dont": [],
+  "editRules": {
+    "textOnly": true,
+    "layoutLocked": true,
+    "styleLocked": true
+  }
+}

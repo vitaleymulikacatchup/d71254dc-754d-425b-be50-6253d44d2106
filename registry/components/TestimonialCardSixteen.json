@@ -1,0 +1,116 @@
+{
+  "name": "TestimonialCardSixteen",
+  "description": "Testimonial section with portrait image cards, star ratings, overlay info, and KPI section below.",
+  "constraints": {
+    "textRules": {
+      "title": {
+        "required": true,
+        "example": "What Our Clients Say",
+        "minChars": 2,
+        "maxChars": 50
+      },
+      "description": {
+        "required": true,
+        "example": "Trusted by industry leaders worldwide",
+        "minChars": 5,
+        "maxChars": 250
+      },
+      "tag": {
+        "required": false,
+        "example": "Testimonials",
+        "minChars": 2,
+        "maxChars": 30
+      }
+    },
+    "buttonRules": {
+      "maxButtons": 2,
+      "structure": {
+        "text": "string - Button label",
+        "href": "string - Link destination (optional)",
+        "onClick": "() => void - Additional click handler (optional)",
+        "props": "Partial<ButtonPropsForVariant> - Additional button props (optional)"
+      },
+      "note": "Button variant is controlled by ThemeProvider's defaultButtonVariant."
+    },
+    "testimonialRules": {
+      "required": true,
+      "minItems": 3,
+      "structure": {
+        "id": "string",
+        "name": "string - Person's name",
+        "role": "string - Job title",
+        "company": "string - Company name",
+        "rating": "number - Star rating 1-5",
+        "imageSrc?": "string - Portrait image path",
+        "videoSrc?": "string - Portrait video path",
+        "imageAlt?": "string - Alt text for image",
+        "videoAriaLabel?": "string - Aria label for video"
+      },
+      "note": "Each testimonial displays as portrait card with overlay containing rating, name, role, and company"
+    },
+    "kpiRules": {
+      "required": true,
+      "exactCount": 3,
+      "structure": {
+        "value": "string - KPI value (e.g., '500+', '98%')",
+        "label": "string - KPI label"
+      },
+      "note": "Exactly 3 KPI items displayed in a card below testimonials"
+    }
+  },
+  "propsSchema": {
+    "testimonials": "Array<{ id: string, name: string, role: string, company: string, rating: number, imageSrc?: string, videoSrc?: string, imageAlt?: string, videoAriaLabel?: string }>",
+    "kpiItems": "[KpiItem, KpiItem, KpiItem] (required) - Exactly 3 items with value and label",
+    "carouselMode?": "'auto' | 'buttons' (default: 'buttons')",
+    "uniformGridCustomHeightClasses?": "string (default: 'min-h-85 2xl:min-h-105')",
+    "animationType": "CardAnimationTypeWith3D",
+    "title": "string",
+    "titleSegments?": "TitleSegment[]",
+    "description": "string",
+    "tag?": "string",
+    "tagIcon?": "LucideIcon",
+    "tagAnimation?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "buttons?": "ButtonConfig[]",
+    "buttonAnimation?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "textboxLayout": "TextboxLayout",
+    "useInvertedBackground": "InvertedBackground",
+    "ariaLabel?": "string (default: 'Testimonials section')",
+    "className?": "string",
+    "containerClassName?": "string",
+    "cardClassName?": "string",
+    "textBoxTitleClassName?": "string",
+    "textBoxTitleImageWrapperClassName?": "string",
+    "textBoxTitleImageClassName?": "string",
+    "textBoxDescriptionClassName?": "string",
+    "imageClassName?": "string",
+    "overlayClassName?": "string",
+    "ratingClassName?": "string",
+    "nameClassName?": "string",
+    "roleClassName?": "string",
+    "companyClassName?": "string",
+    "gridClassName?": "string",
+    "carouselClassName?": "string",
+    "controlsClassName?": "string",
+    "textBoxClassName?": "string",
+    "textBoxTagClassName?": "string",
+    "textBoxButtonContainerClassName?": "string",
+    "textBoxButtonClassName?": "string",
+    "textBoxButtonTextClassName?": "string"
+  },
+  "usageExample": "<ThemeProvider defaultButtonVariant=\"icon-arrow\" borderRadius=\"rounded\">\n  <TestimonialCardSixteen\n    title=\"What Our Clients Say\"\n    description=\"Trusted by industry leaders worldwide.\"\n    tag=\"Testimonials\"\n    tagIcon={Quote}\n    textboxLayout=\"default\"\n    animationType=\"fade\"\n    useInvertedBackground=\"none\"\n    testimonials={[\n      {\n        id: \"1\",\n        name: \"Jane Smith\",\n        role: \"CEO\",\n        company: \"TechCorp\",\n        rating: 5,\n        imageSrc: \"/testimonial1.jpg\"\n      }\n    ]}\n    kpiItems={[\n      { value: \"500+\", label: \"Happy Clients\" },\n      { value: \"98%\", label: \"Satisfaction Rate\" },\n      { value: \"10+\", label: \"Years Experience\" }\n    ]}\n  />\n</ThemeProvider>",
+  "do": [
+    "Use for testimonial sections with visual emphasis on people",
+    "Include exactly 3 KPI items for the bottom section",
+    "Use high-quality portrait images",
+    "Supports 3D animations"
+  ],
+  "dont": [
+    "Do not use without KPI items",
+    "Do not use without portrait images"
+  ],
+  "editRules": {
+    "textOnly": true,
+    "layoutLocked": true,
+    "styleLocked": true
+  }
+}

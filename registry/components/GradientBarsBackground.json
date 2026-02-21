@@ -1,0 +1,26 @@
+{
+  "name": "GradientBarsBackground",
+  "description": "Vertical gradient bars with dynamic height distribution creating a wave-like pattern.",
+  "constraints": {},
+  "propsSchema": {
+    "className?": "string",
+    "numBarsPerSide?": "number (default: 8)",
+    "gradientFrom?": "string (default: 'var(--color-primary-cta)')",
+    "gradientTo?": "string (default: 'transparent')",
+    "opacity?": "number (default: 0.075)",
+    "sideWidth?": "string (default: '35%')"
+  },
+  "usageExample": "<GradientBarsBackground numBarsPerSide={8} gradientFrom=\"var(--color-primary-cta)\" gradientTo=\"transparent\" opacity={0.075} sideWidth=\"35%\" />",
+  "do": [
+    "Use for feature showcases",
+    "Use for capability displays",
+    "Use for statistics displays",
+    "Use for achievement showcases"
+  ],
+  "dont": [],
+  "editRules": {
+    "textOnly": true,
+    "layoutLocked": true,
+    "styleLocked": true
+  }
+}

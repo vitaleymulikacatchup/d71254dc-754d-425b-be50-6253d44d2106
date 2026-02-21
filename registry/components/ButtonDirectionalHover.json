@@ -1,0 +1,34 @@
+{
+  "name": "ButtonDirectionalHover",
+  "description": "CTA button with a circle that expands from the mouse entry point on hover.",
+  "constraints": {
+    "textRules": {
+      "text": {
+        "required": true,
+        "example": "Get Started",
+        "minChars": 2,
+        "maxChars": 25
+      }
+    }
+  },
+  "propsSchema": {
+    "text": "string",
+    "onClick?": "() => void",
+    "href?": "string - External URLs open in new tab, internal values scroll to section",
+    "scrollToSection?": "boolean",
+    "className?": "string",
+    "disabled?": "boolean (default: false)",
+    "ariaLabel?": "string",
+    "type?": "'button' | 'submit' | 'reset' (default: 'button')"
+  },
+  "usageExample": "<ButtonDirectionalHover text=\"Get Started\" href=\"contact\" />",
+  "do": [
+    "Use for general use"
+  ],
+  "dont": [],
+  "editRules": {
+    "textOnly": true,
+    "layoutLocked": true,
+    "styleLocked": true
+  }
+}

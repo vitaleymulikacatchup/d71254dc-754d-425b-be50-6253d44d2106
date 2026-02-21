@@ -1,0 +1,120 @@
+{
+  "name": "FeatureCardTwentyThree",
+  "description": "Feature section with separate media and card layout, featuring tags and arrow navigation.",
+  "constraints": {
+    "textRules": {
+      "title": {
+        "required": true,
+        "example": "Our Features",
+        "minChars": 2,
+        "maxChars": 50
+      },
+      "description": {
+        "required": true,
+        "example": "Stay updated with the latest trends and insights",
+        "minChars": 5,
+        "maxChars": 300
+      },
+      "tag": {
+        "required": false,
+        "example": "Features",
+        "minChars": 2,
+        "maxChars": 30
+      }
+    },
+    "buttonRules": {
+      "maxButtons": 2,
+      "structure": {
+        "text": "string - Button label",
+        "href": "string - Link destination (optional)",
+        "onClick": "() => void - Additional click handler (optional)",
+        "props": "Partial<ButtonPropsForVariant> - Additional button props (optional)"
+      },
+      "note": "Button variant is controlled by ThemeProvider's defaultButtonVariant."
+    },
+    "featureRules": {
+      "id": {
+        "required": true,
+        "example": "1",
+        "note": "Unique identifier for the feature item"
+      },
+      "title": {
+        "required": true,
+        "example": "Discover the essential features of our app",
+        "minChars": 10,
+        "maxChars": 100
+      },
+      "tags": {
+        "required": true,
+        "minItems": 1,
+        "maxItems": 4,
+        "structure": "string[]",
+        "example": ["Features", "Jan 29, 2025"],
+        "note": "Array of tag strings displayed in Tag components"
+      },
+      "media": {
+        "required": false,
+        "note": "Either imageSrc or videoSrc with optional imageAlt/videoAriaLabel"
+      },
+      "onFeatureClick": {
+        "required": false,
+        "note": "Optional click handler for the feature card"
+      }
+    }
+  },
+  "propsSchema": {
+    "features": "FeatureItem[] (required) - Array with id, title, tags[], imageSrc/videoSrc, onFeatureClick",
+    "carouselMode?": "'auto' | 'buttons' (default: 'buttons')",
+    "uniformGridCustomHeightClasses?": "string",
+    "animationType": "CardAnimationType",
+    "title": "string",
+    "titleSegments?": "TitleSegment[]",
+    "description": "string",
+    "tag?": "string",
+    "tagIcon?": "LucideIcon",
+    "tagAnimation?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "buttons?": "ButtonConfig[]",
+    "buttonAnimation?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "textboxLayout": "TextboxLayout",
+    "useInvertedBackground": "InvertedBackground",
+    "ariaLabel?": "string (default: 'Features section')",
+    "className?": "string",
+    "containerClassName?": "string",
+    "itemClassName?": "string",
+    "mediaWrapperClassName?": "string",
+    "mediaClassName?": "string",
+    "cardClassName?": "string",
+    "cardTitleClassName?": "string",
+    "tagsContainerClassName?": "string",
+    "tagClassName?": "string",
+    "arrowClassName?": "string",
+    "textBoxTitleClassName?": "string",
+    "textBoxTitleImageWrapperClassName?": "string",
+    "textBoxTitleImageClassName?": "string",
+    "textBoxDescriptionClassName?": "string",
+    "gridClassName?": "string",
+    "carouselClassName?": "string",
+    "controlsClassName?": "string",
+    "textBoxClassName?": "string",
+    "textBoxTagClassName?": "string",
+    "textBoxButtonContainerClassName?": "string",
+    "textBoxButtonClassName?": "string",
+    "textBoxButtonTextClassName?": "string"
+  },
+  "usageExample": "<ThemeProvider defaultButtonVariant=\"icon-arrow\" borderRadius=\"rounded\">\n  <FeatureCardTwentyThree\n    title=\"Our Features\"\n    description=\"Stay updated with the latest trends and insights.\"\n    tag=\"Features\"\n    tagIcon={Sparkles}\n    textboxLayout=\"default\"\n    animationType=\"fade\"\n    useInvertedBackground=\"none\"\n    features={[\n      {\n        id: \"1\",\n        title: \"Discover the essential features of our app\",\n        tags: [\"Features\", \"New\"],\n        imageSrc: \"/feature1.jpg\"\n      },\n      {\n        id: \"2\",\n        title: \"Advanced analytics for your business\",\n        tags: [\"Analytics\", \"Pro\"],\n        imageSrc: \"/feature2.jpg\"\n      }\n    ]}\n  />\n</ThemeProvider>",
+  "do": [
+    "Use for visual-focused feature listings",
+    "Include 1-4 tags per feature",
+    "Use high-quality square images",
+    "Best for feature showcases with clean separation between imagery and content"
+  ],
+  "dont": [
+    "Do not use without tags",
+    "Do not use for text-heavy features"
+  ],
+  "editRules": {
+    "textOnly": true,
+    "layoutLocked": true,
+    "styleLocked": true
+  }
+}

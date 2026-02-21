@@ -1,0 +1,122 @@
+{
+  "name": "FeatureCardTen",
+  "description": "Timeline process flow feature section with numbered steps, alternating layout, and list items.",
+  "constraints": {
+    "textRules": {
+      "title": {
+        "required": true,
+        "example": "Powerful Features",
+        "minChars": 2,
+        "maxChars": 35
+      },
+      "description": {
+        "required": true,
+        "example": "Everything you need to build and scale your business with confidence",
+        "minChars": 5,
+        "maxChars": 250
+      },
+      "tag": {
+        "required": false,
+        "example": "Features",
+        "minChars": 2,
+        "maxChars": 30
+      }
+    },
+    "buttonRules": {
+      "maxButtons": 2,
+      "structure": {
+        "text": "string - Button label",
+        "href": "string - Link destination (optional)",
+        "onClick": "() => void - Additional click handler (optional)",
+        "props": "Partial<ButtonPropsForVariant> - Additional button props (optional)"
+      },
+      "note": "Button variant is controlled by ThemeProvider's defaultButtonVariant."
+    },
+    "featureCardRules": {
+      "id": {
+        "required": true,
+        "example": "1",
+        "minChars": 1,
+        "maxChars": 3,
+        "note": "Feature identifier displayed in numbered badge"
+      },
+      "title": {
+        "required": true,
+        "example": "Easy Integration",
+        "minChars": 2,
+        "maxChars": 50
+      },
+      "description": {
+        "required": true,
+        "example": "Connect your existing tools and workflows seamlessly.",
+        "minChars": 5,
+        "maxChars": 200
+      },
+      "media": {
+        "required": true,
+        "note": "Either imageSrc or videoSrc required, with optional imageAlt/videoAriaLabel"
+      },
+      "items": {
+        "required": true,
+        "note": "Array of list items with icon (LucideIcon) and text (string)"
+      },
+      "reverse": {
+        "required": true,
+        "note": "Boolean to alternate layout direction (left/right)"
+      }
+    }
+  },
+  "propsSchema": {
+    "features": "FeatureCard[] (required) - Array with id, title, description, media, items, reverse",
+    "title": "string",
+    "titleSegments?": "TitleSegment[]",
+    "description": "string",
+    "tag?": "string",
+    "tagIcon?": "LucideIcon",
+    "tagAnimation?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "buttons?": "ButtonConfig[]",
+    "buttonAnimation?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "textboxLayout": "TextboxLayout",
+    "animationType": "CardAnimationType",
+    "useInvertedBackground": "InvertedBackground",
+    "ariaLabel?": "string (default: 'Feature section')",
+    "className?": "string",
+    "containerClassName?": "string",
+    "textBoxClassName?": "string",
+    "textBoxTitleClassName?": "string",
+    "textBoxDescriptionClassName?": "string",
+    "textBoxTagClassName?": "string",
+    "textBoxButtonContainerClassName?": "string",
+    "textBoxButtonClassName?": "string",
+    "textBoxButtonTextClassName?": "string",
+    "titleImageWrapperClassName?": "string",
+    "titleImageClassName?": "string",
+    "itemClassName?": "string",
+    "mediaWrapperClassName?": "string",
+    "mediaCardClassName?": "string",
+    "numberClassName?": "string",
+    "contentWrapperClassName?": "string",
+    "featureTitleClassName?": "string",
+    "featureDescriptionClassName?": "string",
+    "listItemClassName?": "string",
+    "iconContainerClassName?": "string",
+    "iconClassName?": "string",
+    "gapClassName?": "string"
+  },
+  "usageExample": "<ThemeProvider defaultButtonVariant=\"icon-arrow\" borderRadius=\"rounded\">\n  <FeatureCardTen\n    title=\"How It Works\"\n    description=\"Follow these simple steps to get started.\"\n    tag=\"Process\"\n    tagIcon={Workflow}\n    textboxLayout=\"default\"\n    animationType=\"fade\"\n    useInvertedBackground=\"none\"\n    features={[\n      {\n        id: \"1\",\n        title: \"Sign Up\",\n        description: \"Create your account in seconds.\",\n        media: { imageSrc: \"/step1.jpg\", imageAlt: \"Sign up\" },\n        items: [\n          { icon: Check, text: \"Free to start\" },\n          { icon: Check, text: \"No credit card required\" }\n        ],\n        reverse: false\n      },\n      {\n        id: \"2\",\n        title: \"Configure\",\n        description: \"Set up your preferences.\",\n        media: { imageSrc: \"/step2.jpg\", imageAlt: \"Configure\" },\n        items: [\n          { icon: Settings, text: \"Easy customization\" }\n        ],\n        reverse: true\n      }\n    ]}\n  />\n</ThemeProvider>",
+  "do": [
+    "Use for step-by-step process showcases",
+    "Best for 3-6 step processes",
+    "Alternate reverse property for visual variety",
+    "Include relevant icons for list items"
+  ],
+  "dont": [
+    "Do not use without media for each feature",
+    "Do not use without list items"
+  ],
+  "editRules": {
+    "textOnly": true,
+    "layoutLocked": true,
+    "styleLocked": true
+  }
+}

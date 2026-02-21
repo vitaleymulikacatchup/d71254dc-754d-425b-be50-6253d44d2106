@@ -1,0 +1,81 @@
+{
+  "name": "MetricCardTwo",
+  "description": "Simple metric card with large value and description text.",
+  "constraints": {
+    "textRules": {
+      "title": {
+        "required": true,
+        "example": "Key Metrics",
+        "minChars": 2,
+        "maxChars": 35
+      },
+      "description": {
+        "required": true,
+        "example": "Performance indicators at a glance",
+        "minChars": 5,
+        "maxChars": 250
+      },
+      "tag": {
+        "required": false,
+        "example": "Stats",
+        "minChars": 2,
+        "maxChars": 30
+      }
+    },
+    "metricRules": {
+      "id": {
+        "required": true,
+        "example": "1",
+        "minChars": 1,
+        "maxChars": 20
+      },
+      "value": {
+        "required": true,
+        "example": "98%",
+        "minChars": 1,
+        "maxChars": 15,
+        "note": "Large metric value displayed prominently"
+      },
+      "description": {
+        "required": true,
+        "example": "Customer Satisfaction Rate",
+        "minChars": 5,
+        "maxChars": 100,
+        "note": "Metric label/description displayed below value"
+      }
+    }
+  },
+  "propsSchema": {
+    "metrics": "Array<{ id: string, value: string, description: string }>",
+    "carouselMode?": "'auto' | 'buttons' (default: 'buttons')",
+    "gridVariant": "'uniform-all-items-equal' | 'bento-grid' | 'bento-grid-inverted'",
+    "animationType": "'none' | 'opacity' | 'slide-up' | 'scale-rotate' | 'blur-reveal' (required - controls GSAP scroll animations with stagger effect)",
+    "uniformGridCustomHeightClasses?": "string",
+    "title": "string",
+    "titleSegments?": "Array<{ type: 'text', content: string } | { type: 'image', src: string, alt?: string }> - For inline images in title",
+    "description": "string",
+    "tag?": "string",
+    "tagIcon?": "LucideIcon",
+    "tagAnimation?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "buttons?": "Array<{text: string, onClick?: () => void, href?: string}>",
+    "buttonAnimation?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "textboxLayout": "'default' | 'split' | 'split-actions' | 'split-description' | 'inline-image' (required - 'inline-image' uses titleSegments for rich text with images)",
+    "useInvertedBackground": "boolean",
+    "ariaLabel?": "string (default: 'Metrics section')",
+    "className?": "string"
+  },
+  "usageExample": "<MetricCardTwo metrics={[{ id: '1', value: '98%', description: 'Customer Satisfaction Rate' }, { id: '2', value: '50K+', description: 'Active Users Worldwide' }]} title=\"Key Metrics\" description=\"See how we're making a difference\" gridVariant=\"uniform-all-items-equal\" textboxLayout=\"default\" animationType=\"slide-up\" useInvertedBackground={false} />",
+  "do": [
+    "Use for statistics displays",
+    "Use for achievement showcases",
+    "Requires metrics[]",
+    "Requires titleSegments?[]",
+    "Requires buttons?[]"
+  ],
+  "dont": [],
+  "editRules": {
+    "textOnly": true,
+    "layoutLocked": true,
+    "styleLocked": true
+  }
+}

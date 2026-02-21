@@ -1,0 +1,21 @@
+{
+  "name": "AnimatedAuroraBackground",
+  "description": "Aurora borealis effect with animated repeating gradients and mix-blend-difference.",
+  "constraints": {},
+  "propsSchema": {
+    "className?": "string",
+    "showRadialGradient?": "boolean (default: true)",
+    "invertColors": "boolean (REQUIRED - true for light backgrounds, false for dark backgrounds)"
+  },
+  "usageExample": "<AnimatedAuroraBackground invertColors={true} showRadialGradient={true} />",
+  "do": [
+    "Use for feature showcases",
+    "Use for capability displays"
+  ],
+  "dont": [],
+  "editRules": {
+    "textOnly": true,
+    "layoutLocked": true,
+    "styleLocked": true
+  }
+}

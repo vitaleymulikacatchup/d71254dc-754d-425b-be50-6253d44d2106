@@ -1,0 +1,70 @@
+{
+  "name": "FeatureProcessSteps",
+  "description": "Split-layout feature section with text on left and numbered process steps with timeline on right.",
+  "constraints": {
+    "textRules": {
+      "title": {
+        "required": true,
+        "example": "Getting you results without the complexity",
+        "minChars": 10,
+        "maxChars": 100
+      },
+      "description": {
+        "required": true,
+        "example": "Our three-step process takes you from identifying opportunities to launching systems, with clear communication and support at every stage.",
+        "minChars": 20,
+        "maxChars": 300
+      },
+      "tag": {
+        "required": false,
+        "example": "How we work",
+        "minChars": 2,
+        "maxChars": 30
+      }
+    },
+    "stepsRules": {
+      "minSteps": 2,
+      "recommendedSteps": 3,
+      "maxSteps": 6,
+      "structure": {
+        "number": "string - Step number to display (required, e.g., '01', '02', '1', '2')",
+        "title": "string - Step title (required, e.g., 'Discovery & Assessment')",
+        "description": "string - Step description",
+        "tag": "string - Optional tag/badge for the step (e.g., 'Week 1', 'Ongoing')"
+      },
+      "note": "Minimum 2 steps required, but 3+ steps recommended for optimal visual balance. Each step shows a numbered card with a connecting timeline line."
+    }
+  },
+  "propsSchema": {
+    "title": "string",
+    "description": "string",
+    "steps": "Array<{ number: string, title: string, description: string, tag?: string }>",
+    "useInvertedBackground": "boolean",
+    "tag?": "string",
+    "tagIcon?": "LucideIcon",
+    "tagAnimation?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "buttons?": "ButtonConfig[]",
+    "buttonAnimation?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "stepsAnimation": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "ariaLabel?": "string (default: 'Process steps section')",
+    "className?": "string"
+  },
+  "usageExample": "// Wrap in ThemeProvider\nimport { Sparkles } from 'lucide-react';\n\n<ThemeProvider defaultButtonVariant=\"text-stagger\" defaultTextAnimation=\"entrance-slide\" borderRadius=\"rounded\" cardStyle=\"solid\" primaryButtonStyle=\"gradient\" secondaryButtonStyle=\"glass\">\n  <FeatureProcessSteps\n    tag=\"How we work\"\n    tagIcon={Sparkles}\n    title=\"Getting you results without the complexity\"\n    description=\"Our three-step process takes you from identifying opportunities to launching systems.\"\n    buttons={[{ text: 'Book a call', href: '#' }, { text: 'Watch video', href: '#' }]}\n    steps={[\n      { number: '01', title: 'Discovery & Assessment', tag: 'Week 1', description: 'We analyze your workflows and identify opportunities.' },\n      { number: '02', title: 'Build & Deploy', tag: 'Weeks 2-4', description: 'We create and launch custom systems tailored to your operations.' },\n      { number: '03', title: 'Train & Support', tag: 'Ongoing', description: 'We train your team and provide ongoing support.' }\n    ]}\n    useInvertedBackground={false}\n  />\n</ThemeProvider>",
+  "do": [
+    "Use for process flows",
+    "Use for roadmaps",
+    "Use for step-by-step explanation",
+    "Use for feature showcases",
+    "Use for capability displays",
+    "Requires steps[]"
+  ],
+  "dont": [
+    "Do not use non-sequential content",
+    "Do not use single item"
+  ],
+  "editRules": {
+    "textOnly": true,
+    "layoutLocked": true,
+    "styleLocked": true
+  }
+}

@@ -1,0 +1,1698 @@
+{
+  "NavbarStyleApple": {
+    "category": "navbar",
+    "intent": "product showcase",
+    "bestFor": [
+      "product catalogs",
+      "e-commerce"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "navItems[]"
+    ],
+    "import": "@/components/navbar/NavbarStyleApple/NavbarStyleApple"
+  },
+  "NavbarLayoutFloatingInline": {
+    "category": "navbar",
+    "intent": "feature showcase",
+    "bestFor": [
+      "general use"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "navItems[]"
+    ],
+    "import": "@/components/navbar/NavbarLayoutFloatingInline"
+  },
+  "NavbarLayoutFloatingOverlay": {
+    "category": "navbar",
+    "intent": "feature showcase",
+    "bestFor": [
+      "general use"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "navItems[]"
+    ],
+    "import": "@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay"
+  },
+  "NavbarStyleFullscreen": {
+    "category": "navbar",
+    "intent": "feature showcase",
+    "bestFor": [
+      "feature showcases",
+      "capability displays"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "navItems[]"
+    ],
+    "import": "@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen"
+  },
+  "NavbarStyleCentered": {
+    "category": "navbar",
+    "intent": "feature showcase",
+    "bestFor": [
+      "feature showcases",
+      "capability displays"
+    ],
+    "avoidWhen": [
+      "more than 4 items"
+    ],
+    "requires": [
+      "navItems[]"
+    ],
+    "import": "@/components/navbar/NavbarStyleCentered/NavbarStyleCentered"
+  },
+  "HeroBillboard": {
+    "category": "hero",
+    "intent": "hero with media",
+    "bestFor": [
+      "landing pages",
+      "feature showcases",
+      "capability displays"
+    ],
+    "avoidWhen": [
+      "multiple items"
+    ],
+    "requires": [
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/hero/HeroBillboard"
+  },
+  "HeroBillboardCarousel": {
+    "category": "hero",
+    "intent": "hero with media",
+    "bestFor": [
+      "landing pages",
+      "feature showcases",
+      "capability displays",
+      "portfolios",
+      "image galleries"
+    ],
+    "avoidWhen": [
+      "less than 5 items"
+    ],
+    "requires": [
+      "buttons?[]",
+      "mediaItems[]"
+    ],
+    "import": "@/components/sections/hero/HeroBillboardCarousel"
+  },
+  "HeroBillboardGallery": {
+    "category": "hero",
+    "intent": "hero with media",
+    "bestFor": [
+      "landing pages",
+      "feature showcases",
+      "capability displays",
+      "portfolios",
+      "image galleries"
+    ],
+    "avoidWhen": [
+      "less than 5 items"
+    ],
+    "requires": [
+      "buttons?[]",
+      "mediaItems[]"
+    ],
+    "import": "@/components/sections/hero/HeroBillboardGallery"
+  },
+  "HeroSplit": {
+    "category": "hero",
+    "intent": "hero with media",
+    "bestFor": [
+      "landing pages",
+      "feature showcases",
+      "capability displays"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "buttons?[]",
+      "avatars?[]"
+    ],
+    "import": "@/components/sections/hero/HeroSplit"
+  },
+  "HeroSplitKpi": {
+    "category": "hero",
+    "intent": "hero with media",
+    "bestFor": [
+      "landing pages",
+      "feature showcases",
+      "capability displays",
+      "statistics displays",
+      "achievement showcases"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "kpis[]",
+      "buttons?[]",
+      "avatars?[]"
+    ],
+    "import": "@/components/sections/hero/HeroSplitKpi"
+  },
+  "HeroOverlay": {
+    "category": "hero",
+    "intent": "hero with media",
+    "bestFor": [
+      "landing pages",
+      "feature showcases",
+      "capability displays"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/hero/HeroOverlay"
+  },
+  "HeroLogo": {
+    "category": "hero",
+    "intent": "hero with media",
+    "bestFor": [
+      "landing pages",
+      "feature showcases",
+      "capability displays"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "buttons[]"
+    ],
+    "import": "@/components/sections/hero/HeroLogo"
+  },
+  "HeroLogoBillboard": {
+    "category": "hero",
+    "intent": "hero with media",
+    "bestFor": [
+      "landing pages",
+      "feature showcases",
+      "capability displays"
+    ],
+    "avoidWhen": [
+      "multiple items"
+    ],
+    "requires": [],
+    "import": "@/components/sections/hero/HeroLogoBillboard"
+  },
+  "HeroLogoBillboardSplit": {
+    "category": "hero",
+    "intent": "hero with media",
+    "bestFor": [
+      "landing pages",
+      "feature showcases",
+      "capability displays"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "buttons[]"
+    ],
+    "import": "@/components/sections/hero/HeroLogoBillboardSplit"
+  },
+  "HeroBillboardScroll": {
+    "category": "hero",
+    "intent": "hero with media",
+    "bestFor": [
+      "landing pages",
+      "feature showcases",
+      "capability displays",
+      "product catalogs",
+      "e-commerce"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/hero/HeroBillboardScroll"
+  },
+  "HeroBillboardRotatedCarousel": {
+    "category": "hero",
+    "intent": "hero with media",
+    "bestFor": [
+      "landing pages",
+      "feature showcases",
+      "capability displays",
+      "portfolios",
+      "image galleries",
+      "product catalogs",
+      "e-commerce"
+    ],
+    "avoidWhen": [
+      "less than 5 items"
+    ],
+    "requires": [
+      "buttons?[]",
+      "carouselItems[]"
+    ],
+    "import": "@/components/sections/hero/HeroBillboardRotatedCarousel"
+  },
+  "HeroCarouselLogo": {
+    "category": "hero",
+    "intent": "hero with media",
+    "bestFor": [
+      "landing pages",
+      "feature showcases",
+      "capability displays"
+    ],
+    "avoidWhen": [
+      "less than 5 items"
+    ],
+    "requires": [
+      "buttons[]",
+      "slides[]"
+    ],
+    "import": "@/components/sections/hero/heroCarouselLogo/HeroCarouselLogo"
+  },
+  "HeroCentered": {
+    "category": "hero",
+    "intent": "hero with media",
+    "bestFor": [
+      "landing pages",
+      "feature showcases"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "avatars[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/hero/HeroCentered"
+  },
+  "HeroSignup": {
+    "category": "hero",
+    "intent": "hero with media",
+    "bestFor": [
+      "landing pages",
+      "lead generation",
+      "newsletter signups"
+    ],
+    "avoidWhen": [],
+    "requires": [],
+    "import": "@/components/sections/hero/HeroSignup"
+  },
+  "HeroSplitDualMedia": {
+    "category": "hero",
+    "intent": "hero with media",
+    "bestFor": [
+      "landing pages",
+      "coaching",
+      "consulting"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "mediaItems[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/hero/HeroSplitDualMedia"
+  },
+  "HeroPersonalLinks": {
+    "category": "hero",
+    "intent": "hero with media",
+    "bestFor": [
+      "personal pages",
+      "portfolios",
+      "link-in-bio"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "linkCards[]",
+      "socialLinks?[]"
+    ],
+    "import": "@/components/sections/hero/HeroPersonalLinks"
+  },
+  "HeroBillboardDashboard": {
+    "category": "hero",
+    "intent": "hero with media",
+    "bestFor": [
+      "landing pages",
+      "SaaS products",
+      "analytics platforms"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "dashboard",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/hero/HeroBillboardDashboard"
+  },
+  "SplitAbout": {
+    "category": "about",
+    "intent": "feature showcase",
+    "bestFor": [
+      "feature showcases",
+      "capability displays",
+      "about pages",
+      "company information"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "titleSegments?[]",
+      "buttons?[]",
+      "bulletPoints[]"
+    ],
+    "import": "@/components/sections/about/SplitAbout"
+  },
+  "TextSplitAbout": {
+    "category": "about",
+    "intent": "feature showcase",
+    "bestFor": [
+      "feature showcases",
+      "capability displays",
+      "about pages",
+      "company information"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/about/TextSplitAbout"
+  },
+  "TextAbout": {
+    "category": "about",
+    "intent": "feature showcase",
+    "bestFor": [
+      "feature showcases",
+      "capability displays",
+      "about pages",
+      "company information"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/about/TextAbout"
+  },
+  "MediaAbout": {
+    "category": "about",
+    "intent": "hero with media",
+    "bestFor": [
+      "landing pages",
+      "feature showcases",
+      "capability displays",
+      "about pages",
+      "company information",
+      "product catalogs",
+      "e-commerce"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/about/MediaAbout"
+  },
+  "MediaSplitTabsAbout": {
+    "category": "about",
+    "intent": "feature showcase",
+    "bestFor": [
+      "feature showcases",
+      "capability displays",
+      "about pages",
+      "company information"
+    ],
+    "avoidWhen": [
+      "more than 4 items"
+    ],
+    "requires": [
+      "tabs[]"
+    ],
+    "import": "@/components/sections/about/MediaSplitTabsAbout"
+  },
+  "TestimonialAboutCard": {
+    "category": "about",
+    "intent": "feature showcase",
+    "bestFor": [
+      "feature showcases",
+      "capability displays",
+      "social proof",
+      "customer reviews",
+      "about pages",
+      "company information"
+    ],
+    "avoidWhen": [
+      "more than 4 items"
+    ],
+    "requires": [],
+    "import": "@/components/sections/about/TestimonialAboutCard"
+  },
+  "InlineImageSplitTextAbout": {
+    "category": "about",
+    "intent": "about section",
+    "bestFor": [
+      "about pages",
+      "company information"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "heading[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/about/InlineImageSplitTextAbout"
+  },
+  "AboutMetric": {
+    "category": "about",
+    "intent": "feature showcase",
+    "bestFor": [
+      "feature showcases",
+      "capability displays",
+      "about pages",
+      "company information",
+      "statistics displays",
+      "achievement showcases"
+    ],
+    "avoidWhen": [
+      "more than 4 items"
+    ],
+    "requires": [
+      "metrics[]"
+    ],
+    "import": "@/components/sections/about/AboutMetric"
+  },
+  "MetricSplitMediaAbout": {
+    "category": "about",
+    "intent": "about section",
+    "bestFor": [
+      "about pages",
+      "company information",
+      "statistics displays",
+      "achievement showcases"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "metrics[]"
+    ],
+    "import": "@/components/sections/about/MetricSplitMediaAbout"
+  },
+  "FeatureCardOne": {
+    "category": "feature",
+    "intent": "feature showcase",
+    "bestFor": [
+      "feature showcases",
+      "capability displays",
+      "statistics displays",
+      "achievement showcases"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "features[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/feature/FeatureCardOne"
+  },
+  "FeatureCardThree": {
+    "category": "feature",
+    "intent": "feature showcase",
+    "bestFor": [
+      "feature showcases",
+      "capability displays"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "features[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/feature/featureCardThree/FeatureCardThree"
+  },
+  "FeatureCardSix": {
+    "category": "feature",
+    "intent": "sequential process",
+    "bestFor": [
+      "process flows",
+      "roadmaps",
+      "step-by-step explanation",
+      "feature showcases",
+      "capability displays"
+    ],
+    "avoidWhen": [
+      "non-sequential content",
+      "single item"
+    ],
+    "requires": [
+      "features[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/feature/FeatureCardSix"
+  },
+  "FeatureCardSeven": {
+    "category": "feature",
+    "intent": "sequential vertical steps with alternating layout",
+    "bestFor": [
+      "process flows",
+      "roadmaps",
+      "step-by-step explanation",
+      "feature showcases",
+      "capability displays"
+    ],
+    "avoidWhen": [
+      "non-sequential content",
+      "single item"
+    ],
+    "requires": [
+      "features[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/feature/FeatureCardSeven"
+  },
+  "FeatureCardEight": {
+    "category": "feature",
+    "intent": "horizontal timeline",
+    "bestFor": [
+      "process flows",
+      "roadmaps",
+      "step-by-step explanation",
+      "feature showcases",
+      "capability displays"
+    ],
+    "avoidWhen": [
+      "non-sequential content",
+      "single item",
+      "more than 4 items",
+      "less than 2 items",
+      "more than 4 items"
+    ],
+    "requires": [
+      "features[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/feature/FeatureCardEight"
+  },
+  "FeatureCardNine": {
+    "category": "feature",
+    "intent": "vertical sticky scroll timeline",
+    "bestFor": [
+      "feature showcases",
+      "capability displays"
+    ],
+    "avoidWhen": [
+      "less than 2 items",
+      "more than 4 items"
+    ],
+    "requires": [
+      "features[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/feature/FeatureCardNine"
+  },
+  "FeatureCardTwelve": {
+    "category": "feature",
+    "intent": "feature showcase",
+    "bestFor": [
+      "feature showcases",
+      "capability displays",
+      "pricing pages",
+      "subscription tiers"
+    ],
+    "avoidWhen": [
+      "more than 8 items"
+    ],
+    "requires": [
+      "features[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/feature/FeatureCardTwelve"
+  },
+  "FeatureCardSixteen": {
+    "category": "feature",
+    "intent": "feature showcase",
+    "bestFor": [
+      "feature showcases",
+      "capability displays"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/feature/FeatureCardSixteen"
+  },
+  "FeatureCardNineteen": {
+    "category": "feature",
+    "intent": "sequential process",
+    "bestFor": [
+      "process flows",
+      "roadmaps",
+      "step-by-step explanation",
+      "feature showcases",
+      "capability displays"
+    ],
+    "avoidWhen": [
+      "multiple items",
+      "non-sequential content",
+      "single item"
+    ],
+    "requires": [
+      "features[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/feature/FeatureCardNineteen"
+  },
+  "FeatureCardTwentyOne": {
+    "category": "feature",
+    "intent": "feature showcase",
+    "bestFor": [
+      "feature showcases",
+      "capability displays"
+    ],
+    "avoidWhen": [
+      "less than 2 items",
+      "more than 6 items"
+    ],
+    "requires": [
+      "titleSegments?[]",
+      "buttons?[]",
+      "accordionItems[]"
+    ],
+    "import": "@/components/sections/feature/FeatureCardTwentyOne"
+  },
+  "FeatureProcessSteps": {
+    "category": "feature",
+    "intent": "sequential process",
+    "bestFor": [
+      "process flows",
+      "roadmaps",
+      "step-by-step explanation",
+      "feature showcases",
+      "capability displays"
+    ],
+    "avoidWhen": [
+      "non-sequential content",
+      "single item"
+    ],
+    "requires": [
+      "steps[]"
+    ],
+    "import": "@/components/sections/feature/FeatureProcessSteps"
+  },
+  "FeatureCardMedia": {
+    "category": "feature",
+    "intent": "feature showcase",
+    "bestFor": [
+      "feature showcases",
+      "capability displays"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "features[]",
+      "titleSegments?[]"
+    ],
+    "import": "@/components/sections/feature/FeatureCardMedia"
+  },
+  "FeatureCardTen": {
+    "category": "feature",
+    "intent": "sequential process",
+    "bestFor": [
+      "process flows",
+      "step-by-step explanation",
+      "feature showcases"
+    ],
+    "avoidWhen": [
+      "non-sequential content"
+    ],
+    "requires": [
+      "features[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/feature/FeatureCardTen"
+  },
+  "FeatureCardTwentyTwo": {
+    "category": "feature",
+    "intent": "feature showcase",
+    "bestFor": [
+      "feature showcases",
+      "capability displays"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "features[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/feature/FeatureCardTwentyTwo"
+  },
+  "FeatureCardTwentyThree": {
+    "category": "feature",
+    "intent": "feature showcase",
+    "bestFor": [
+      "feature showcases",
+      "capability displays"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "features[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/feature/FeatureCardTwentyThree"
+  },
+  "FeatureCardTwentyFour": {
+    "category": "feature",
+    "intent": "feature showcase",
+    "bestFor": [
+      "feature showcases",
+      "capability displays"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "features[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/feature/FeatureCardTwentyFour"
+  },
+  "FeatureCardTwentyFive": {
+    "category": "feature",
+    "intent": "feature showcase",
+    "bestFor": [
+      "feature showcases",
+      "capability displays"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "features[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/feature/FeatureCardTwentyFive"
+  },
+  "FeatureCardTwentySix": {
+    "category": "feature",
+    "intent": "feature showcase",
+    "bestFor": [
+      "feature showcases",
+      "capability displays"
+    ],
+    "avoidWhen": [
+      "less than 4 items"
+    ],
+    "requires": [
+      "features[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/feature/FeatureCardTwentySix"
+  },
+  "FeatureBento": {
+    "category": "feature",
+    "intent": "feature showcase",
+    "bestFor": [
+      "feature showcases",
+      "capability displays",
+      "interactive visualizations"
+    ],
+    "avoidWhen": [
+      "simple text-only features"
+    ],
+    "requires": [
+      "features[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/feature/FeatureBento"
+  },
+  "FeatureBorderGlow": {
+    "category": "feature",
+    "intent": "feature showcase",
+    "bestFor": [
+      "feature showcases",
+      "capability displays"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "features[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/feature/featureBorderGlow/FeatureBorderGlow"
+  },
+  "FeatureHoverPattern": {
+    "category": "feature",
+    "intent": "feature showcase",
+    "bestFor": [
+      "feature showcases",
+      "capability displays"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "features[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/feature/featureHoverPattern/FeatureHoverPattern"
+  },
+  "ProductCardOne": {
+    "category": "product",
+    "intent": "contact form",
+    "bestFor": [
+      "product catalogs",
+      "e-commerce"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "products[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/product/ProductCardOne"
+  },
+  "ProductCardTwo": {
+    "category": "product",
+    "intent": "testimonials",
+    "bestFor": [
+      "product catalogs",
+      "e-commerce"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "products[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/product/ProductCardTwo"
+  },
+  "ProductCardThree": {
+    "category": "product",
+    "intent": "product showcase",
+    "bestFor": [
+      "product catalogs",
+      "e-commerce"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "products[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/product/ProductCardThree"
+  },
+  "ProductCardFour": {
+    "category": "product",
+    "intent": "product showcase",
+    "bestFor": [
+      "product catalogs",
+      "e-commerce"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "products[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/product/ProductCardFour"
+  },
+  "PricingCardOne": {
+    "category": "pricing",
+    "intent": "feature showcase",
+    "bestFor": [
+      "feature showcases",
+      "capability displays",
+      "pricing pages",
+      "subscription tiers"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "plans[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/pricing/PricingCardOne"
+  },
+  "PricingCardTwo": {
+    "category": "pricing",
+    "intent": "feature showcase",
+    "bestFor": [
+      "feature showcases",
+      "capability displays",
+      "pricing pages",
+      "subscription tiers"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "plans[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/pricing/PricingCardTwo"
+  },
+  "PricingCardThree": {
+    "category": "pricing",
+    "intent": "feature showcase",
+    "bestFor": [
+      "feature showcases",
+      "capability displays",
+      "pricing pages",
+      "subscription tiers"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "plans[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/pricing/PricingCardThree"
+  },
+  "PricingCardFive": {
+    "category": "pricing",
+    "intent": "feature showcase",
+    "bestFor": [
+      "feature showcases",
+      "capability displays",
+      "pricing pages",
+      "subscription tiers"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "plans[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/pricing/PricingCardFive"
+  },
+  "PricingCardEight": {
+    "category": "pricing",
+    "intent": "feature showcase",
+    "bestFor": [
+      "feature showcases",
+      "capability displays",
+      "pricing pages",
+      "subscription tiers"
+    ],
+    "avoidWhen": [
+      "more than 4 items"
+    ],
+    "requires": [
+      "plans[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/pricing/PricingCardEight"
+  },
+  "PricingCardNine": {
+    "category": "pricing",
+    "intent": "feature showcase",
+    "bestFor": [
+      "feature showcases",
+      "capability displays",
+      "pricing pages",
+      "subscription tiers"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "plans[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/pricing/PricingCardNine"
+  },
+  "MetricCardOne": {
+    "category": "metric",
+    "intent": "metrics display",
+    "bestFor": [
+      "statistics displays",
+      "achievement showcases"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "metrics[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/metrics/MetricCardOne"
+  },
+  "MetricCardTwo": {
+    "category": "metric",
+    "intent": "metrics display",
+    "bestFor": [
+      "statistics displays",
+      "achievement showcases"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "metrics[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/metrics/MetricCardTwo"
+  },
+  "MetricCardThree": {
+    "category": "metric",
+    "intent": "feature showcase",
+    "bestFor": [
+      "feature showcases",
+      "capability displays",
+      "statistics displays",
+      "achievement showcases"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "metrics[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/metrics/MetricCardThree"
+  },
+  "MetricCardSeven": {
+    "category": "metric",
+    "intent": "feature showcase",
+    "bestFor": [
+      "feature showcases",
+      "capability displays",
+      "pricing pages",
+      "subscription tiers",
+      "statistics displays",
+      "achievement showcases"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "metrics[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/metrics/MetricCardSeven"
+  },
+  "MetricCardTen": {
+    "category": "metric",
+    "intent": "pricing plans",
+    "bestFor": [
+      "pricing pages",
+      "subscription tiers",
+      "statistics displays",
+      "achievement showcases"
+    ],
+    "avoidWhen": [
+      "more than 12 items"
+    ],
+    "requires": [
+      "metrics[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/metrics/MetricCardTen"
+  },
+  "MetricCardEleven": {
+    "category": "metric",
+    "intent": "metrics display",
+    "bestFor": [
+      "statistics displays",
+      "achievement showcases"
+    ],
+    "avoidWhen": [
+      "more than 4 items",
+      "more than 6 items"
+    ],
+    "requires": [
+      "metrics[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/metrics/MetricCardEleven"
+  },
+  "MetricCardFourteen": {
+    "category": "metric",
+    "intent": "metrics display",
+    "bestFor": [
+      "statistics displays",
+      "achievement showcases"
+    ],
+    "avoidWhen": [
+      "more than 4 items",
+      "more than 4 items"
+    ],
+    "requires": [
+      "metrics[]"
+    ],
+    "import": "@/components/sections/metrics/MetricCardFourteen"
+  },
+  "TeamCardOne": {
+    "category": "team",
+    "intent": "team section",
+    "bestFor": [
+      "team pages",
+      "staff directories"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "members[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/team/TeamCardOne"
+  },
+  "TeamCardTwo": {
+    "category": "team",
+    "intent": "about section",
+    "bestFor": [
+      "about pages",
+      "company information",
+      "team pages",
+      "staff directories"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "members[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/team/TeamCardTwo"
+  },
+  "TeamCardFive": {
+    "category": "team",
+    "intent": "team section",
+    "bestFor": [
+      "team pages",
+      "staff directories"
+    ],
+    "avoidWhen": [
+      "more than 4 items",
+      "less than 2 items",
+      "more than 12 items"
+    ],
+    "requires": [
+      "team[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/team/TeamCardFive"
+  },
+  "TeamCardSix": {
+    "category": "team",
+    "intent": "about section",
+    "bestFor": [
+      "about pages",
+      "company information",
+      "team pages",
+      "staff directories"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "members[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/team/TeamCardSix"
+  },
+  "TeamCardTen": {
+    "category": "team",
+    "intent": "team section",
+    "bestFor": [
+      "team pages",
+      "staff directories"
+    ],
+    "avoidWhen": [
+      "multiple items",
+      "more than 4 items",
+      "more than 6 items"
+    ],
+    "requires": [
+      "members[]"
+    ],
+    "import": "@/components/sections/team/TeamCardTen"
+  },
+  "TeamCardEleven": {
+    "category": "team",
+    "intent": "contact form",
+    "bestFor": [
+      "contact pages",
+      "lead generation",
+      "team pages",
+      "staff directories"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "groups[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/team/TeamCardEleven"
+  },
+  "TestimonialCardOne": {
+    "category": "testimonial",
+    "intent": "testimonials",
+    "bestFor": [
+      "social proof",
+      "customer reviews"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "testimonials[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/testimonial/TestimonialCardOne"
+  },
+  "TestimonialCardTwo": {
+    "category": "testimonial",
+    "intent": "testimonials",
+    "bestFor": [
+      "social proof",
+      "customer reviews"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "testimonials[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/testimonial/TestimonialCardTwo"
+  },
+  "TestimonialCardFive": {
+    "category": "testimonial",
+    "intent": "testimonials",
+    "bestFor": [
+      "social proof",
+      "customer reviews"
+    ],
+    "avoidWhen": [
+      "less than 3 items",
+      "more than 10 items"
+    ],
+    "requires": [
+      "testimonials[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/testimonial/TestimonialCardFive"
+  },
+  "TestimonialCardSix": {
+    "category": "testimonial",
+    "intent": "testimonials",
+    "bestFor": [
+      "social proof",
+      "customer reviews"
+    ],
+    "avoidWhen": [
+      "less than 6 items",
+      "more than 20 items"
+    ],
+    "requires": [
+      "testimonials[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/testimonial/TestimonialCardSix"
+  },
+  "TestimonialCardTen": {
+    "category": "testimonial",
+    "intent": "feature showcase",
+    "bestFor": [
+      "feature showcases",
+      "capability displays",
+      "social proof",
+      "customer reviews"
+    ],
+    "avoidWhen": [
+      "more than 4 items"
+    ],
+    "requires": [
+      "testimonials[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/testimonial/TestimonialCardTen"
+  },
+  "TestimonialCardTwelve": {
+    "category": "testimonial",
+    "intent": "feature showcase",
+    "bestFor": [
+      "feature showcases",
+      "capability displays",
+      "social proof",
+      "customer reviews"
+    ],
+    "avoidWhen": [
+      "multiple items",
+      "less than 3 items",
+      "more than 10 items"
+    ],
+    "requires": [
+      "testimonials[]"
+    ],
+    "import": "@/components/sections/testimonial/TestimonialCardTwelve"
+  },
+  "TestimonialCardThirteen": {
+    "category": "testimonial",
+    "intent": "testimonials",
+    "bestFor": [
+      "social proof",
+      "customer reviews",
+      "product catalogs",
+      "e-commerce"
+    ],
+    "avoidWhen": [
+      "multiple items"
+    ],
+    "requires": [
+      "testimonials[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/testimonial/TestimonialCardThirteen"
+  },
+  "TestimonialCardFifteen": {
+    "category": "testimonial",
+    "intent": "hero with media",
+    "bestFor": [
+      "landing pages",
+      "feature showcases",
+      "capability displays",
+      "social proof",
+      "customer reviews"
+    ],
+    "avoidWhen": [
+      "multiple items"
+    ],
+    "requires": [
+      "avatars[]"
+    ],
+    "import": "@/components/sections/testimonial/TestimonialCardFifteen"
+  },
+  "TestimonialCardSixteen": {
+    "category": "testimonial",
+    "intent": "testimonials",
+    "bestFor": [
+      "social proof",
+      "customer reviews"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "testimonials[]",
+      "kpiItems[]"
+    ],
+    "import": "@/components/sections/testimonial/TestimonialCardSixteen"
+  },
+  "SocialProofOne": {
+    "category": "socialProof",
+    "intent": "testimonials",
+    "bestFor": [
+      "social proof",
+      "partner names",
+      "partner logos"
+    ],
+    "avoidWhen": [
+      "less than 4 items"
+    ],
+    "requires": [
+      "names[]",
+      "logos?[]"
+    ],
+    "import": "@/components/sections/socialProof/SocialProofOne"
+  },
+  "FaqBase": {
+    "category": "faq",
+    "intent": "contact form",
+    "bestFor": [
+      "help pages",
+      "support sections"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "faqs[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/faq/FaqBase"
+  },
+  "FaqDouble": {
+    "category": "faq",
+    "intent": "contact form",
+    "bestFor": [
+      "help pages",
+      "support sections"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "faqs[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/faq/FaqDouble"
+  },
+  "FaqSplitMedia": {
+    "category": "faq",
+    "intent": "faq section",
+    "bestFor": [
+      "help pages",
+      "support sections"
+    ],
+    "avoidWhen": [
+      "more than 4 items"
+    ],
+    "requires": [
+      "faqs[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/faq/FaqSplitMedia"
+  },
+  "FaqSplitText": {
+    "category": "faq",
+    "intent": "faq section",
+    "bestFor": [
+      "help pages",
+      "support sections"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "faqs[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/faq/FaqSplitText"
+  },
+  "BlogCardOne": {
+    "category": "blog",
+    "intent": "content listing",
+    "bestFor": [
+      "blog listings",
+      "article grids"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "blogs[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/blog/BlogCardOne"
+  },
+  "BlogCardTwo": {
+    "category": "blog",
+    "intent": "content listing",
+    "bestFor": [
+      "blog listings",
+      "article grids"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "blogs[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/blog/BlogCardTwo"
+  },
+  "BlogCardThree": {
+    "category": "blog",
+    "intent": "hero with media",
+    "bestFor": [
+      "landing pages",
+      "feature showcases",
+      "capability displays",
+      "blog listings",
+      "article grids"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "blogs[]",
+      "titleSegments?[]",
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/blog/BlogCardThree"
+  },
+  "ContactCenter": {
+    "category": "contact",
+    "intent": "feature showcase",
+    "bestFor": [
+      "feature showcases",
+      "capability displays",
+      "contact pages",
+      "lead generation"
+    ],
+    "avoidWhen": [],
+    "requires": [],
+    "import": "@/components/sections/contact/ContactCenter"
+  },
+  "ContactSplit": {
+    "category": "contact",
+    "intent": "feature showcase",
+    "bestFor": [
+      "feature showcases",
+      "capability displays",
+      "contact pages",
+      "lead generation"
+    ],
+    "avoidWhen": [],
+    "requires": [],
+    "import": "@/components/sections/contact/ContactSplit"
+  },
+  "ContactSplitForm": {
+    "category": "contact",
+    "intent": "feature showcase",
+    "bestFor": [
+      "feature showcases",
+      "capability displays",
+      "contact pages",
+      "lead generation"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "inputs[]"
+    ],
+    "import": "@/components/sections/contact/ContactSplitForm"
+  },
+  "ContactText": {
+    "category": "contact",
+    "intent": "contact form",
+    "bestFor": [
+      "contact pages",
+      "lead generation"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "buttons?[]"
+    ],
+    "import": "@/components/sections/contact/ContactText"
+  },
+  "ContactFaq": {
+    "category": "contact",
+    "intent": "contact form",
+    "bestFor": [
+      "contact pages",
+      "lead generation",
+      "help pages",
+      "support sections"
+    ],
+    "avoidWhen": [
+      "more than 4 items"
+    ],
+    "requires": [
+      "faqs[]"
+    ],
+    "import": "@/components/sections/contact/ContactFaq"
+  },
+  "ContactCTA": {
+    "category": "contact",
+    "intent": "contact form",
+    "bestFor": [
+      "contact pages",
+      "lead generation",
+      "call-to-action sections"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "buttons[]"
+    ],
+    "import": "@/components/sections/contact/ContactCTA"
+  },
+  "FooterBase": {
+    "category": "footer",
+    "intent": "feature showcase",
+    "bestFor": [
+      "feature showcases",
+      "capability displays"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "columns[]"
+    ],
+    "import": "@/components/sections/footer/FooterBase"
+  },
+  "FooterMedia": {
+    "category": "footer",
+    "intent": "feature showcase",
+    "bestFor": [
+      "feature showcases",
+      "capability displays"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "columns[]"
+    ],
+    "import": "@/components/sections/footer/FooterMedia"
+  },
+  "FooterBaseReveal": {
+    "category": "footer",
+    "intent": "footer",
+    "bestFor": [
+      "general use"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "columns[]"
+    ],
+    "import": "@/components/sections/footer/FooterBaseReveal"
+  },
+  "FooterLogoEmphasis": {
+    "category": "footer",
+    "intent": "feature showcase",
+    "bestFor": [
+      "feature showcases",
+      "capability displays"
+    ],
+    "avoidWhen": [
+      "more than 4 items"
+    ],
+    "requires": [
+      "columns[]"
+    ],
+    "import": "@/components/sections/footer/FooterLogoEmphasis"
+  },
+  "FooterCard": {
+    "category": "footer",
+    "intent": "footer",
+    "bestFor": [
+      "general use"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "socialLinks?[]"
+    ],
+    "import": "@/components/sections/footer/FooterCard"
+  },
+  "FooterBaseCard": {
+    "category": "footer",
+    "intent": "footer",
+    "bestFor": [
+      "general use"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "columns[]"
+    ],
+    "import": "@/components/sections/footer/FooterBaseCard"
+  },
+  "FooterLogoReveal": {
+    "category": "footer",
+    "intent": "footer",
+    "bestFor": [
+      "general use"
+    ],
+    "avoidWhen": [],
+    "requires": [],
+    "import": "@/components/sections/footer/FooterLogoReveal"
+  },
+  "FooterSimple": {
+    "category": "footer",
+    "intent": "feature showcase",
+    "bestFor": [
+      "feature showcases",
+      "capability displays"
+    ],
+    "avoidWhen": [],
+    "requires": [
+      "columns[]"
+    ],
+    "import": "@/components/sections/footer/FooterSimple"
+  }
+}

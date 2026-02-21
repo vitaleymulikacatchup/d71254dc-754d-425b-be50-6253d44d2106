@@ -1,0 +1,426 @@
+{
+  "singleFonts": {
+    "interTight": {
+      "name": "Inter Tight",
+      "import": "import { Inter_Tight } from \"next/font/google\";",
+      "initialization": "const interTight = Inter_Tight({\n  variable: \"--font-inter-tight\",\n  subsets: [\"latin\"],\n  weight: [\"100\", \"200\", \"300\", \"400\", \"500\", \"600\", \"700\", \"800\", \"900\"],\n});",
+      "className": "${interTight.variable}",
+      "cssVariable": "font-family: var(--font-inter-tight), sans-serif;"
+    },
+    "inter": {
+      "name": "Inter",
+      "import": "import { Inter } from \"next/font/google\";",
+      "initialization": "const inter = Inter({\n  variable: \"--font-inter\",\n  subsets: [\"latin\"],\n});",
+      "className": "${inter.variable}",
+      "cssVariable": "font-family: var(--font-inter), sans-serif;"
+    },
+    "poppins": {
+      "name": "Poppins",
+      "import": "import { Poppins } from \"next/font/google\";",
+      "initialization": "const poppins = Poppins({\n  variable: \"--font-poppins\",\n  subsets: [\"latin\"],\n  weight: [\"100\", \"200\", \"300\", \"400\", \"500\", \"600\", \"700\", \"800\", \"900\"],\n});",
+      "className": "${poppins.variable}",
+      "cssVariable": "font-family: var(--font-poppins), sans-serif;"
+    },
+    "montserrat": {
+      "name": "Montserrat",
+      "import": "import { Montserrat } from \"next/font/google\";",
+      "initialization": "const montserrat = Montserrat({\n  variable: \"--font-montserrat\",\n  subsets: [\"latin\"],\n});",
+      "className": "${montserrat.variable}",
+      "cssVariable": "font-family: var(--font-montserrat), sans-serif;"
+    },
+    "roboto": {
+      "name": "Roboto",
+      "import": "import { Roboto } from \"next/font/google\";",
+      "initialization": "const roboto = Roboto({\n  variable: \"--font-roboto\",\n  subsets: [\"latin\"],\n  weight: [\"100\", \"300\", \"400\", \"500\", \"700\", \"900\"],\n});",
+      "className": "${roboto.variable}",
+      "cssVariable": "font-family: var(--font-roboto), sans-serif;"
+    },
+    "openSans": {
+      "name": "Open Sans",
+      "import": "import { Open_Sans } from \"next/font/google\";",
+      "initialization": "const openSans = Open_Sans({\n  variable: \"--font-open-sans\",\n  subsets: [\"latin\"],\n});",
+      "className": "${openSans.variable}",
+      "cssVariable": "font-family: var(--font-open-sans), sans-serif;"
+    },
+    "lato": {
+      "name": "Lato",
+      "import": "import { Lato } from \"next/font/google\";",
+      "initialization": "const lato = Lato({\n  variable: \"--font-lato\",\n  subsets: [\"latin\"],\n  weight: [\"100\", \"300\", \"400\", \"700\", \"900\"],\n});",
+      "className": "${lato.variable}",
+      "cssVariable": "font-family: var(--font-lato), sans-serif;"
+    },
+    "workSans": {
+      "name": "Work Sans",
+      "import": "import { Work_Sans } from \"next/font/google\";",
+      "initialization": "const workSans = Work_Sans({\n  variable: \"--font-work-sans\",\n  subsets: [\"latin\"],\n});",
+      "className": "${workSans.variable}",
+      "cssVariable": "font-family: var(--font-work-sans), sans-serif;"
+    },
+    "dmSans": {
+      "name": "DM Sans",
+      "import": "import { DM_Sans } from \"next/font/google\";",
+      "initialization": "const dmSans = DM_Sans({\n  variable: \"--font-dm-sans\",\n  subsets: [\"latin\"],\n});",
+      "className": "${dmSans.variable}",
+      "cssVariable": "font-family: var(--font-dm-sans), sans-serif;"
+    },
+    "plusJakartaSans": {
+      "name": "Plus Jakarta Sans",
+      "import": "import { Plus_Jakarta_Sans } from \"next/font/google\";",
+      "initialization": "const plusJakartaSans = Plus_Jakarta_Sans({\n  variable: \"--font-plus-jakarta-sans\",\n  subsets: [\"latin\"],\n});",
+      "className": "${plusJakartaSans.variable}",
+      "cssVariable": "font-family: var(--font-plus-jakarta-sans), sans-serif;"
+    },
+    "manrope": {
+      "name": "Manrope",
+      "import": "import { Manrope } from \"next/font/google\";",
+      "initialization": "const manrope = Manrope({\n  variable: \"--font-manrope\",\n  subsets: [\"latin\"],\n});",
+      "className": "${manrope.variable}",
+      "cssVariable": "font-family: var(--font-manrope), sans-serif;"
+    },
+    "rubik": {
+      "name": "Rubik",
+      "import": "import { Rubik } from \"next/font/google\";",
+      "initialization": "const rubik = Rubik({\n  variable: \"--font-rubik\",\n  subsets: [\"latin\"],\n});",
+      "className": "${rubik.variable}",
+      "cssVariable": "font-family: var(--font-rubik), sans-serif;"
+    },
+    "sourceSans3": {
+      "name": "Source Sans 3",
+      "import": "import { Source_Sans_3 } from \"next/font/google\";",
+      "initialization": "const sourceSans3 = Source_Sans_3({\n  variable: \"--font-source-sans-3\",\n  subsets: [\"latin\"],\n});",
+      "className": "${sourceSans3.variable}",
+      "cssVariable": "font-family: var(--font-source-sans-3), sans-serif;"
+    },
+    "cormorantGaramond": {
+      "name": "Cormorant Garamond",
+      "import": "import { Cormorant_Garamond } from \"next/font/google\";",
+      "initialization": "const cormorantGaramond = Cormorant_Garamond({\n  variable: \"--font-cormorant-garamond\",\n  subsets: [\"latin\"],\n  weight: [\"300\", \"400\", \"500\", \"600\", \"700\"],\n});",
+      "className": "${cormorantGaramond.variable}",
+      "cssVariable": "font-family: var(--font-cormorant-garamond), serif;",
+      "category": "serif"
+    },
+    "lora": {
+      "name": "Lora",
+      "import": "import { Lora } from \"next/font/google\";",
+      "initialization": "const lora = Lora({\n  variable: \"--font-lora\",\n  subsets: [\"latin\"],\n});",
+      "className": "${lora.variable}",
+      "cssVariable": "font-family: var(--font-lora), serif;",
+      "category": "serif"
+    },
+    "publicSans": {
+      "name": "Public Sans",
+      "import": "import { Public_Sans } from \"next/font/google\";",
+      "initialization": "const publicSans = Public_Sans({\n  variable: \"--font-public-sans\",\n  subsets: [\"latin\"],\n});",
+      "className": "${publicSans.variable}",
+      "cssVariable": "font-family: var(--font-public-sans), sans-serif;"
+    },
+    "notoSans": {
+      "name": "Noto Sans",
+      "import": "import { Noto_Sans } from \"next/font/google\";",
+      "initialization": "const notoSans = Noto_Sans({\n  variable: \"--font-noto-sans\",\n  subsets: [\"latin\"],\n});",
+      "className": "${notoSans.variable}",
+      "cssVariable": "font-family: var(--font-noto-sans), sans-serif;"
+    },
+    "mulish": {
+      "name": "Mulish",
+      "import": "import { Mulish } from \"next/font/google\";",
+      "initialization": "const mulish = Mulish({\n  variable: \"--font-mulish\",\n  subsets: [\"latin\"],\n});",
+      "className": "${mulish.variable}",
+      "cssVariable": "font-family: var(--font-mulish), sans-serif;"
+    },
+    "ibmPlexSans": {
+      "name": "IBM Plex Sans",
+      "import": "import { IBM_Plex_Sans } from \"next/font/google\";",
+      "initialization": "const ibmPlexSans = IBM_Plex_Sans({\n  variable: \"--font-ibm-plex-sans\",\n  subsets: [\"latin\"],\n  weight: [\"100\", \"200\", \"300\", \"400\", \"500\", \"600\", \"700\"],\n});",
+      "className": "${ibmPlexSans.variable}",
+      "cssVariable": "font-family: var(--font-ibm-plex-sans), sans-serif;"
+    },
+    "nunito": {
+      "name": "Nunito",
+      "import": "import { Nunito } from \"next/font/google\";",
+      "initialization": "const nunito = Nunito({\n  variable: \"--font-nunito\",\n  subsets: [\"latin\"],\n});",
+      "className": "${nunito.variable}",
+      "cssVariable": "font-family: var(--font-nunito), sans-serif;"
+    },
+    "nunitoSans": {
+      "name": "Nunito Sans",
+      "import": "import { Nunito_Sans } from \"next/font/google\";",
+      "initialization": "const nunitoSans = Nunito_Sans({\n  variable: \"--font-nunito-sans\",\n  subsets: [\"latin\"],\n});",
+      "className": "${nunitoSans.variable}",
+      "cssVariable": "font-family: var(--font-nunito-sans), sans-serif;"
+    },
+    "ubuntu": {
+      "name": "Ubuntu",
+      "import": "import { Ubuntu } from \"next/font/google\";",
+      "initialization": "const ubuntu = Ubuntu({\n  variable: \"--font-ubuntu\",\n  subsets: [\"latin\"],\n  weight: [\"300\", \"400\", \"500\", \"700\"],\n});",
+      "className": "${ubuntu.variable}",
+      "cssVariable": "font-family: var(--font-ubuntu), sans-serif;"
+    },
+    "raleway": {
+      "name": "Raleway",
+      "import": "import { Raleway } from \"next/font/google\";",
+      "initialization": "const raleway = Raleway({\n  variable: \"--font-raleway\",\n  subsets: [\"latin\"],\n});",
+      "className": "${raleway.variable}",
+      "cssVariable": "font-family: var(--font-raleway), sans-serif;"
+    },
+    "archivo": {
+      "name": "Archivo",
+      "import": "import { Archivo } from \"next/font/google\";",
+      "initialization": "const archivo = Archivo({\n  variable: \"--font-archivo\",\n  subsets: [\"latin\"],\n});",
+      "className": "${archivo.variable}",
+      "cssVariable": "font-family: var(--font-archivo), sans-serif;"
+    },
+    "cabin": {
+      "name": "Cabin",
+      "import": "import { Cabin } from \"next/font/google\";",
+      "initialization": "const cabin = Cabin({\n  variable: \"--font-cabin\",\n  subsets: [\"latin\"],\n});",
+      "className": "${cabin.variable}",
+      "cssVariable": "font-family: var(--font-cabin), sans-serif;"
+    },
+    "barlow": {
+      "name": "Barlow",
+      "import": "import { Barlow } from \"next/font/google\";",
+      "initialization": "const barlow = Barlow({\n  variable: \"--font-barlow\",\n  subsets: [\"latin\"],\n  weight: [\"100\", \"200\", \"300\", \"400\", \"500\", \"600\", \"700\", \"800\", \"900\"],\n});",
+      "className": "${barlow.variable}",
+      "cssVariable": "font-family: var(--font-barlow), sans-serif;"
+    },
+    "karla": {
+      "name": "Karla",
+      "import": "import { Karla } from \"next/font/google\";",
+      "initialization": "const karla = Karla({\n  variable: \"--font-karla\",\n  subsets: [\"latin\"],\n});",
+      "className": "${karla.variable}",
+      "cssVariable": "font-family: var(--font-karla), sans-serif;"
+    },
+    "figtree": {
+      "name": "Figtree",
+      "import": "import { Figtree } from \"next/font/google\";",
+      "initialization": "const figtree = Figtree({\n  variable: \"--font-figtree\",\n  subsets: [\"latin\"],\n});",
+      "className": "${figtree.variable}",
+      "cssVariable": "font-family: var(--font-figtree), sans-serif;"
+    },
+    "outfit": {
+      "name": "Outfit",
+      "import": "import { Outfit } from \"next/font/google\";",
+      "initialization": "const outfit = Outfit({\n  variable: \"--font-outfit\",\n  subsets: [\"latin\"],\n});",
+      "className": "${outfit.variable}",
+      "cssVariable": "font-family: var(--font-outfit), sans-serif;"
+    },
+    "instrumentSans": {
+      "name": "Instrument Sans",
+      "import": "import { Instrument_Sans } from \"next/font/google\";",
+      "initialization": "const instrumentSans = Instrument_Sans({\n  variable: \"--font-instrument-sans\",\n  subsets: [\"latin\"],\n});",
+      "className": "${instrumentSans.variable}",
+      "cssVariable": "font-family: var(--font-instrument-sans), sans-serif;"
+    }
+  },
+  "fontPairings": {
+    "interOpenSans": {
+      "name": "Inter + Open Sans",
+      "description": "Neutral headings with friendly body. Clean and approachable.",
+      "headingFont": "inter",
+      "bodyFont": "openSans",
+      "imports": "import { Inter } from \"next/font/google\";\nimport { Open_Sans } from \"next/font/google\";",
+      "initializations": "const inter = Inter({\n  variable: \"--font-inter\",\n  subsets: [\"latin\"],\n});\n\nconst openSans = Open_Sans({\n  variable: \"--font-open-sans\",\n  subsets: [\"latin\"],\n});",
+      "classNames": "${inter.variable} ${openSans.variable}",
+      "globalsCss": {
+        "instructions": "Update the font-family property within the existing CSS rules in globals.css (@layer base section)",
+        "bodyRule": "body {\n  /* ... existing properties ... */\n  font-family: var(--font-open-sans), sans-serif;\n}",
+        "headingsRule": "h1, h2, h3, h4, h5, h6 {\n  font-family: var(--font-inter), sans-serif;\n}",
+        "bodyFontFamily": "var(--font-open-sans), sans-serif",
+        "headingsFontFamily": "var(--font-inter), sans-serif"
+      }
+    },
+    "dmSansInter": {
+      "name": "DM Sans + Inter",
+      "description": "Modern geometric headings with neutral body. Contemporary and clean.",
+      "headingFont": "dmSans",
+      "bodyFont": "inter",
+      "imports": "import { DM_Sans } from \"next/font/google\";\nimport { Inter } from \"next/font/google\";",
+      "initializations": "const dmSans = DM_Sans({\n  variable: \"--font-dm-sans\",\n  subsets: [\"latin\"],\n});\n\nconst inter = Inter({\n  variable: \"--font-inter\",\n  subsets: [\"latin\"],\n});",
+      "classNames": "${dmSans.variable} ${inter.variable}",
+      "globalsCss": {
+        "instructions": "Update the font-family property within the existing CSS rules in globals.css (@layer base section)",
+        "bodyRule": "body {\n  /* ... existing properties ... */\n  font-family: var(--font-inter), sans-serif;\n}",
+        "headingsRule": "h1, h2, h3, h4, h5, h6 {\n  font-family: var(--font-dm-sans), sans-serif;\n}",
+        "bodyFontFamily": "var(--font-inter), sans-serif",
+        "headingsFontFamily": "var(--font-dm-sans), sans-serif"
+      }
+    },
+    "workSansSourceSans3": {
+      "name": "Work Sans + Source Sans 3",
+      "description": "Versatile headings with modern body. Professional and balanced.",
+      "headingFont": "workSans",
+      "bodyFont": "sourceSans3",
+      "imports": "import { Work_Sans } from \"next/font/google\";\nimport { Source_Sans_3 } from \"next/font/google\";",
+      "initializations": "const workSans = Work_Sans({\n  variable: \"--font-work-sans\",\n  subsets: [\"latin\"],\n});\n\nconst sourceSans3 = Source_Sans_3({\n  variable: \"--font-source-sans-3\",\n  subsets: [\"latin\"],\n});",
+      "classNames": "${workSans.variable} ${sourceSans3.variable}",
+      "globalsCss": {
+        "instructions": "Update the font-family property within the existing CSS rules in globals.css (@layer base section)",
+        "bodyRule": "body {\n  /* ... existing properties ... */\n  font-family: var(--font-source-sans-3), sans-serif;\n}",
+        "headingsRule": "h1, h2, h3, h4, h5, h6 {\n  font-family: var(--font-work-sans), sans-serif;\n}",
+        "bodyFontFamily": "var(--font-source-sans-3), sans-serif",
+        "headingsFontFamily": "var(--font-work-sans), sans-serif"
+      }
+    },
+    "manropeDmSans": {
+      "name": "Manrope + DM Sans",
+      "description": "Geometric headings with clean body. Modern and professional.",
+      "headingFont": "manrope",
+      "bodyFont": "dmSans",
+      "imports": "import { Manrope } from \"next/font/google\";\nimport { DM_Sans } from \"next/font/google\";",
+      "initializations": "const manrope = Manrope({\n  variable: \"--font-manrope\",\n  subsets: [\"latin\"],\n});\n\nconst dmSans = DM_Sans({\n  variable: \"--font-dm-sans\",\n  subsets: [\"latin\"],\n});",
+      "classNames": "${manrope.variable} ${dmSans.variable}",
+      "globalsCss": {
+        "instructions": "Update the font-family property within the existing CSS rules in globals.css (@layer base section)",
+        "bodyRule": "body {\n  /* ... existing properties ... */\n  font-family: var(--font-dm-sans), sans-serif;\n}",
+        "headingsRule": "h1, h2, h3, h4, h5, h6 {\n  font-family: var(--font-manrope), sans-serif;\n}",
+        "bodyFontFamily": "var(--font-dm-sans), sans-serif",
+        "headingsFontFamily": "var(--font-manrope), sans-serif"
+      }
+    },
+    "publicSansInter": {
+      "name": "Public Sans + Inter",
+      "description": "Government-inspired headings with neutral body. Professional and trustworthy.",
+      "headingFont": "publicSans",
+      "bodyFont": "inter",
+      "imports": "import { Public_Sans } from \"next/font/google\";\nimport { Inter } from \"next/font/google\";",
+      "initializations": "const publicSans = Public_Sans({\n  variable: \"--font-public-sans\",\n  subsets: [\"latin\"],\n});\n\nconst inter = Inter({\n  variable: \"--font-inter\",\n  subsets: [\"latin\"],\n});",
+      "classNames": "${publicSans.variable} ${inter.variable}",
+      "globalsCss": {
+        "instructions": "Update the font-family property within the existing CSS rules in globals.css (@layer base section)",
+        "bodyRule": "body {\n  /* ... existing properties ... */\n  font-family: var(--font-inter), sans-serif;\n}",
+        "headingsRule": "h1, h2, h3, h4, h5, h6 {\n  font-family: var(--font-public-sans), sans-serif;\n}",
+        "bodyFontFamily": "var(--font-inter), sans-serif",
+        "headingsFontFamily": "var(--font-public-sans), sans-serif"
+      }
+    },
+    "notoSansInter": {
+      "name": "Noto Sans + Inter",
+      "description": "Universal headings with neutral body. Global and accessible.",
+      "headingFont": "notoSans",
+      "bodyFont": "inter",
+      "imports": "import { Noto_Sans } from \"next/font/google\";\nimport { Inter } from \"next/font/google\";",
+      "initializations": "const notoSans = Noto_Sans({\n  variable: \"--font-noto-sans\",\n  subsets: [\"latin\"],\n});\n\nconst inter = Inter({\n  variable: \"--font-inter\",\n  subsets: [\"latin\"],\n});",
+      "classNames": "${notoSans.variable} ${inter.variable}",
+      "globalsCss": {
+        "instructions": "Update the font-family property within the existing CSS rules in globals.css (@layer base section)",
+        "bodyRule": "body {\n  /* ... existing properties ... */\n  font-family: var(--font-inter), sans-serif;\n}",
+        "headingsRule": "h1, h2, h3, h4, h5, h6 {\n  font-family: var(--font-noto-sans), sans-serif;\n}",
+        "bodyFontFamily": "var(--font-inter), sans-serif",
+        "headingsFontFamily": "var(--font-noto-sans), sans-serif"
+      }
+    },
+    "openSansWorkSans": {
+      "name": "Open Sans + Work Sans",
+      "description": "Friendly headings with versatile body. Approachable and balanced.",
+      "headingFont": "openSans",
+      "bodyFont": "workSans",
+      "imports": "import { Open_Sans } from \"next/font/google\";\nimport { Work_Sans } from \"next/font/google\";",
+      "initializations": "const openSans = Open_Sans({\n  variable: \"--font-open-sans\",\n  subsets: [\"latin\"],\n});\n\nconst workSans = Work_Sans({\n  variable: \"--font-work-sans\",\n  subsets: [\"latin\"],\n});",
+      "classNames": "${openSans.variable} ${workSans.variable}",
+      "globalsCss": {
+        "instructions": "Update the font-family property within the existing CSS rules in globals.css (@layer base section)",
+        "bodyRule": "body {\n  /* ... existing properties ... */\n  font-family: var(--font-work-sans), sans-serif;\n}",
+        "headingsRule": "h1, h2, h3, h4, h5, h6 {\n  font-family: var(--font-open-sans), sans-serif;\n}",
+        "bodyFontFamily": "var(--font-work-sans), sans-serif",
+        "headingsFontFamily": "var(--font-open-sans), sans-serif"
+      }
+    },
+    "mulishInter": {
+      "name": "Mulish + Inter",
+      "description": "Minimal headings with neutral body. Clean and modern.",
+      "headingFont": "mulish",
+      "bodyFont": "inter",
+      "imports": "import { Mulish } from \"next/font/google\";\nimport { Inter } from \"next/font/google\";",
+      "initializations": "const mulish = Mulish({\n  variable: \"--font-mulish\",\n  subsets: [\"latin\"],\n});\n\nconst inter = Inter({\n  variable: \"--font-inter\",\n  subsets: [\"latin\"],\n});",
+      "classNames": "${mulish.variable} ${inter.variable}",
+      "globalsCss": {
+        "instructions": "Update the font-family property within the existing CSS rules in globals.css (@layer base section)",
+        "bodyRule": "body {\n  /* ... existing properties ... */\n  font-family: var(--font-inter), sans-serif;\n}",
+        "headingsRule": "h1, h2, h3, h4, h5, h6 {\n  font-family: var(--font-mulish), sans-serif;\n}",
+        "bodyFontFamily": "var(--font-inter), sans-serif",
+        "headingsFontFamily": "var(--font-mulish), sans-serif"
+      }
+    },
+    "plusJakartaSansInter": {
+      "name": "Plus Jakarta Sans + Inter",
+      "description": "Friendly rounded headings with neutral body. Approachable and modern.",
+      "headingFont": "plusJakartaSans",
+      "bodyFont": "inter",
+      "imports": "import { Plus_Jakarta_Sans } from \"next/font/google\";\nimport { Inter } from \"next/font/google\";",
+      "initializations": "const plusJakartaSans = Plus_Jakarta_Sans({\n  variable: \"--font-plus-jakarta-sans\",\n  subsets: [\"latin\"],\n});\n\nconst inter = Inter({\n  variable: \"--font-inter\",\n  subsets: [\"latin\"],\n});",
+      "classNames": "${plusJakartaSans.variable} ${inter.variable}",
+      "globalsCss": {
+        "instructions": "Update the font-family property within the existing CSS rules in globals.css (@layer base section)",
+        "bodyRule": "body {\n  /* ... existing properties ... */\n  font-family: var(--font-inter), sans-serif;\n}",
+        "headingsRule": "h1, h2, h3, h4, h5, h6 {\n  font-family: var(--font-plus-jakarta-sans), sans-serif;\n}",
+        "bodyFontFamily": "var(--font-inter), sans-serif",
+        "headingsFontFamily": "var(--font-plus-jakarta-sans), sans-serif"
+      }
+    },
+    "montserratInter": {
+      "name": "Montserrat + Inter",
+      "description": "Geometric sans-serif headings with neutral body. Popular and reliable.",
+      "headingFont": "montserrat",
+      "bodyFont": "inter",
+      "imports": "import { Montserrat } from \"next/font/google\";\nimport { Inter } from \"next/font/google\";",
+      "initializations": "const montserrat = Montserrat({\n  variable: \"--font-montserrat\",\n  subsets: [\"latin\"],\n});\n\nconst inter = Inter({\n  variable: \"--font-inter\",\n  subsets: [\"latin\"],\n});",
+      "classNames": "${montserrat.variable} ${inter.variable}",
+      "globalsCss": {
+        "instructions": "Update the font-family property within the existing CSS rules in globals.css (@layer base section)",
+        "bodyRule": "body {\n  /* ... existing properties ... */\n  font-family: var(--font-inter), sans-serif;\n}",
+        "headingsRule": "h1, h2, h3, h4, h5, h6 {\n  font-family: var(--font-montserrat), sans-serif;\n}",
+        "bodyFontFamily": "var(--font-inter), sans-serif",
+        "headingsFontFamily": "var(--font-montserrat), sans-serif"
+      }
+    },
+    "josefinSansInter": {
+      "name": "Josefin Sans + Inter",
+      "description": "Elegant geometric headings with neutral body. Stylish and modern.",
+      "headingFont": "josefinSans",
+      "bodyFont": "inter",
+      "imports": "import { Josefin_Sans } from \"next/font/google\";\nimport { Inter } from \"next/font/google\";",
+      "initializations": "const josefinSans = Josefin_Sans({\n  variable: \"--font-josefin-sans\",\n  subsets: [\"latin\"],\n  weight: [\"100\", \"200\", \"300\", \"400\", \"500\", \"600\", \"700\"],\n});\n\nconst inter = Inter({\n  variable: \"--font-inter\",\n  subsets: [\"latin\"],\n});",
+      "classNames": "${josefinSans.variable} ${inter.variable}",
+      "globalsCss": {
+        "instructions": "Update the font-family property within the existing CSS rules in globals.css (@layer base section)",
+        "bodyRule": "body {\n  /* ... existing properties ... */\n  font-family: var(--font-inter), sans-serif;\n}",
+        "headingsRule": "h1, h2, h3, h4, h5, h6 {\n  font-family: var(--font-josefin-sans), sans-serif;\n}",
+        "bodyFontFamily": "var(--font-inter), sans-serif",
+        "headingsFontFamily": "var(--font-josefin-sans), sans-serif"
+      }
+    },
+    "ubuntuInter": {
+      "name": "Ubuntu + Inter",
+      "description": "Friendly humanist headings with neutral body. Approachable and professional.",
+      "headingFont": "ubuntu",
+      "bodyFont": "inter",
+      "imports": "import { Ubuntu } from \"next/font/google\";\nimport { Inter } from \"next/font/google\";",
+      "initializations": "const ubuntu = Ubuntu({\n  variable: \"--font-ubuntu\",\n  subsets: [\"latin\"],\n  weight: [\"300\", \"400\", \"500\", \"700\"],\n});\n\nconst inter = Inter({\n  variable: \"--font-inter\",\n  subsets: [\"latin\"],\n});",
+      "classNames": "${ubuntu.variable} ${inter.variable}",
+      "globalsCss": {
+        "instructions": "Update the font-family property within the existing CSS rules in globals.css (@layer base section)",
+        "bodyRule": "body {\n  /* ... existing properties ... */\n  font-family: var(--font-inter), sans-serif;\n}",
+        "headingsRule": "h1, h2, h3, h4, h5, h6 {\n  font-family: var(--font-ubuntu), sans-serif;\n}",
+        "bodyFontFamily": "var(--font-inter), sans-serif",
+        "headingsFontFamily": "var(--font-ubuntu), sans-serif"
+      }
+    },
+    "libreBaskervilleInter": {
+      "name": "Libre Baskerville + Inter",
+      "description": "Classic serif headings with neutral body. Elegant and readable.",
+      "headingFont": "libreBaskerville",
+      "bodyFont": "inter",
+      "imports": "import { Libre_Baskerville } from \"next/font/google\";\nimport { Inter } from \"next/font/google\";",
+      "initializations": "const libreBaskerville = Libre_Baskerville({\n  variable: \"--font-libre-baskerville\",\n  subsets: [\"latin\"],\n  weight: [\"400\", \"700\"],\n});\n\nconst inter = Inter({\n  variable: \"--font-inter\",\n  subsets: [\"latin\"],\n});",
+      "classNames": "${libreBaskerville.variable} ${inter.variable}",
+      "globalsCss": {
+        "instructions": "Update the font-family property within the existing CSS rules in globals.css (@layer base section)",
+        "bodyRule": "body {\n  /* ... existing properties ... */\n  font-family: var(--font-inter), sans-serif;\n}",
+        "headingsRule": "h1, h2, h3, h4, h5, h6 {\n  font-family: var(--font-libre-baskerville), serif;\n}",
+        "bodyFontFamily": "var(--font-inter), sans-serif",
+        "headingsFontFamily": "var(--font-libre-baskerville), serif"
+      }
+    }
+  }
+}

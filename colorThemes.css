@@ -1,0 +1,484 @@
+/* ============================================ */
+/* LIGHT THEME VARIANTS */
+/* ============================================ */
+
+/* Light Theme - Minimal Dark Blue */
+:root[data-theme="minimal-dark-blue"] {
+  --background: #ffffff;
+  --card: #f9f9f9;
+  --foreground: #000612e6;
+  --primary-cta: #15479c;
+  --secondary-cta: #f9f9f9;
+  --accent: #e2e2e2;
+  --background-accent: #c4c4c4;
+}
+
+/* Light Theme - Minimal Dark Green */
+:root[data-theme="minimal-dark-green"] {
+  --background: #ffffff;
+  --card: #f9f9f9;
+  --foreground: #000f06e6;
+  --primary-cta: #0a7039;
+  --secondary-cta: #f9f9f9;
+  --accent: #e2e2e2;
+  --background-accent: #c4c4c4;
+}
+
+/* Light Theme - Minimal Light Red */
+:root[data-theme="minimal-light-red"] {
+  --background: #ffffff;
+  --card: #f9f9f9;
+  --foreground: #120006e6;
+  --primary-cta: #e63946;
+  --secondary-cta: #f9f9f9;
+  --accent: #e2e2e2;
+  --background-accent: #c4c4c4;
+}
+
+/* Light Theme - Minimal Light Orange */
+:root[data-theme="minimal-light-orange"] {
+  --background: #ffffff;
+  --card: #f9f9f9;
+  --foreground: #120a00e6;
+  --primary-cta: #ff8c42;
+  --secondary-cta: #f9f9f9;
+  --accent: #e2e2e2;
+  --background-accent: #c4c4c4;
+}
+
+/* Light Theme - Dark Blue */
+:root[data-theme="dark-blue"] {
+  --background: #f5faff;
+  --card: #f1f8ff;
+  --foreground: #001122;
+  --primary-cta: #15479c;
+  --secondary-cta: #ffffff;
+  --accent: #a8cce8;
+  --background-accent: #7ba3cf;
+}
+
+/* Light Theme - Dark Green */
+:root[data-theme="dark-green"] {
+  --background: #fafffb;
+  --card: #f7fffa;
+  --foreground: #001a0a;
+  --primary-cta: #0a7039;
+  --secondary-cta: #ffffff;
+  --accent: #a8d9be;
+  --background-accent: #6bbf8e;
+}
+
+/* Light Theme - Light Red */
+:root[data-theme="light-red"] {
+  --background: #fffafa;
+  --card: #fff7f7;
+  --foreground: #1a0000;
+  --primary-cta: #e63946;
+  --secondary-cta: #ffffff;
+  --accent: #f5c4c7;
+  --background-accent: #f09199;
+}
+
+/* Light Theme - Light Purple */
+:root[data-theme="light-purple"] {
+  --background: #fbfaff;
+  --card: #f7f5ff;
+  --foreground: #0f0022;
+  --primary-cta: #8b5cf6;
+  --secondary-cta: #ffffff;
+  --accent: #d8cef5;
+  --background-accent: #c4a8f9;
+}
+
+/* Light Theme - Warm Cream */
+:root[data-theme="warm-cream"] {
+  --background: #f6f0e9;
+  --card: #efe7dd;
+  --foreground: #2b180a;
+  --primary-cta: #2b180a;
+  --secondary-cta: #efe7dd;
+  --accent: #94877c;
+  --background-accent: #afa094;
+}
+
+/* Light Theme - Gray Blue Accent */
+:root[data-theme="gray-blue-accent"] {
+  --background: #f5f5f5;
+  --card: #ffffff;
+  --foreground: #1c1c1c;
+  --primary-cta: #1c1c1c;
+  --secondary-cta: #ffffff;
+  --accent: #15479c;
+  --background-accent: #a8cce8;
+}
+
+/* Light Theme - Gray Green Accent */
+:root[data-theme="gray-green-accent"] {
+  --background: #f5f5f5;
+  --card: #ffffff;
+  --foreground: #1c1c1c;
+  --primary-cta: #1c1c1c;
+  --secondary-cta: #ffffff;
+  --accent: #159c49;
+  --background-accent: #a8e8ba;
+}
+
+/* Light Theme - Gray Red Accent */
+:root[data-theme="gray-red-accent"] {
+  --background: #f5f5f5;
+  --card: #ffffff;
+  --foreground: #1c1c1c;
+  --primary-cta: #1c1c1c;
+  --secondary-cta: #ffffff;
+  --accent: #e63946;
+  --background-accent: #e8bea8;
+}
+
+/* Light Theme - Gray Purple Accent */
+:root[data-theme="gray-purple-accent"] {
+  --background: #f5f5f5;
+  --card: #ffffff;
+  --foreground: #1c1c1c;
+  --primary-cta: #1c1c1c;
+  --secondary-cta: #ffffff;
+  --accent: #6139e6;
+  --background-accent: #b3a8e8;
+}
+
+/* Light Theme - Warm Beige */
+:root[data-theme="warm-beige"] {
+  --background: #efebe5;
+  --card: #f7f2ea;
+  --foreground: #000000;
+  --primary-cta: #000000;
+  --secondary-cta: #ffffff;
+  --accent: #ffffff;
+  --background-accent: #e1b875;
+}
+
+/* Light Theme - Gray Teal Green */
+:root[data-theme="gray-teal-green"] {
+  --background: #f5f5f5;
+  --card: #ffffff;
+  --foreground: #1c1c1c;
+  --primary-cta: #1f514c;
+  --secondary-cta: #ffffff;
+  --accent: #159c49;
+  --background-accent: #a8e8ba;
+}
+
+/* Light Theme - Gray Navy Blue */
+:root[data-theme="gray-navy-blue"] {
+  --background: #f5f5f5;
+  --card: #ffffff;
+  --foreground: #1c1c1c;
+  --primary-cta: #1f3251;
+  --secondary-cta: #ffffff;
+  --accent: #15479c;
+  --background-accent: #a8cce8;
+}
+
+/* Light Theme - Gray Burgundy Red */
+:root[data-theme="gray-burgundy-red"] {
+  --background: #f5f5f5;
+  --card: #ffffff;
+  --foreground: #1c1c1c;
+  --primary-cta: #511f1f;
+  --secondary-cta: #ffffff;
+  --accent: #e63946;
+  --background-accent: #e8bea8;
+}
+
+/* Light Theme - Gray Indigo Purple */
+:root[data-theme="gray-indigo-purple"] {
+  --background: #f5f5f5;
+  --card: #ffffff;
+  --foreground: #1c1c1c;
+  --primary-cta: #341f51;
+  --secondary-cta: #ffffff;
+  --accent: #6139e6;
+  --background-accent: #b3a8e8;
+}
+
+/* Light Theme - Warm Gray Pink */
+:root[data-theme="warmgray-pink"] {
+  --background: #f7f6f7;
+  --card: #ffffff;
+  --foreground: #1b0c25;
+  --primary-cta: #1b0c25;
+  --secondary-cta: #ffffff;
+  --accent: #ff93e4;
+  --background-accent: #e8a8c3;
+}
+
+/* Light Theme - Warm Gray Orange */
+:root[data-theme="warmgray-orange"] {
+  --background: #f7f6f7;
+  --card: #ffffff;
+  --foreground: #25190c;
+  --primary-cta: #ff6207;
+  --secondary-cta: #ffffff;
+  --accent: #ffce93;
+  --background-accent: #e8cfa8;
+}
+
+/* Light Theme - Warm Gray Blue */
+:root[data-theme="warmgray-blue"] {
+  --background: #f7f6f7;
+  --card: #ffffff;
+  --foreground: #0c1325;
+  --primary-cta: #0798ff;
+  --secondary-cta: #ffffff;
+  --accent: #93c7ff;
+  --background-accent: #a8cde8;
+}
+
+/* Light Theme - Warm Gray Indigo */
+:root[data-theme="warmgray-indigo"] {
+  --background: #f7f6f7;
+  --card: #ffffff;
+  --foreground: #0c1325;
+  --primary-cta: #0b07ff;
+  --secondary-cta: #ffffff;
+  --accent: #93b7ff;
+  --background-accent: #a8bae8;
+}
+
+/* Light Theme - Lavender Peach */
+:root[data-theme="lavender-peach"] {
+  --background: #e3deea;
+  --card: #ffffff;
+  --foreground: #27231f;
+  --primary-cta: #27231f;
+  --secondary-cta: #ffffff;
+  --accent: #c68a62;
+  --background-accent: #c68a62;
+}
+
+/* Light Theme - Lavender Blue */
+:root[data-theme="lavender-blue"] {
+  --background: #e3deea;
+  --card: #ffffff;
+  --foreground: #1f2027;
+  --primary-cta: #1f2027;
+  --secondary-cta: #ffffff;
+  --accent: #627dc6;
+  --background-accent: #627dc6;
+}
+
+/* Light Theme - Warm Stone */
+:root[data-theme="warm-stone"] {
+  --background: #f5f4ef;
+  --card: #dad6cd;
+  --foreground: #2a2928;
+  --primary-cta: #2a2928;
+  --secondary-cta: #ecebea;
+  --accent: #ffffff;
+  --background-accent: #c6b180;
+}
+
+/* Light Theme - Warm Sand */
+:root[data-theme="warm-sand"] {
+  --background: #fcf6ec;
+  --card: #f3ede2;
+  --foreground: #2e2521;
+  --primary-cta: #2e2521;
+  --secondary-cta: #ffffff;
+  --accent: #b2a28b;
+  --background-accent: #b2a28b;
+}
+
+/* Light Theme - Warm Gray Green */
+:root[data-theme="warmgray-green"] {
+  --background: #f7f6f7;
+  --card: #ffffff;
+  --foreground: #032419;
+  --primary-cta: #2bb889;
+  --secondary-cta: #ffffff;
+  --accent: #09b97e;
+  --background-accent: #a8e8c3;
+}
+
+/* Light Theme - Warm Gray Red */
+:root[data-theme="warmgray-red"] {
+  --background: #f7f6f7;
+  --card: #ffffff;
+  --foreground: #250c0d;
+  --primary-cta: #b82b40;
+  --secondary-cta: #ffffff;
+  --accent: #b90941;
+  --background-accent: #e8a8b6;
+}
+
+/* Light Theme - Warm Gray Yellow */
+:root[data-theme="warmgray-yellow"] {
+  --background: #f7f6f7;
+  --card: #ffffff;
+  --foreground: #251a0c;
+  --primary-cta: #f4c408;
+  --secondary-cta: #ffffff;
+  --accent: #f4ca26;
+  --background-accent: #e8daa8;
+}
+
+
+/* ============================================ */
+/* DARK THEME VARIANTS */
+/* ============================================ */
+
+/* Dark Theme - Minimal */
+:root[data-theme="dark"] {
+  --background: #0a0a0a;
+  --card: #1a1a1a;
+  --foreground: #ffffffe6;
+  --primary-cta: #e6e6e6;
+  --secondary-cta: #1a1a1a;
+  --accent: #737373;
+  --background-accent: #737373;
+}
+
+/* Dark Theme - Minimal Light Blue */
+:root[data-theme="dark-minimal-light-blue"] {
+  --background: #0a0a0a;
+  --card: #1a1a1a;
+  --foreground: #f0f8ffe6;
+  --primary-cta: #cee7ff;
+  --secondary-cta: #1a1a1a;
+  --accent: #737373;
+  --background-accent: #737373;
+}
+
+/* Dark Theme - Minimal Light Green */
+:root[data-theme="dark-minimal-light-green"] {
+  --background: #0a0a0a;
+  --card: #1a1a1a;
+  --foreground: #f5fffae6;
+  --primary-cta: #80da9b;
+  --secondary-cta: #1a1a1a;
+  --accent: #737373;
+  --background-accent: #737373;
+}
+
+/* Dark Theme - Minimal Light Red */
+:root[data-theme="dark-minimal-light-red"] {
+  --background: #0a0a0a;
+  --card: #1a1a1a;
+  --foreground: #fff5f5e6;
+  --primary-cta: #ff7a7a;
+  --secondary-cta: #1a1a1a;
+  --accent: #737373;
+  --background-accent: #737373;
+}
+
+/* Dark Theme - Minimal Light Purple */
+:root[data-theme="dark-minimal-light-purple"] {
+  --background: #0a0a0a;
+  --card: #1a1a1a;
+  --foreground: #f8f5ffe6;
+  --primary-cta: #c89bff;
+  --secondary-cta: #1a1a1a;
+  --accent: #737373;
+  --background-accent: #737373;
+}
+
+/* Dark Theme - Minimal Light Orange */
+:root[data-theme="dark-minimal-light-orange"] {
+  --background: #0a0a0a;
+  --card: #1a1a1a;
+  --foreground: #fffaf5e6;
+  --primary-cta: #ffaa70;
+  --secondary-cta: #1a1a1a;
+  --accent: #737373;
+  --background-accent: #737373;
+}
+
+
+/* Dark Theme - Minimal Light Yellow */
+:root[data-theme="dark-minimal-light-yellow"] {
+  --background: #0a0a0a;
+  --card: #1a1a1a;
+  --foreground: #fffffae6;
+  --primary-cta: #fde047;
+  --secondary-cta: #1a1a1a;
+  --accent: #737373;
+  --background-accent: #737373;
+}
+
+/* Dark Theme - Light Blue */
+:root[data-theme="dark-light-blue"] {
+  --background: #010912;
+  --card: #152840;
+  --foreground: #e6f0ff;
+  --primary-cta: #cee7ff;
+  --secondary-cta: #0e1a29;
+  --accent: #3f5c79;
+  --background-accent: #004a93;
+}
+
+/* Dark Theme - Light Green */
+:root[data-theme="dark-light-green"] {
+  --background: #000802;
+  --card: #0b1a0b;
+  --foreground: #e6ffe6;
+  --primary-cta: #80da9b;
+  --secondary-cta: #07170b;
+  --accent: #38714a;
+  --background-accent: #2c6541;
+}
+
+/* Dark Theme - Light Red */
+:root[data-theme="dark-light-red"] {
+  --background: #080000;
+  --card: #1e0d0d;
+  --foreground: #ffe6e6;
+  --primary-cta: #ff7a7a;
+  --secondary-cta: #1e0909;
+  --accent: #7b4242;
+  --background-accent: #65292c;
+}
+
+/* Dark Theme - Dark Red */
+:root[data-theme="dark-dark-red"] {
+  --background: #060000;
+  --card: #1d0d0d;
+  --foreground: #ffe6e6;
+  --primary-cta: #ff3d4a;
+  --secondary-cta: #1f0a0a;
+  --accent: #7b2d2d;
+  --background-accent: #b8111f;
+}
+
+/* Dark Theme - Light Purple */
+:root[data-theme="dark-light-purple"] {
+  --background: #050012;
+  --card: #040121;
+  --foreground: #f0e6ff;
+  --primary-cta: #c89bff;
+  --secondary-cta: #1d123b;
+  --accent: #684f7b;
+  --background-accent: #65417c;
+}
+
+/* Dark Theme - Light Orange */
+:root[data-theme="dark-light-orange"] {
+  --background: #080200;
+  --card: #1a0d0b;
+  --foreground: #ffe6d5;
+  --primary-cta: #ffaa70;
+  --secondary-cta: #170b07;
+  --accent: #7b5e4a;
+  --background-accent: #b8541e;
+}
+
+/* Dark Theme - Deep Blue */
+:root[data-theme="dark-deep-blue"] {
+  --background: #020617;
+  --card: #0f172a;
+  --foreground: #e2e8f0;
+  --primary-cta: #c4d8f9;
+  --secondary-cta: #041633;
+  --accent: #2d30f3;
+  --background-accent: #1d4ed8;
+}
+
+

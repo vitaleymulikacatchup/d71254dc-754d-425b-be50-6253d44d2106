@@ -1,0 +1,39 @@
+{
+  "name": "TextNumberCount",
+  "description": "Animated number counter that increments smoothly from a start to an end value.",
+  "constraints": {
+    "numberRules": {
+      "value": {
+        "required": true,
+        "example": 99.99
+      },
+      "startFrom": {
+        "required": false,
+        "example": 0
+      }
+    }
+  },
+  "propsSchema": {
+    "value": "number",
+    "startFrom?": "number",
+    "duration?": "number",
+    "format?": "Intl.NumberFormatOptions (notation excludes 'scientific' and 'engineering')",
+    "locales?": "string | string[] | Intl.Locale",
+    "prefix?": "string",
+    "suffix?": "string",
+    "animateOnScroll?": "boolean",
+    "threshold?": "number",
+    "className?": "string"
+  },
+  "usageExample": "",
+  "do": [
+    "Use for statistics displays",
+    "Use for achievement showcases"
+  ],
+  "dont": [],
+  "editRules": {
+    "textOnly": true,
+    "layoutLocked": true,
+    "styleLocked": true
+  }
+}

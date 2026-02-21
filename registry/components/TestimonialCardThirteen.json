@@ -1,0 +1,103 @@
+{
+  "name": "TestimonialCardThirteen",
+  "description": "Testimonial cards with star ratings or quote icon, testimonial text, and author details.",
+  "constraints": {
+    "textRules": {
+      "title": {
+        "required": true,
+        "example": "What Our Clients Say",
+        "minChars": 2,
+        "maxChars": 50
+      },
+      "description": {
+        "required": true,
+        "example": "Hear from those who've experienced our work",
+        "minChars": 5,
+        "maxChars": 300
+      },
+      "tag": {
+        "required": false,
+        "example": "Testimonials",
+        "minChars": 2,
+        "maxChars": 30
+      }
+    },
+    "testimonialRules": {
+      "id": {
+        "required": true,
+        "example": "1",
+        "note": "Unique identifier for the testimonial"
+      },
+      "name": {
+        "required": true,
+        "example": "Sarah Johnson",
+        "minChars": 2,
+        "maxChars": 50
+      },
+      "handle": {
+        "required": true,
+        "example": "@sarahj",
+        "minChars": 2,
+        "maxChars": 30
+      },
+      "testimonial": {
+        "required": true,
+        "example": "Amazing product that transformed our workflow!",
+        "minChars": 10,
+        "maxChars": 500
+      },
+      "rating": {
+        "required": true,
+        "example": 5,
+        "note": "Number from 1-5 indicating star rating"
+      },
+      "imageSrc": {
+        "required": false,
+        "example": "/testimonials/sarah.jpg",
+        "note": "Author avatar image (either imageSrc or icon required)"
+      },
+      "icon": {
+        "required": false,
+        "example": "Quote",
+        "note": "LucideIcon for author avatar (either imageSrc or icon required)"
+      }
+    }
+  },
+  "propsSchema": {
+    "testimonials": "Array<{ id: string, name: string, handle: string, testimonial: string, rating: number, imageSrc?: string, imageAlt?: string, icon?: LucideIcon }>",
+    "showRating": "boolean - true for star ratings, false for quote icon",
+    "carouselMode?": "'auto' | 'buttons' (default: 'buttons')",
+    "uniformGridCustomHeightClasses?": "string (default: 'min-h-none')",
+    "animationType": "'none' | 'opacity' | 'slide-up' | 'scale-rotate' | 'blur-reveal'",
+    "title": "string",
+    "titleSegments?": "Array<{ type: 'text', content: string } | { type: 'image', src: string, alt?: string }> - For inline images in title",
+    "description": "string",
+    "textboxLayout": "'default' | 'split' | 'split-actions' | 'split-description' | 'inline-image'",
+    "useInvertedBackground": "boolean",
+    "tag?": "string",
+    "tagIcon?": "LucideIcon",
+    "tagAnimation?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "buttons?": "Array<{text: string, onClick?: () => void, href?: string}>",
+    "buttonAnimation?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "ariaLabel?": "string (default: 'Testimonials section')",
+    "className?": "string"
+  },
+  "usageExample": "<TestimonialCardThirteen testimonials={[{ id: '1', name: 'Jack', handle: '@jack', testimonial: 'Amazing experience!', rating: 5, icon: Quote }, { id: '2', name: 'Sarah', handle: '@sarah', testimonial: 'Highly recommended!', rating: 4, imageSrc: '/testimonials/sarah.jpg' }]} showRating={true} title=\"What Our Clients Say\" description=\"Hear from those who've experienced our work\" textboxLayout=\"default\" animationType=\"slide-up\" useInvertedBackground={false} />",
+  "do": [
+    "Use for social proof",
+    "Use for customer reviews",
+    "Use for product catalogs",
+    "Use for e-commerce",
+    "Requires testimonials[]",
+    "Requires titleSegments?[]",
+    "Requires buttons?[]"
+  ],
+  "dont": [
+    "Do not use multiple items"
+  ],
+  "editRules": {
+    "textOnly": true,
+    "layoutLocked": true,
+    "styleLocked": true
+  }
+}

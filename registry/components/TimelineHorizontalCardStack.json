@@ -1,0 +1,89 @@
+{
+  "name": "TimelineHorizontalCardStack",
+  "description": "Horizontal auto-playing timeline component that displays 2-4 cards in a grid with animated progress bars and optional media display.",
+  "constraints": {
+    "textRules": {
+      "title": {
+        "required": true,
+        "example": "Our Process",
+        "minChars": 2,
+        "maxChars": 50
+      },
+      "description": {
+        "required": true,
+        "example": "Follow our step-by-step approach to success",
+        "minChars": 5,
+        "maxChars": 300
+      },
+      "tag": {
+        "required": false,
+        "example": "How It Works",
+        "minChars": 2,
+        "maxChars": 30
+      }
+    },
+    "itemRules": {
+      "minItems": 2,
+      "maxItems": 4,
+      "recommendedItems": "2-4",
+      "note": "Works best with 2-4 card content children. Grid layout adapts based on item count. Each child is wrapped in card styling with progress bar."
+    },
+    "mediaRules": {
+      "imageSrc": {
+        "required": false,
+        "example": "/step1.jpg",
+        "note": "Either imageSrc or videoSrc per media item"
+      },
+      "videoSrc": {
+        "required": false,
+        "example": "/step1.mp4",
+        "note": "Either imageSrc or videoSrc per media item"
+      },
+      "imageAlt": {
+        "required": false,
+        "example": "Step 1 illustration"
+      },
+      "videoAriaLabel": {
+        "required": false,
+        "example": "Step 1 video"
+      }
+    }
+  },
+  "propsSchema": {
+    "children": "React.ReactNode",
+    "title": "string",
+    "titleSegments?": "Array<{ type: 'text', content: string } | { type: 'image', src: string, alt?: string }> - For inline images in title",
+    "description": "string",
+    "tag?": "string",
+    "tagIcon?": "LucideIcon",
+    "buttons?": "Array<{text: string, onClick?: () => void, href?: string}>",
+    "textboxLayout": "'default' | 'split' | 'split-actions' | 'split-description' | 'inline-image' (required - 'inline-image' uses titleSegments for rich text with images)",
+    "mediaItems?": "Array<{ imageSrc?: string, videoSrc?: string, imageAlt?: string, videoAriaLabel?: string }>",
+    "useInvertedBackground?": "boolean",
+    "ariaLabel?": "string (default: 'Timeline section')",
+    "className?": "string"
+  },
+  "usageExample": "<TimelineHorizontalCardStack title=\"Our Process\" description=\"Follow our step-by-step approach\" textboxLayout=\"default\" mediaItems={[{ imageSrc: '/step1.jpg', imageAlt: 'Step 1' }, { imageSrc: '/step2.jpg', imageAlt: 'Step 2' }]}><div><h3>Step 1</h3><p>Description</p></div><div><h3>Step 2</h3><p>Description</p></div></TimelineHorizontalCardStack>",
+  "do": [
+    "Use for process flows",
+    "Use for roadmaps",
+    "Use for step-by-step explanation",
+    "Use for feature showcases",
+    "Use for capability displays",
+    "Requires titleSegments?[]",
+    "Requires buttons?[]",
+    "Requires mediaItems?[]"
+  ],
+  "dont": [
+    "Do not use non-sequential content",
+    "Do not use single item",
+    "Do not use more than 4 items",
+    "Do not use less than 2 items",
+    "Do not use more than 4 items"
+  ],
+  "editRules": {
+    "textOnly": true,
+    "layoutLocked": true,
+    "styleLocked": true
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "name": "FeatureCardTwentySix",
+  "description": "Full-bleed media carousel feature cards with bottom text overlay and arrow navigation.",
+  "constraints": {
+    "textRules": {
+      "title": {
+        "required": true,
+        "example": "Featured Courses",
+        "minChars": 2,
+        "maxChars": 50
+      },
+      "description": {
+        "required": true,
+        "example": "Handpicked by our team to help you start strong",
+        "minChars": 5,
+        "maxChars": 300
+      },
+      "tag": {
+        "required": false,
+        "example": "Popular",
+        "minChars": 2,
+        "maxChars": 30
+      }
+    },
+    "buttonRules": {
+      "maxButtons": 2,
+      "structure": {
+        "text": "string - Button label",
+        "href": "string - Link destination (optional)",
+        "onClick": "() => void - Additional click handler (optional)",
+        "props": "Partial<ButtonPropsForVariant> - Additional button props (optional)"
+      },
+      "note": "Button variant is controlled by ThemeProvider's defaultButtonVariant."
+    },
+    "featureRules": {
+      "minItems": 4,
+      "maxItems": 12,
+      "recommendedItems": "6",
+      "structure": {
+        "title": "string - Card title displayed over media",
+        "description": "string - Card description displayed over media",
+        "imageSrc": "string - Path to background image (optional if videoSrc provided)",
+        "videoSrc": "string - Path to background video (optional if imageSrc provided)",
+        "imageAlt": "string - Alt text for background image",
+        "videoAriaLabel": "string - Aria label for background video",
+        "buttonIcon": "LucideIcon - Icon for the action button",
+        "buttonHref": "string - Button link destination (optional)",
+        "buttonOnClick": "() => void - Button click handler (optional)"
+      },
+      "note": "Each feature requires title, description, media (image or video), and buttonIcon. Cards display with frosted glass gradient overlay."
+    }
+  },
+  "propsSchema": {
+    "features": "FeatureItem[] (required) - Array with title, description, imageSrc/videoSrc, buttonIcon, buttonHref/buttonOnClick",
+    "title": "string",
+    "titleSegments?": "TitleSegment[]",
+    "description": "string",
+    "tag?": "string",
+    "tagIcon?": "LucideIcon",
+    "tagAnimation?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "buttons?": "ButtonConfig[]",
+    "buttonAnimation?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "textboxLayout": "TextboxLayout",
+    "useInvertedBackground": "InvertedBackground",
+    "ariaLabel?": "string (default: 'Feature section')",
+    "className?": "string",
+    "containerClassName?": "string",
+    "cardClassName?": "string",
+    "textBoxTitleClassName?": "string",
+    "textBoxTitleImageWrapperClassName?": "string",
+    "textBoxTitleImageClassName?": "string",
+    "textBoxDescriptionClassName?": "string",
+    "cardTitleClassName?": "string",
+    "cardDescriptionClassName?": "string",
+    "cardButtonClassName?": "string",
+    "carouselClassName?": "string",
+    "controlsClassName?": "string",
+    "textBoxClassName?": "string",
+    "textBoxTagClassName?": "string",
+    "textBoxButtonContainerClassName?": "string",
+    "textBoxButtonClassName?": "string",
+    "textBoxButtonTextClassName?": "string"
+  },
+  "usageExample": "<ThemeProvider defaultButtonVariant=\"icon-arrow\" borderRadius=\"rounded\">\n  <FeatureCardTwentySix\n    title=\"Featured Courses\"\n    description=\"Handpicked by our team to help you start strong.\"\n    tag=\"Popular\"\n    tagIcon={Star}\n    textboxLayout=\"default\"\n    useInvertedBackground=\"none\"\n    features={[\n      {\n        title: \"Web Development\",\n        description: \"Learn modern web technologies.\",\n        imageSrc: \"/course1.jpg\",\n        buttonIcon: ArrowRight,\n        buttonHref: \"/courses/web\"\n      },\n      {\n        title: \"UI/UX Design\",\n        description: \"Master design principles.\",\n        imageSrc: \"/course2.jpg\",\n        buttonIcon: ArrowRight,\n        buttonHref: \"/courses/design\"\n      }\n    ]}\n  />\n</ThemeProvider>",
+  "do": [
+    "Use for showcasing features or courses with strong visual media",
+    "Best for 4-12 items (6 recommended)",
+    "Use high-quality images or videos for full-bleed display",
+    "Each card requires a buttonIcon for the action button"
+  ],
+  "dont": [
+    "Do not use without media for each feature",
+    "Do not use without buttonIcon",
+    "Do not use for text-heavy content"
+  ],
+  "editRules": {
+    "textOnly": true,
+    "layoutLocked": true,
+    "styleLocked": true
+  }
+}

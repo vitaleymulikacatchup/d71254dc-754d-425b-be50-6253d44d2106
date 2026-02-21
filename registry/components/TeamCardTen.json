@@ -1,0 +1,76 @@
+{
+  "name": "TeamCardTen",
+  "description": "Team section with animated title at top, Tag label, and member cards with images and names.",
+  "constraints": {
+    "textRules": {
+      "title": {
+        "required": true,
+        "example": "Growing fast means tough calls. We help you turn pricing from doubt into conviction.",
+        "minChars": 20,
+        "maxChars": 300
+      },
+      "tag": {
+        "required": true,
+        "example": "Team",
+        "minChars": 2,
+        "maxChars": 30
+      }
+    },
+    "memberRules": {
+      "id": {
+        "required": true,
+        "example": "1",
+        "minChars": 1,
+        "maxChars": 20
+      },
+      "name": {
+        "required": true,
+        "example": "Johan van der Poel",
+        "minChars": 2,
+        "maxChars": 50
+      },
+      "imageSrc": {
+        "required": false,
+        "example": "/team/johan.jpg",
+        "note": "Portrait image (3:3.5 aspect ratio)"
+      },
+      "videoSrc": {
+        "required": false,
+        "example": "/team/johan.mp4",
+        "note": "Video alternative to image"
+      }
+    },
+    "itemRules": {
+      "minItems": 1,
+      "maxItems": 6,
+      "recommendedItems": "2-4"
+    }
+  },
+  "propsSchema": {
+    "title": "string",
+    "tag": "string",
+    "tagAnimation?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "membersAnimation": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "members": "Array<{ id: string, name: string, imageSrc?: string, imageAlt?: string, videoSrc?: string, videoAriaLabel?: string }>",
+    "memberVariant": "'default' | 'card' (required - 'default': no card styling, 'card': each member wrapped in card with rounded corners)",
+    "useInvertedBackground": "boolean",
+    "ariaLabel?": "string (default: 'Team section')",
+    "className?": "string"
+  },
+  "usageExample": "<TeamCardTen title=\"Growing fast means tough calls. We help you turn pricing from doubt into conviction.\" tag=\"Team\" members={[{ id: '1', name: 'Johan van der Poel', imageSrc: '/team/johan.jpg' }, { id: '2', name: 'Saagar Mehta', imageSrc: '/team/saagar.jpg' }]} memberVariant=\"default\" useInvertedBackground={false} />",
+  "do": [
+    "Use for team pages",
+    "Use for staff directories",
+    "Requires members[]"
+  ],
+  "dont": [
+    "Do not use multiple items",
+    "Do not use more than 4 items",
+    "Do not use more than 6 items"
+  ],
+  "editRules": {
+    "textOnly": true,
+    "layoutLocked": true,
+    "styleLocked": true
+  }
+}

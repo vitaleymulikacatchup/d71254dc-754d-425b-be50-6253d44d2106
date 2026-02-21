@@ -1,0 +1,110 @@
+{
+  "name": "FeatureCardTwentyTwo",
+  "description": "Feature section with TextBox header and fixed 2-column grid layout with horizontal feature cards and categories.",
+  "constraints": {
+    "textRules": {
+      "title": {
+        "required": true,
+        "example": "Our Features",
+        "minChars": 2,
+        "maxChars": 50
+      },
+      "description": {
+        "required": true,
+        "example": "Discover what makes us different",
+        "minChars": 5,
+        "maxChars": 250
+      },
+      "tag": {
+        "required": false,
+        "example": "Features",
+        "minChars": 2,
+        "maxChars": 30
+      }
+    },
+    "buttonRules": {
+      "maxButtons": 2,
+      "structure": {
+        "text": "string - Button label",
+        "href": "string - Link destination (optional)",
+        "onClick": "() => void - Additional click handler (optional)",
+        "props": "Partial<ButtonPropsForVariant> - Additional button props (optional)"
+      },
+      "note": "Button variant is controlled by ThemeProvider's defaultButtonVariant."
+    },
+    "featureRules": {
+      "id": {
+        "required": true,
+        "example": "1",
+        "minChars": 1,
+        "maxChars": 20
+      },
+      "title": {
+        "required": true,
+        "example": "The Future of Web Development",
+        "minChars": 10,
+        "maxChars": 150,
+        "note": "Feature title shown at text-3xl size, supports line-clamp-2"
+      },
+      "category": {
+        "required": true,
+        "example": ["Technology", "Innovation"],
+        "note": "Array of category strings, displayed inline with bullet separators"
+      },
+      "media": {
+        "required": false,
+        "note": "Either imageSrc or videoSrc with optional imageAlt/videoAriaLabel"
+      }
+    }
+  },
+  "propsSchema": {
+    "features": "FeatureItem[] (required) - Array with id, category[], title, imageSrc/videoSrc",
+    "animationType": "CardAnimationType",
+    "title": "string",
+    "titleSegments?": "TitleSegment[]",
+    "description": "string",
+    "textboxLayout": "TextboxLayout",
+    "useInvertedBackground": "InvertedBackground",
+    "tag?": "string",
+    "tagIcon?": "LucideIcon",
+    "tagAnimation?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "buttons?": "ButtonConfig[]",
+    "buttonAnimation?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "ariaLabel?": "string (default: 'Features section')",
+    "className?": "string",
+    "containerClassName?": "string",
+    "textBoxTitleClassName?": "string",
+    "titleImageWrapperClassName?": "string",
+    "titleImageClassName?": "string",
+    "textBoxDescriptionClassName?": "string",
+    "textBoxClassName?": "string",
+    "textBoxTagClassName?": "string",
+    "textBoxButtonContainerClassName?": "string",
+    "textBoxButtonClassName?": "string",
+    "textBoxButtonTextClassName?": "string",
+    "gridClassName?": "string",
+    "cardClassName?": "string",
+    "cardContentClassName?": "string",
+    "cardTitleClassName?": "string",
+    "categoryContainerClassName?": "string",
+    "categoryClassName?": "string",
+    "mediaWrapperClassName?": "string",
+    "mediaClassName?": "string"
+  },
+  "usageExample": "<ThemeProvider defaultButtonVariant=\"icon-arrow\" borderRadius=\"rounded\">\n  <FeatureCardTwentyTwo\n    title=\"Our Features\"\n    description=\"Discover what makes us different.\"\n    tag=\"Features\"\n    tagIcon={Sparkles}\n    textboxLayout=\"default\"\n    animationType=\"fade\"\n    useInvertedBackground=\"none\"\n    features={[\n      {\n        id: \"1\",\n        title: \"Advanced Analytics Dashboard\",\n        category: [\"Analytics\", \"Data\"],\n        imageSrc: \"/feature1.jpg\"\n      },\n      {\n        id: \"2\",\n        title: \"Real-time Collaboration Tools\",\n        category: [\"Collaboration\", \"Team\"],\n        imageSrc: \"/feature2.jpg\"\n      }\n    ]}\n  />\n</ThemeProvider>",
+  "do": [
+    "Use for featured listings with prominent display",
+    "Best for 2-6 feature items",
+    "Include relevant categories for each feature",
+    "Use high-quality square images"
+  ],
+  "dont": [
+    "Do not use without categories",
+    "Do not use for simple icon-based features"
+  ],
+  "editRules": {
+    "textOnly": true,
+    "layoutLocked": true,
+    "styleLocked": true
+  }
+}

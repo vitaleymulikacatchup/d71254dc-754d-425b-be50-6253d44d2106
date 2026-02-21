@@ -1,0 +1,75 @@
+{
+  "name": "FeatureCardOne",
+  "description": "Adaptive feature section with image/video-based cards in customizable bento grid layouts or carousel.",
+  "constraints": {
+    "textRules": {
+      "title": {
+        "required": true,
+        "example": "Our Features",
+        "minChars": 2,
+        "maxChars": 35
+      },
+      "description": {
+        "required": true,
+        "example": "Discover the tools and capabilities that make our platform powerful",
+        "minChars": 5,
+        "maxChars": 250
+      },
+      "tag": {
+        "required": false,
+        "example": "Features",
+        "minChars": 2,
+        "maxChars": 30
+      }
+    },
+    "featureCardRules": {
+      "title": {
+        "required": true,
+        "example": "Advanced Analytics",
+        "minChars": 2,
+        "maxChars": 35
+      },
+      "description": {
+        "required": true,
+        "example": "Get detailed insights into your business performance",
+        "minChars": 10,
+        "maxChars": 250
+      }
+    }
+  },
+  "propsSchema": {
+    "features": "Array<{ title: string, description: string, button?: {text: string, onClick?: () => void, href?: string} } & ({ imageSrc: string, imageAlt?: string } | { videoSrc: string, videoAriaLabel?: string })>",
+    "carouselMode?": "'auto' | 'buttons' (default: 'buttons')",
+    "gridVariant": "'uniform-all-items-equal' | 'bento-grid' | 'bento-grid-inverted' | 'two-columns-alternating-heights' | 'asymmetric-60-wide-40-narrow' | 'three-columns-all-equal-width' | 'four-items-2x2-equal-grid' | 'one-large-right-three-stacked-left' | 'items-top-row-full-width-bottom' | 'full-width-top-items-bottom-row' | 'one-large-left-three-stacked-right' | 'timeline'",
+    "animationType": "'none' | 'opacity' | 'slide-up' | 'scale-rotate' | 'blur-reveal' | 'depth-3d' (required - controls GSAP scroll animations with stagger effect)",
+    "uniformGridCustomHeightClasses?": "string",
+    "title": "string",
+    "titleSegments?": "Array<{ type: 'text', content: string } | { type: 'image', src: string, alt?: string }> - For inline images in title",
+    "description": "string",
+    "tag?": "string",
+    "tagIcon?": "LucideIcon",
+    "tagAnimation?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "buttons?": "Array<{text: string, onClick?: () => void, href?: string}>",
+    "buttonAnimation?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "textboxLayout": "'default' | 'split' | 'split-actions' | 'split-description' | 'inline-image' (required - 'inline-image' uses titleSegments for rich text with images)",
+    "ariaLabel?": "string (default: 'Feature section')",
+    "className?": "string",
+    "useInvertedBackground": "boolean"
+  },
+  "usageExample": "<FeatureCardOne features={[{ title: 'Analytics', description: 'Get insights', imageSrc: '/feature.jpg', button: { text: 'Learn More', href: '#' } }]} title=\"Our Features\" description=\"Discover what makes us different\" textboxLayout=\"default\" animationType=\"slide-up\" useInvertedBackground={false} />",
+  "do": [
+    "Use for feature showcases",
+    "Use for capability displays",
+    "Use for statistics displays",
+    "Use for achievement showcases",
+    "Requires features[]",
+    "Requires titleSegments?[]",
+    "Requires buttons?[]"
+  ],
+  "dont": [],
+  "editRules": {
+    "textOnly": true,
+    "layoutLocked": true,
+    "styleLocked": true
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "AvatarGroup",
+  "description": "Displays a group of user avatars with overlapping layout and optional text label.",
+  "constraints": {
+    "textRules": {
+      "text": {
+        "required": false,
+        "example": "Join 1,000+ members",
+        "minChars": 2,
+        "maxChars": 50
+      }
+    }
+  },
+  "propsSchema": {
+    "avatars": "Array<{ src: string, alt: string }>",
+    "text?": "string",
+    "maxVisible?": "number (default: 5)",
+    "animationType?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "className?": "string",
+    "ariaLabel?": "string (default: 'User avatars')"
+  },
+  "usageExample": "<AvatarGroup avatars={[{ src: '/avatar1.jpg', alt: 'User 1' }, { src: '/avatar2.jpg', alt: 'User 2' }]} text=\"Join 1,000+ members\" />",
+  "do": [
+    "Use for social proof",
+    "Use for customer reviews",
+    "Requires avatars[]"
+  ],
+  "dont": [],
+  "editRules": {
+    "textOnly": true,
+    "layoutLocked": true,
+    "styleLocked": true
+  }
+}

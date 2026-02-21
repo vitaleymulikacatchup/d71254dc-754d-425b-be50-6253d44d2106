@@ -1,0 +1,113 @@
+{
+  "name": "HeroSplitDualMedia",
+  "description": "Split-layout hero section with configurable background, text content with rating on one side, and dual image/video grid on the other.",
+  "constraints": {
+    "textRules": {
+      "title": {
+        "required": true,
+        "example": "Transform your business with proven strategies",
+        "minChars": 2,
+        "maxChars": 36
+      },
+      "description": {
+        "required": true,
+        "example": "I help entrepreneurs and executives unlock their full potential and build thriving businesses.",
+        "minChars": 5,
+        "maxChars": 200
+      },
+      "tag": {
+        "required": true,
+        "example": "Business Coach",
+        "minChars": 2,
+        "maxChars": 30
+      },
+      "ratingText": {
+        "required": true,
+        "example": "Rated by loving Clients",
+        "minChars": 2,
+        "maxChars": 50
+      }
+    },
+    "buttonRules": {
+      "maxButtons": 2,
+      "structure": {
+        "text": "string - Button label",
+        "href": "string - Link destination (optional)",
+        "onClick": "() => void - Additional click handler (optional)",
+        "props": "Partial<ButtonPropsForVariant> - Additional button props (optional)"
+      },
+      "note": "Button variant is controlled by ThemeProvider's defaultButtonVariant."
+    },
+    "mediaRules": {
+      "mediaItems": {
+        "required": true,
+        "exactCount": 2,
+        "note": "Array of exactly 2 media items displayed in 2-column grid",
+        "structure": {
+          "imageSrc": "string - Path to image (optional if videoSrc provided)",
+          "videoSrc": "string - Path to video (optional if imageSrc provided)",
+          "imageAlt": "string - Alt text for image",
+          "videoAriaLabel": "string - Aria label for video"
+        }
+      }
+    },
+    "ratingRules": {
+      "rating": {
+        "required": true,
+        "min": 1,
+        "max": 5,
+        "note": "Number of filled star icons to display"
+      },
+      "ratingText": {
+        "required": true,
+        "note": "Text displayed next to star rating"
+      }
+    }
+  },
+  "propsSchema": {
+    "title": "string",
+    "description": "string",
+    "background": "{ variant: 'plain' | 'animated-grid' | 'canvas-reveal' | 'cell-wave' | 'downward-rays-animated' | 'downward-rays-animated-grid' | 'downward-rays-static' | 'downward-rays-static-grid' | 'glowing-orb' | 'gradient-bars' | 'radial-gradient' | 'rotated-rays-animated' | 'rotated-rays-animated-grid' | 'rotated-rays-static' | 'rotated-rays-static-grid' | 'sparkles-gradient' }",
+    "tag": "string",
+    "tagIcon?": "LucideIcon",
+    "tagAnimation?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "buttons?": "ButtonConfig[]",
+    "buttonAnimation?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "mediaItems": "[MediaItem, MediaItem] (required) - Exactly 2 media items",
+    "mediaAnimation": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "rating": "number (required) - Number of stars (1-5)",
+    "ratingText": "string",
+    "ariaLabel?": "string (default: 'Hero section')",
+    "className?": "string",
+    "containerClassName?": "string",
+    "textBoxClassName?": "string",
+    "titleClassName?": "string",
+    "descriptionClassName?": "string",
+    "tagClassName?": "string",
+    "buttonContainerClassName?": "string",
+    "buttonClassName?": "string",
+    "buttonTextClassName?": "string",
+    "mediaWrapperClassName?": "string",
+    "mediaItemClassName?": "string",
+    "imageClassName?": "string",
+    "ratingClassName?": "string",
+    "ratingTextClassName?": "string"
+  },
+  "usageExample": "<ThemeProvider defaultButtonVariant=\"icon-arrow\" borderRadius=\"rounded\">\n  <HeroSplitDualMedia\n    title=\"Transform your business with proven strategies\"\n    description=\"I help entrepreneurs unlock their full potential.\"\n    background={{ variant: 'plain' }}\n    tag=\"Business Coach\"\n    tagIcon={Briefcase}\n    buttons={[{ text: 'Book a Call', href: '#' }]}\n    mediaItems={[\n      { imageSrc: '/coach1.jpg', imageAlt: 'Coaching session' },\n      { imageSrc: '/coach2.jpg', imageAlt: 'Workshop' }\n    ]}\n    rating={5}\n    ratingText=\"Rated by loving Clients\"\n  />\n</ThemeProvider>",
+  "do": [
+    "Use for coaching, consulting, or service-focused landing pages",
+    "Include exactly 2 media items",
+    "Include star rating for social proof",
+    "Full viewport height with split layout"
+  ],
+  "dont": [
+    "Do not use without 2 media items",
+    "Do not use without rating",
+    "Do not use for product showcases"
+  ],
+  "editRules": {
+    "textOnly": true,
+    "layoutLocked": true,
+    "styleLocked": true
+  }
+}

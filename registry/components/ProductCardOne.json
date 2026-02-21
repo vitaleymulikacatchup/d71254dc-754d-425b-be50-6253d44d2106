@@ -1,0 +1,91 @@
+{
+  "name": "ProductCardOne",
+  "description": "Simple product card showing name, price, and arrow icon for viewing details.",
+  "constraints": {
+    "textRules": {
+      "title": {
+        "required": true,
+        "example": "Featured Products",
+        "minChars": 2,
+        "maxChars": 35
+      },
+      "description": {
+        "required": true,
+        "example": "Discover our latest collection of premium products",
+        "minChars": 5,
+        "maxChars": 250
+      },
+      "tag": {
+        "required": false,
+        "example": "New Arrivals",
+        "minChars": 2,
+        "maxChars": 30
+      }
+    },
+    "productCardRules": {
+      "id": {
+        "required": true,
+        "example": "1",
+        "minChars": 1,
+        "maxChars": 20
+      },
+      "name": {
+        "required": true,
+        "example": "Eclipse Motion Pro",
+        "minChars": 2,
+        "maxChars": 50
+      },
+      "price": {
+        "required": true,
+        "example": "$150",
+        "minChars": 1,
+        "maxChars": 20
+      }
+    },
+    "mediaRules": {
+      "imageSrc": {
+        "required": true,
+        "example": "/product.jpg",
+        "note": "Supports external URLs with unoptimized prop"
+      },
+      "imageAlt": {
+        "required": false,
+        "example": "Product name",
+        "note": "Empty string marks image as decorative (aria-hidden)"
+      }
+    }
+  },
+  "propsSchema": {
+    "products": "Array<{ id: string, name: string, price: string, imageSrc: string, imageAlt?: string, onFavorite?: () => void, onProductClick?: () => void, isFavorited?: boolean }>",
+    "carouselMode?": "'auto' | 'buttons' (default: 'buttons')",
+    "gridVariant": "'uniform-all-items-equal' | 'bento-grid' | 'bento-grid-inverted' | 'two-columns-alternating-heights' | 'asymmetric-60-wide-40-narrow' | 'three-columns-all-equal-width' | 'four-items-2x2-equal-grid' | 'one-large-right-three-stacked-left' | 'items-top-row-full-width-bottom' | 'full-width-top-items-bottom-row' | 'one-large-left-three-stacked-right'",
+    "animationType": "'none' | 'opacity' | 'slide-up' | 'scale-rotate' | 'blur-reveal' (required - controls GSAP scroll animations with stagger effect)",
+    "uniformGridCustomHeightClasses?": "string (default: 'min-h-95 2xl:min-h-105')",
+    "title": "string",
+    "titleSegments?": "Array<{ type: 'text', content: string } | { type: 'image', src: string, alt?: string }> - For inline images in title",
+    "description": "string",
+    "tag?": "string",
+    "tagIcon?": "LucideIcon",
+    "tagAnimation?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "buttons?": "Array<{text: string, onClick?: () => void, href?: string}>",
+    "buttonAnimation?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "textboxLayout": "'default' | 'split' | 'split-actions' | 'split-description' | 'inline-image' (required - 'inline-image' uses titleSegments for rich text with images)",
+    "useInvertedBackground": "boolean",
+    "ariaLabel?": "string (default: 'Product section')",
+    "className?": "string"
+  },
+  "usageExample": "<ProductCardOne products={[{ id: '1', name: 'Eclipse Motion Pro', price: '$150', imageSrc: '/product.jpg', onProductClick: () => window.open('https://example.com', '_blank') }]} title=\"Featured Products\" description=\"Explore our curated collection\" textboxLayout=\"default\" animationType=\"slide-up\" useInvertedBackground={false} />",
+  "do": [
+    "Use for product catalogs",
+    "Use for e-commerce",
+    "Requires products[]",
+    "Requires titleSegments?[]",
+    "Requires buttons?[]"
+  ],
+  "dont": [],
+  "editRules": {
+    "textOnly": true,
+    "layoutLocked": true,
+    "styleLocked": true
+  }
+}

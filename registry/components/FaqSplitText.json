@@ -1,0 +1,73 @@
+{
+  "name": "FaqSplitText",
+  "description": "FAQ section with split layout featuring animated text on one side and accordion list on the other.",
+  "constraints": {
+    "textRules": {
+      "sideTitle": {
+        "required": true,
+        "example": "Frequently Asked Questions",
+        "minChars": 2,
+        "maxChars": 100
+      },
+      "sideDescription": {
+        "required": false,
+        "example": "Everything you need to know",
+        "minChars": 5,
+        "maxChars": 250
+      }
+    },
+    "faqRules": {
+      "faqs": {
+        "required": true,
+        "minItems": 1,
+        "example": "[{\"id\": \"1\", \"title\": \"What is your return policy?\", \"content\": \"We offer a 30-day money-back guarantee.\"}]",
+        "note": "Array of FAQ items. Each item requires unique id, title (question), and content (answer with HTML support)."
+      },
+      "animationType": {
+        "required": false,
+        "default": "smooth",
+        "options": [
+          "smooth",
+          "instant"
+        ],
+        "note": "Animation type for accordion open/close. 'smooth' uses height transition, 'instant' shows/hides immediately."
+      },
+      "textPosition": {
+        "required": false,
+        "default": "left",
+        "options": [
+          "left",
+          "right"
+        ],
+        "note": "Position of title/description text relative to FAQ list."
+      }
+    }
+  },
+  "propsSchema": {
+    "faqs": "Array<{ id: string, title: string, content: string }> - FAQ items",
+    "sideTitle": "string",
+    "sideDescription?": "string",
+    "buttons?": "Array<{text: string, onClick?: () => void, href?: string}>",
+    "buttonAnimation?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "faqsAnimation": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "textPosition?": "'left' | 'right' (default: 'left')",
+    "useInvertedBackground": "boolean",
+    "animationType?": "'smooth' | 'instant' (default: 'smooth')",
+    "showCard?": "boolean (default: true)",
+    "ariaLabel?": "string (default: 'FAQ section')",
+    "className?": "string"
+  },
+  "usageExample": "<FaqSplitText faqs={[{id: '1', title: 'How can I be part of Buenro?', content: 'You can join by signing up on our platform.'}, {id: '2', title: 'Can anyone join Buenro?', content: 'Yes! We welcome remote workers and entrepreneurs.'}]} sideTitle=\"Frequently Asked Questions\" textPosition=\"left\" useInvertedBackground={false} />",
+  "do": [
+    "Use for help pages",
+    "Use for support sections",
+    "Requires faqs[]",
+    "Requires buttons?[]"
+  ],
+  "dont": [],
+  "editRules": {
+    "textOnly": true,
+    "layoutLocked": true,
+    "styleLocked": true
+  }
+}

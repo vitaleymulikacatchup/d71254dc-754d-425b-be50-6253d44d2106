@@ -1,0 +1,39 @@
+{
+  "name": "EmailSignupForm",
+  "description": "Compact email signup form with inline input and submit button in card container.",
+  "constraints": {
+    "textRules": {
+      "inputPlaceholder": {
+        "required": false,
+        "default": "Enter your email",
+        "example": "Your email address",
+        "minChars": 5,
+        "maxChars": 50
+      },
+      "buttonText": {
+        "required": false,
+        "default": "Sign Up",
+        "example": "Subscribe",
+        "minChars": 2,
+        "maxChars": 15
+      }
+    }
+  },
+  "propsSchema": {
+    "inputPlaceholder?": "string (default: 'Enter your email')",
+    "buttonText?": "string (default: 'Sign Up')",
+    "onSubmit?": "(email: string) => void",
+    "className?": "string"
+  },
+  "usageExample": "<EmailSignupForm inputPlaceholder=\"Your email\" buttonText=\"Subscribe\" onSubmit={(email) => console.log(email)} />",
+  "do": [
+    "Use for feature showcases",
+    "Use for capability displays"
+  ],
+  "dont": [],
+  "editRules": {
+    "textOnly": true,
+    "layoutLocked": true,
+    "styleLocked": true
+  }
+}

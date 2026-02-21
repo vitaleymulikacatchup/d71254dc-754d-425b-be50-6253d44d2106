@@ -1,0 +1,74 @@
+{
+  "name": "ContactCenter",
+  "description": "Centered contact section with tag, animated title and description, email signup form, and terms text.",
+  "constraints": {
+    "textRules": {
+      "tag": {
+        "required": true,
+        "example": "Newsletter",
+        "minChars": 2,
+        "maxChars": 20
+      },
+      "title": {
+        "required": true,
+        "example": "Medium length heading goes here",
+        "minChars": 4,
+        "maxChars": 50
+      },
+      "description": {
+        "required": true,
+        "example": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+        "minChars": 20,
+        "maxChars": 200
+      },
+      "inputPlaceholder": {
+        "required": false,
+        "default": "Enter your email",
+        "example": "Your email address",
+        "minChars": 5,
+        "maxChars": 30
+      },
+      "buttonText": {
+        "required": false,
+        "default": "Sign Up",
+        "example": "Subscribe",
+        "minChars": 2,
+        "maxChars": 15
+      },
+      "termsText": {
+        "required": false,
+        "default": "By clicking Sign Up you're confirming that you agree with our Terms and Conditions.",
+        "example": "We respect your privacy. Unsubscribe at any time.",
+        "minChars": 10,
+        "maxChars": 150
+      }
+    }
+  },
+  "propsSchema": {
+    "tag": "string",
+    "title": "string",
+    "description": "string",
+    "tagIcon?": "LucideIcon",
+    "tagAnimation?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "useInvertedBackground": "boolean",
+    "inputPlaceholder?": "string (default: 'Enter your email')",
+    "buttonText?": "string (default: 'Sign Up')",
+    "termsText?": "string (default: 'By clicking Sign Up you're confirming that you agree with our Terms and Conditions.')",
+    "onSubmit?": "(email: string) => void",
+    "ariaLabel?": "string (default: 'Contact section')",
+    "className?": "string"
+  },
+  "usageExample": "// Wrap in ThemeProvider\n<ThemeProvider defaultButtonVariant=\"text-stagger\" defaultTextAnimation=\"entrance-slide\" borderRadius=\"rounded\" background=\"aurora\" cardStyle=\"glass-elevated\" primaryButtonStyle=\"gradient\" secondaryButtonStyle=\"glass\">\n  <ContactCenter tag=\"Newsletter\" title=\"Stay updated with our latest news\" description=\"Subscribe to our newsletter for weekly updates and exclusive content.\" useInvertedBackground={false} onSubmit={(email) => console.log(email)} />\n</ThemeProvider>",
+  "do": [
+    "Use for feature showcases",
+    "Use for capability displays",
+    "Use for contact pages",
+    "Use for lead generation"
+  ],
+  "dont": [],
+  "editRules": {
+    "textOnly": true,
+    "layoutLocked": true,
+    "styleLocked": true
+  }
+}

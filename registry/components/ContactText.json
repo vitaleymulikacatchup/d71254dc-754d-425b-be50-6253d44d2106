@@ -1,0 +1,48 @@
+{
+  "name": "ContactText",
+  "description": "Centered contact section with animated text and action buttons in a card container.",
+  "constraints": {
+    "textRules": {
+      "text": {
+        "required": true,
+        "example": "Ready to start your next project? Let's create something amazing together.",
+        "minChars": 10,
+        "maxChars": 200
+      },
+      "animationType": {
+        "required": false,
+        "default": "entrance-slide",
+        "options": [
+          "entrance-slide",
+          "reveal-blur",
+          "background-highlight"
+        ],
+        "note": "GSAP scroll-triggered animation type for text"
+      }
+    },
+    "buttonRules": {
+      "maxButtons": 2,
+      "note": "Supports up to 2 buttons with px-8 spacing. Buttons use theme.defaultButtonVariant."
+    }
+  },
+  "propsSchema": {
+    "text": "string",
+    "animationType?": "'entrance-slide' | 'reveal-blur' | 'background-highlight' (default: 'entrance-slide')",
+    "buttons?": "Array<{text: string, onClick?: () => void, href?: string}>",
+    "useInvertedBackground": "boolean",
+    "ariaLabel?": "string (default: 'Contact section')",
+    "className?": "string"
+  },
+  "usageExample": "<ContactText text=\"Ready to start your next project? Let's create something amazing together.\" animationType=\"entrance-slide\" buttons={[{ text: 'Get in Touch', href: '/contact' }, { text: 'View Portfolio', href: '/portfolio' }]} useInvertedBackground={false} />",
+  "do": [
+    "Use for contact pages",
+    "Use for lead generation",
+    "Requires buttons?[]"
+  ],
+  "dont": [],
+  "editRules": {
+    "textOnly": true,
+    "layoutLocked": true,
+    "styleLocked": true
+  }
+}

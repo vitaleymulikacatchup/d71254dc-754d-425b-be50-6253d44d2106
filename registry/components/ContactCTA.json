@@ -1,0 +1,79 @@
+{
+  "name": "ContactCTA",
+  "description": "Centered contact CTA section with tag, title, description, and action buttons in a card container with background support.",
+  "constraints": {
+    "textRules": {
+      "tag": {
+        "required": true,
+        "example": "Get in Touch",
+        "minChars": 2,
+        "maxChars": 30
+      },
+      "title": {
+        "required": true,
+        "example": "Ready to Build Your Next Project?",
+        "minChars": 5,
+        "maxChars": 100
+      },
+      "description": {
+        "required": true,
+        "example": "Let's work together to create something amazing. Our team is ready to help you bring your vision to life.",
+        "minChars": 10,
+        "maxChars": 300
+      }
+    },
+    "buttonRules": {
+      "maxButtons": 2,
+      "required": true,
+      "structure": {
+        "text": "string - Button label",
+        "href": "string - Link destination (optional). External URLs (https://, http://, www.) open in new tab. Internal values (e.g., 'about', 'contact') scroll to #about, #contact sections",
+        "onClick": "() => void - Additional click handler (optional)",
+        "props": "Partial<ButtonPropsForVariant> - Additional button props like className, textClassName (optional)"
+      },
+      "examples": [
+        "{ text: 'Contact Us', href: 'contact' }",
+        "{ text: 'Learn More', href: 'https://example.com' }"
+      ],
+      "note": "At least one button is required. Supports up to 2 buttons with gap-4 spacing. Button variant is controlled by ThemeProvider's defaultButtonVariant. Border radius is controlled by ThemeProvider's borderRadius."
+    }
+  },
+  "propsSchema": {
+    "tag": "string",
+    "tagIcon?": "LucideIcon",
+    "tagAnimation?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "title": "string",
+    "description": "string",
+    "buttons": "Array<{text: string, onClick?: () => void, href?: string}>",
+    "buttonAnimation?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "background": "{ variant: 'plain' | 'animated-grid' | 'canvas-reveal' | 'cell-wave' | 'downward-rays-animated' | 'downward-rays-animated-grid' | 'downward-rays-static' | 'downward-rays-static-grid' | 'gradient-bars' | 'radial-gradient' | 'rotated-rays-animated' | 'rotated-rays-animated-grid' | 'rotated-rays-static' | 'rotated-rays-static-grid' | 'sparkles-gradient' }",
+    "useInvertedBackground": "boolean",
+    "ariaLabel?": "string (default: 'Contact section')",
+    "className?": "string",
+    "containerClassName?": "string",
+    "contentClassName?": "string",
+    "textBoxClassName?": "string",
+    "titleClassName?": "string",
+    "descriptionClassName?": "string",
+    "tagClassName?": "string",
+    "buttonContainerClassName?": "string",
+    "buttonClassName?": "string",
+    "buttonTextClassName?": "string"
+  },
+  "usageExample": "<ThemeProvider defaultButtonVariant=\"icon-arrow\" borderRadius=\"rounded\">\n  <ContactCTA\n    tag=\"Get in Touch\"\n    tagIcon={Mail}\n    title=\"Ready to Build Your Next Project?\"\n    description=\"Let's work together to create something amazing.\"\n    buttons={[{ text: 'Contact Us', href: 'contact' }]}\n    background={{ variant: 'plain' }}\n    useInvertedBackground=\"none\"\n  />\n</ThemeProvider>",
+  "do": [
+    "Use for call-to-action contact sections",
+    "Place at the end of pages for conversion",
+    "Use with appropriate background variant",
+    "Requires at least one button"
+  ],
+  "dont": [
+    "Do not use without buttons",
+    "Do not use for general content sections"
+  ],
+  "editRules": {
+    "textOnly": true,
+    "layoutLocked": true,
+    "styleLocked": true
+  }
+}

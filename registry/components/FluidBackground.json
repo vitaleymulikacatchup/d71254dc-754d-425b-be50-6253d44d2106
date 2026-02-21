@@ -1,0 +1,19 @@
+{
+  "name": "FluidBackground",
+  "description": "Generative fluid patterns using CPPN shader with theme color integration.",
+  "constraints": {},
+  "propsSchema": {
+    "className?": "string"
+  },
+  "usageExample": "<FluidBackground />",
+  "do": [
+    "Use for feature showcases",
+    "Use for capability displays"
+  ],
+  "dont": [],
+  "editRules": {
+    "textOnly": true,
+    "layoutLocked": true,
+    "styleLocked": true
+  }
+}

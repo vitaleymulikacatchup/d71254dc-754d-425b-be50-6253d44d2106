@@ -1,0 +1,80 @@
+{
+  "name": "HeroPersonalLinks",
+  "description": "Full-screen centered hero section with title, social link buttons, and link cards for personal/portfolio pages.",
+  "constraints": {
+    "textRules": {
+      "title": {
+        "required": true,
+        "example": "Hi, I'm John Doe",
+        "minChars": 2,
+        "maxChars": 36
+      }
+    },
+    "socialLinkRules": {
+      "required": false,
+      "structure": {
+        "icon": "LucideIcon",
+        "label": "string - Display label",
+        "href": "string - Link destination"
+      },
+      "note": "Array of social media links displayed as pill buttons"
+    },
+    "linkCardRules": {
+      "required": true,
+      "minItems": 1,
+      "structure": {
+        "icon": "LucideIcon (optional if imageSrc/videoSrc provided)",
+        "imageSrc": "string - Image source (optional)",
+        "videoSrc": "string - Video source (optional)",
+        "imageAlt": "string - Alt text for image",
+        "videoAriaLabel": "string - Aria label for video",
+        "title": "string - Card title",
+        "description": "string - Card description",
+        "button": "ButtonConfig - Card action button"
+      },
+      "note": "Array of link cards with icon/media, title, description, and action button"
+    }
+  },
+  "propsSchema": {
+    "background": "{ variant: 'plain' | 'animated-grid' | 'canvas-reveal' | 'cell-wave' | 'downward-rays-animated' | 'downward-rays-animated-grid' | 'downward-rays-static' | 'downward-rays-static-grid' | 'gradient-bars' | 'radial-gradient' | 'rotated-rays-animated' | 'rotated-rays-animated-grid' | 'rotated-rays-static' | 'rotated-rays-static-grid' | 'sparkles-gradient' }",
+    "title": "string",
+    "titleSegments?": "TitleSegment[] - For inline images in title",
+    "socialLinks?": "SocialLink[] - Array with icon, label, href",
+    "linkCards": "LinkCard[] (required) - Array with icon/media, title, description, button",
+    "buttonAnimation?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "ariaLabel?": "string (default: 'Personal links section')",
+    "className?": "string",
+    "containerClassName?": "string",
+    "textboxClassName?": "string",
+    "titleClassName?": "string",
+    "titleImageWrapperClassName?": "string",
+    "titleImageClassName?": "string",
+    "socialLinksClassName?": "string",
+    "socialLinkClassName?": "string",
+    "linkCardsClassName?": "string",
+    "linkCardClassName?": "string",
+    "linkCardIconClassName?": "string",
+    "linkCardTitleClassName?": "string",
+    "linkCardDescriptionClassName?": "string",
+    "buttonClassName?": "string",
+    "buttonTextClassName?": "string"
+  },
+  "usageExample": "<ThemeProvider defaultButtonVariant=\"icon-arrow\" borderRadius=\"rounded\">\n  <HeroPersonalLinks\n    background={{ variant: 'plain' }}\n    title=\"Hi, I'm John Doe\"\n    socialLinks={[\n      { icon: Twitter, label: 'Twitter', href: 'https://twitter.com' },\n      { icon: Linkedin, label: 'LinkedIn', href: 'https://linkedin.com' }\n    ]}\n    linkCards={[\n      {\n        icon: Briefcase,\n        title: 'My Portfolio',\n        description: 'Check out my latest work',\n        button: { text: 'View', href: '/portfolio' }\n      },\n      {\n        imageSrc: '/project.jpg',\n        title: 'Latest Project',\n        description: 'A new design system',\n        button: { text: 'Explore', href: '/project' }\n      }\n    ]}\n  />\n</ThemeProvider>",
+  "do": [
+    "Use only for single-section personal brand websites (link-in-bio style)",
+    "Can optionally include a footer section",
+    "Include at least one link card",
+    "Use social links for social media presence"
+  ],
+  "dont": [
+    "Never use with other sections",
+    "Never use for multi-page or multi-section websites",
+    "Do not use without link cards",
+    "Do not use for product or company landing pages"
+  ],
+  "editRules": {
+    "textOnly": true,
+    "layoutLocked": true,
+    "styleLocked": true
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "name": "TestimonialCardFive",
+  "description": "Full-width carousel testimonial section with split card layout showing text content and square image side-by-side.",
+  "constraints": {
+    "textRules": {
+      "title": {
+        "required": true,
+        "example": "What Our Clients Say",
+        "minChars": 2,
+        "maxChars": 50
+      },
+      "description": {
+        "required": true,
+        "example": "Hear from those who've experienced our work",
+        "minChars": 5,
+        "maxChars": 250
+      },
+      "tag": {
+        "required": false,
+        "example": "Testimonials",
+        "minChars": 2,
+        "maxChars": 30
+      }
+    },
+    "testimonialRules": {
+      "id": {
+        "required": true,
+        "example": "1",
+        "minChars": 1,
+        "maxChars": 20
+      },
+      "name": {
+        "required": true,
+        "example": "Alisa Hester, CEO of Ecomflow",
+        "minChars": 2,
+        "maxChars": 80,
+        "note": "Full name including role and company (e.g., 'John Smith, CTO of Tech Corp')"
+      },
+      "date": {
+        "required": true,
+        "example": "Date: 28 October 2024",
+        "minChars": 5,
+        "maxChars": 50,
+        "note": "Date string including 'Date:' prefix"
+      },
+      "title": {
+        "required": true,
+        "example": "We've got only good things to say!",
+        "minChars": 5,
+        "maxChars": 100,
+        "note": "Testimonial headline shown at 4xl, truncated to 3 lines"
+      },
+      "quote": {
+        "required": true,
+        "example": "We have been working with them for over 6 months now, and have been able to scale our business to new heights.",
+        "minChars": 20,
+        "maxChars": 500,
+        "note": "Full testimonial text shown at base/lg size, truncated to 10 lines"
+      },
+      "tag": {
+        "required": true,
+        "example": "Standard Line",
+        "minChars": 2,
+        "maxChars": 30,
+        "note": "Category or plan tag displayed at top of card"
+      },
+      "avatarSrc": {
+        "required": true,
+        "example": "/client-avatar.jpg",
+        "note": "Avatar image shown in TestimonialAuthor component (h-11 aspect-square)"
+      }
+    },
+    "mediaRules": {
+      "imageSrc": {
+        "required": false,
+        "example": "/testimonial-image.jpg",
+        "note": "Either imageSrc or videoSrc should be provided for optimal display"
+      },
+      "videoSrc": {
+        "required": false,
+        "example": "/testimonial-video.mp4",
+        "note": "Either imageSrc or videoSrc should be provided for optimal display"
+      },
+      "imageAlt": {
+        "required": false,
+        "example": "Team collaboration",
+        "note": "Alt text for testimonial image"
+      },
+      "videoAriaLabel": {
+        "required": false,
+        "example": "Client testimonial video",
+        "note": "ARIA label for testimonial video"
+      },
+      "avatarAlt": {
+        "required": false,
+        "example": "Alisa Hester",
+        "note": "Alt text for avatar image"
+      }
+    },
+    "itemRules": {
+      "minItems": 3,
+      "maxItems": 10,
+      "recommendedItems": "5-6",
+      "note": "Works best with 5-6 testimonials. Auto-advances every 5 seconds with loop enabled."
+    }
+  },
+  "propsSchema": {
+    "testimonials": "Array<{ id: string, name: string, date: string, title: string, quote: string, tag: string, avatarSrc: string, avatarAlt?: string, imageSrc?: string, videoSrc?: string, imageAlt?: string, videoAriaLabel?: string }>",
+    "title": "string",
+    "titleSegments?": "Array<{ type: 'text', content: string } | { type: 'image', src: string, alt?: string }> - For inline images in title",
+    "description": "string",
+    "tag?": "string",
+    "tagIcon?": "LucideIcon",
+    "tagAnimation?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "buttons?": "Array<{text: string, onClick?: () => void, href?: string}>",
+    "buttonAnimation?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "textboxLayout": "'default' | 'split' | 'split-actions' | 'split-description' | 'inline-image' (required - 'inline-image' uses titleSegments for rich text with images)",
+    "useInvertedBackground": "boolean",
+    "ariaLabel?": "string (default: 'Testimonials section')",
+    "className?": "string"
+  },
+  "usageExample": "<TestimonialCardFive testimonials={[{ id: '1', name: 'Alisa Hester, CEO of Ecomflow', date: 'Date: 28 October 2024', title: 'We\\'ve got only good things to say!', quote: 'We have been working with them for over 6 months now, and have been able to scale our business to new heights.', tag: 'Standard Line', avatarSrc: '/avatar.jpg', imageSrc: '/testimonial.jpg' }]} title=\"What Our Clients Say\" description=\"Hear from those who've experienced our work\" textboxLayout=\"default\" useInvertedBackground={false} />",
+  "do": [
+    "Use for social proof",
+    "Use for customer reviews",
+    "Requires testimonials[]",
+    "Requires titleSegments?[]",
+    "Requires buttons?[]"
+  ],
+  "dont": [
+    "Do not use less than 3 items",
+    "Do not use more than 10 items"
+  ],
+  "editRules": {
+    "textOnly": true,
+    "layoutLocked": true,
+    "styleLocked": true
+  }
+}

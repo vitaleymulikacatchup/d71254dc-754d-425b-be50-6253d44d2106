@@ -1,0 +1,68 @@
+{
+  "name": "FooterSimple",
+  "description": "Minimal footer with navigation columns, divider, and bottom text row.",
+  "constraints": {
+    "textRules": {
+      "bottomLeftText": {
+        "required": true,
+        "example": "© 2025 Company. All rights reserved.",
+        "minChars": 5,
+        "maxChars": 60
+      },
+      "bottomRightText": {
+        "required": true,
+        "example": "Made with Webild",
+        "minChars": 2,
+        "maxChars": 50
+      },
+      "columnTitle": {
+        "required": true,
+        "example": "Navigate",
+        "minChars": 2,
+        "maxChars": 20
+      },
+      "itemLabel": {
+        "required": true,
+        "example": "Home",
+        "minChars": 2,
+        "maxChars": 30
+      }
+    },
+    "structureRules": {
+      "columns": {
+        "required": true,
+        "minColumns": 2,
+        "maxColumns": 5,
+        "note": "Each column must have title and items array. Columns spread evenly across width."
+      },
+      "items": {
+        "required": true,
+        "minItems": 1,
+        "structure": {
+          "label": "string - Link text",
+          "href": "string - Link destination (optional)",
+          "onClick": "() => void - Click handler (optional)"
+        }
+      }
+    }
+  },
+  "propsSchema": {
+    "columns": "Array<{ title: string, items: Array<{ label: string, href?: string, onClick?: () => void }> }>",
+    "bottomLeftText": "string",
+    "bottomRightText": "string",
+    "ariaLabel?": "string (default: 'Site footer')",
+    "className?": "string"
+  },
+  "usageExample": "<FooterSimple columns={[{ title: 'Navigate', items: [{ label: 'Home', href: '#' }, { label: 'About', href: '#' }] }, { title: 'Resources', items: [{ label: 'Blog', href: '#' }, { label: 'FAQ', href: '#' }] }, { title: 'Legal', items: [{ label: 'Privacy', href: '#' }, { label: 'Terms', href: '#' }] }]} bottomLeftText=\"© 2025 Company. All rights reserved.\" bottomRightText=\"Made with Webild\" />",
+  "do": [
+    "Use for feature showcases",
+    "Use for capability displays",
+    "Requires columns[]"
+  ],
+  "dont": [],
+  "editRules": {
+    "textOnly": true,
+    "layoutLocked": true,
+    "styleLocked": true
+  }
+}

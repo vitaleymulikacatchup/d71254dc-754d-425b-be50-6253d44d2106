@@ -1,0 +1,19 @@
+{
+  "name": "BlurBottomBackground",
+  "description": "Backdrop blur effect positioned at the bottom of the page with linear gradient mask.",
+  "constraints": {},
+  "propsSchema": {
+    "className?": "string"
+  },
+  "usageExample": "<BlurBottomBackground />",
+  "do": [
+    "Use for feature showcases",
+    "Use for capability displays"
+  ],
+  "dont": [],
+  "editRules": {
+    "textOnly": true,
+    "layoutLocked": true,
+    "styleLocked": true
+  }
+}

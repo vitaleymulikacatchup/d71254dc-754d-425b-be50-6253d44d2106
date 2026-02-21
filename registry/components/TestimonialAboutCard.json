@@ -1,0 +1,77 @@
+{
+  "name": "TestimonialAboutCard",
+  "description": "Card-based about section with tag, title, description footer, icon box, and required media.",
+  "constraints": {
+    "textRules": {
+      "tag": {
+        "required": true,
+        "example": "Testimonial",
+        "minChars": 2,
+        "maxChars": 30
+      },
+      "title": {
+        "required": true,
+        "example": "They took social media off our plate completely and our audience has never been more engaged.",
+        "minChars": 10,
+        "maxChars": 300
+      },
+      "description": {
+        "required": true,
+        "example": "Elena Chen",
+        "minChars": 2,
+        "maxChars": 50
+      },
+      "subdescription": {
+        "required": true,
+        "example": "Bloom Skincare",
+        "minChars": 2,
+        "maxChars": 50
+      }
+    },
+    "mediaRules": {
+      "note": "Either imageSrc or videoSrc is required (discriminated union)",
+      "imageSrc": {
+        "required": "conditional - required if no videoSrc",
+        "example": "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=800"
+      },
+      "videoSrc": {
+        "required": "conditional - required if no imageSrc",
+        "example": "/videos/testimonial.mp4"
+      }
+    }
+  },
+  "propsSchema": {
+    "tag": "string",
+    "tagIcon?": "LucideIcon",
+    "tagAnimation?": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "title": "string",
+    "description": "string",
+    "subdescription": "string",
+    "icon": "LucideIcon (required - displayed in the icon box)",
+    "mediaAnimation": "'none' | 'opacity' | 'slide-up' | 'blur-reveal'",
+    "imageSrc": "string (required if no videoSrc)",
+    "imageAlt?": "string (default: '')",
+    "videoSrc": "string (required if no imageSrc)",
+    "videoAriaLabel?": "string (default: 'Testimonial video')",
+    "useInvertedBackground": "boolean",
+    "ariaLabel?": "string (default: 'Testimonial section')",
+    "className?": "string"
+  },
+  "usageExample": "<TestimonialAboutCard tag=\"Testimonial\" title=\"They took social media off our plate completely and our audience has never been more engaged.\" description=\"Elena Chen\" subdescription=\"Bloom Skincare\" icon={Quote} imageSrc=\"https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=800\" useInvertedBackground={false} />",
+  "do": [
+    "Use for feature showcases",
+    "Use for capability displays",
+    "Use for social proof",
+    "Use for customer reviews",
+    "Use for about pages",
+    "Use for company information"
+  ],
+  "dont": [
+    "Do not use more than 4 items"
+  ],
+  "editRules": {
+    "textOnly": true,
+    "layoutLocked": true,
+    "styleLocked": true
+  }
+}
