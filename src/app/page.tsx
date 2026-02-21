@@ -38,7 +38,7 @@ export default function LandingPage() {
       <div id="hero" data-section="hero">
         <HeroSplitDualMedia
           tag="Where Beauty Blooms"
-          title="Life Flowers Studio: Crafting Moments with Nature's Art"
+          title="Short Text"
           description="Discover exquisite floral arrangements for every occasion. Our passion for flowers transforms ordinary moments into extraordinary memories."
           mediaItems={[{imageSrc:"https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_35vmIsFKiMtTSUSBP7nWGRgR0We/uploaded-1771680143093-eezdue7y.mp4",imageAlt:"Luxurious bouquet of fresh, vibrant flowers."},{imageSrc:"https://img.b2bpic.net/free-photo/spring-composition-with-bouquet-flowers-vase-closeup_169016-29760.jpg",imageAlt:"Elegant floral display for an event."}]}
           rating={5}
