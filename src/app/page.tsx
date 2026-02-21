@@ -40,7 +40,7 @@ export default function LandingPage() {
           tag="Where Beauty Blooms"
           title="Life Flowers Studio: Crafting Moments with Nature's Art"
           description="Discover exquisite floral arrangements for every occasion. Our passion for flowers transforms ordinary moments into extraordinary memories."
-          mediaItems={[{imageSrc:"https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_35vmIsFKiMtTSUSBP7nWGRgR0We/uploaded-1771579037483-z9kji4b2.mp4",imageAlt:"Luxurious bouquet of fresh, vibrant flowers."},{imageSrc:"https://img.b2bpic.net/free-photo/spring-composition-with-bouquet-flowers-vase-closeup_169016-29760.jpg",imageAlt:"Elegant floral display for an event."}]}
+          mediaItems={[{imageSrc:"https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_35vmIsFKiMtTSUSBP7nWGRgR0We/uploaded-1771680143093-eezdue7y.mp4",imageAlt:"Luxurious bouquet of fresh, vibrant flowers."},{imageSrc:"https://img.b2bpic.net/free-photo/spring-composition-with-bouquet-flowers-vase-closeup_169016-29760.jpg",imageAlt:"Elegant floral display for an event."}]}
           rating={5}
           ratingText="Loved by thousands of happy customers"
           buttons={[{text:"Shop Now",href:"/shop"},{text:"Our Story",href:"/#about"}]}
