@@ -29,7 +29,7 @@ export default function LandingPage() {
     >
       <div id="nav" data-section="nav">
         <NavbarStyleFullscreen
-          navItems={[{name:"Home",id:"home"},{name:"About",id:"about"},{name:"Shop",id:"shop"},{name:"Services",id:"services"},{name:"Contact",id:"contact"}]}
+          navItems={[{name:"Home",id:"hero"},{name:"About",id:"about"},{name:"Shop",id:"shop"},{name:"Services",id:"services"},{name:"Contact",id:"contact"}]}
           brandName="Life"
           bottomLeftText="Embrace Nature's Beauty"
           bottomRightText="hello@lifestudio.com"
@@ -60,7 +60,7 @@ export default function LandingPage() {
         <ProductCardThree
           title="Our Signature Arrangements"
           description="Explore our curated collection of fresh flowers and unique designs, perfect for any occasion."
-          products={[{id:"1",name:"Eternal Elegance Bouquet",price:"$75.00",imageSrc:"https://img.b2bpic.net/free-photo/bouquet-pink-roses-single-branch-rose-with-green-leaves-inside-vase_114579-1440.jpg?_wi=1",imageAlt:"A lush bouquet of pink roses and white lilies."},{id:"2",name:"Modern Serenity Vase",price:"$60.00",imageSrc:"https://img.b2bpic.net/free-photo/beautiful-white-poinsettia-composition_23-2149138679.jpg",imageAlt:"A minimalist arrangement of white tulips in a glass vase."},{id:"3",name:"Vibrant Celebration Mix",price:"$85.00",imageSrc:"https://img.b2bpic.net/free-photo/woman-holding-bouquet-yellow-orange-dahliason-light-background_169016-39443.jpg",imageAlt:"A colorful mix of sunflowers, daisies, and lavender."},{id:"4",name:"Sunset Dream Bouquet",price:"$90.00",imageSrc:"https://img.b2bpic.net/free-photo/bouquet-pink-roses-single-branch-rose-with-green-leaves-inside-vase_114579-1440.jpg?_wi=2",imageAlt:"Warm-toned roses and exotic foliage."}]}
+          products={[{id:"1",name:"Eternal Elegance Bouquet",price:"$75.00",imageSrc:"https://img.b2bpic.net/free-photo/bouquet-pink-roses-single-branch-rose-with-green-leaves-inside-vase_114579-1440.jpg",imageAlt:"A lush bouquet of pink roses and white lilies."},{id:"2",name:"Modern Serenity Vase",price:"$60.00",imageSrc:"https://img.b2bpic.net/free-photo/beautiful-white-poinsettia-composition_23-2149138679.jpg",imageAlt:"A minimalist arrangement of white tulips in a glass vase."},{id:"3",name:"Vibrant Celebration Mix",price:"$85.00",imageSrc:"https://img.b2bpic.net/free-photo/woman-holding-bouquet-yellow-orange-dahliason-light-background_169016-39443.jpg",imageAlt:"A colorful mix of sunflowers, daisies, and lavender."},{id:"4",name:"Sunset Dream Bouquet",price:"$90.00",imageSrc:"https://img.b2bpic.net/free-photo/bouquet-pink-roses-single-branch-rose-with-green-leaves-inside-vase_114579-1440.jpg",imageAlt:"Warm-toned roses and exotic foliage."}]}
           carouselMode="buttons"
           gridVariant="uniform-all-items-equal"
           animationType="slide-up"
@@ -81,7 +81,7 @@ export default function LandingPage() {
       </div>
       <div id="testimonials" data-section="testimonials">
         <TestimonialCardFifteen
-          testimonial="\"Life Flowers Studio transformed my wedding day with the most breathtaking arrangements. Every detail was perfect!\""
+          testimonial={"\"Life Flowers Studio transformed my wedding day with the most breathtaking arrangements. Every detail was perfect!\""}
           rating={5}
           author="Sophia R., Bride"
           avatars={[{src:"https://img.b2bpic.net/free-photo/casual-smile-street-style-background-spring_1139-777.jpg",alt:"Sophia R."},{src:"https://img.b2bpic.net/free-photo/smiling-businessman-standing-airport_107420-85035.jpg",alt:"Mark T."},{src:"https://img.b2bpic.net/free-photo/smiling-young-woman-typing-her-laptop_231208-13559.jpg",alt:"Emily K."},{src:"https://img.b2bpic.net/free-photo/waist-up-shot-handsome-middle-aged-man-wearing-suit-tie-pondering-new-ideas_1098-19245.jpg",alt:"David L."},{src:"https://img.b2bpic.net/free-photo/pretty-attractive-young-mixed-race-model-with-large-afro-wearing-navy-jacket-her-naked-body-shorts_633478-1216.jpg",alt:"Grace M."},{src:"https://img.b2bpic.net/free-photo/smiling-man-sitting-cafe-table-gesturing_1262-1141.jpg",alt:"Alex S."}]}
