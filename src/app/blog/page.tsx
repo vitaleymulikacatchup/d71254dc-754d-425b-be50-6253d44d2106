@@ -26,12 +26,7 @@ export default function BlogPage() {
         >
             <ReactLenis root>
                 <NavbarStyleFullscreen
-                    navItems={[
-                        { name: "Home", id: "/" },
-                        { name: "About", id: "/#about" },
-                        { name: "Services", id: "/#services" },
-                        { name: "Contact", id: "/#contact" }
-                    ]}
+                    navItems={[{ name: "Home", id: "/" }, { name: "About", id: "/#about" }, { name: "Shop", id: "/shop" }, { name: "Services", id: "/#services" }, { name: "Contact", id: "/#contact" }, { name: "Blog", id: "/blog" }]}
                     brandName="Life"
                     bottomLeftText="Embrace Nature's Beauty"
                     bottomRightText="hello@lifestudio.com"
