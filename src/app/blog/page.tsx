@@ -28,10 +28,9 @@ export default function BlogPage() {
                 <NavbarStyleFullscreen
                     navItems={[
                         { name: "Home", id: "/" },
-                        { name: "About", id: "about" },
-                        { name: "Shop", id: "shop" },
-                        { name: "Services", id: "services" },
-                        { name: "Contact", id: "contact" }
+                        { name: "About", id: "/#about" },
+                        { name: "Services", id: "/#services" },
+                        { name: "Contact", id: "/#contact" }
                     ]}
                     brandName="Life"
                     bottomLeftText="Embrace Nature's Beauty"
@@ -56,10 +55,10 @@ export default function BlogPage() {
 
                 <FooterSimple
                     columns={[
-                        { title: "Studio", items: [{ label: "About Us", href: "#about" }, { label: "Our Story", href: "#about" }, { label: "Team", href: "#team" }] },
-                        { title: "Shop", items: [{ label: "Bouquets", href: "#shop" }, { label: "Seasonal", href: "#shop" }, { label: "Gifts", href: "#shop" }] },
-                        { title: "Services", items: [{ label: "Weddings", href: "#services" }, { label: "Events", href: "#services" }, { label: "Subscriptions", href: "#services" }] },
-                        { title: "Help", items: [{ label: "FAQ", href: "#faq" }, { label: "Contact Us", href: "#contact" }, { label: "Blog", href: "#blog" }] }
+                        { title: "Studio", items: [{ label: "About Us", href: "/#about" }, { label: "Our Story", href: "/#about" }, { label: "Team", href: "/#team" }] },
+                        { title: "Shop", items: [{ label: "Bouquets", href: "/shop" }, { label: "Seasonal", href: "/shop" }, { label: "Gifts", href: "/shop" }] },
+                        { title: "Services", items: [{ label: "Weddings", href: "/#services" }, { label: "Events", href: "/#services" }, { label: "Subscriptions", href: "/#services" }] },
+                        { title: "Help", items: [{ label: "FAQ", href: "/#faq" }, { label: "Contact Us", href: "/#contact" }, { label: "Blog", href: "/blog" }] }
                     ]}
                     bottomLeftText="© 2024 Life Flowers Studio. All rights reserved."
                     bottomRightText="Crafted with Love & Nature"
