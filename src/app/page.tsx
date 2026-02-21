@@ -29,7 +29,7 @@ export default function LandingPage() {
     >
       <div id="nav" data-section="nav">
         <NavbarStyleFullscreen
-          navItems={[{name:"Home",id:"hero"},{name:"About",id:"about"},{name:"Shop",id:"shop"},{name:"Services",id:"services"},{name:"Contact",id:"contact"}]}
+          navItems={[{name:"Home",id:"/"},{name:"About",id:"/#about"},{name:"Shop",id:"/shop"},{name:"Services",id:"/#services"},{name:"Contact",id:"/#contact"},{name:"Blog",id:"/blog"}]}
           brandName="Life"
           bottomLeftText="Embrace Nature's Beauty"
           bottomRightText="hello@lifestudio.com"
@@ -43,7 +43,7 @@ export default function LandingPage() {
           mediaItems={[{imageSrc:"https://img.b2bpic.net/free-photo/elegant-rose-bouquet_23-2147697781.jpg",imageAlt:"Luxurious bouquet of fresh, vibrant flowers."},{imageSrc:"https://img.b2bpic.net/free-photo/spring-composition-with-bouquet-flowers-vase-closeup_169016-29760.jpg",imageAlt:"Elegant floral display for an event."}]}
           rating={5}
           ratingText="Loved by thousands of happy customers"
-          buttons={[{text:"Shop Now",href:"#shop"},{text:"Our Story",href:"#about"}]}
+          buttons={[{text:"Shop Now",href:"/shop"},{text:"Our Story",href:"/#about"}]}
           background={{variant:"plain"}}
           mediaAnimation="slide-up"
         />
@@ -53,7 +53,7 @@ export default function LandingPage() {
           tag="Our Passion, Your Joy"
           title="At Life Flowers Studio, we believe every bloom tells a story. We handcraft arrangements that speak volumes."
           useInvertedBackground={false}
-          buttons={[{text:"Meet Our Team",href:"#team"},{text:"Visit Our Studio",href:"#contact"}]}
+          buttons={[{text:"Meet Our Team",href:"/#team"},{text:"Visit Our Studio",href:"/#contact"}]}
         />
       </div>
       <div id="shop" data-section="shop">
@@ -72,7 +72,7 @@ export default function LandingPage() {
         <PricingCardThree
           title="Our Floral Services"
           description="Find the perfect floral solution for your special events and everyday needs."
-          plans={[{id:"1",name:"Daily Deliveries",price:"From $50",features:["Fresh seasonal blooms","Customizable options","Same-day delivery available","Personalized note included"],buttons:[{text:"Order Now",href:"#contact"}]},{id:"2",badge:"Most Popular",badgeIcon:Sparkles,name:"Event Florals",price:"Quote Basis",features:["Wedding & corporate events","Venue decoration","Bridal bouquets & boutonnieres","Consultation with expert florists"],buttons:[{text:"Book Consultation",href:"#contact"}]},{id:"3",name:"Subscription Boxes",price:"From $40/month",features:["Weekly or bi-weekly fresh flowers","Exclusive seasonal selections","Flexible delivery schedule","Cancel anytime"],buttons:[{text:"Subscribe",href:"#contact"}]}]}
+          plans={[{id:"1",name:"Daily Deliveries",price:"From $50",features:["Fresh seasonal blooms","Customizable options","Same-day delivery available","Personalized note included"],buttons:[{text:"Order Now",href:"/#contact"}]},{id:"2",badge:"Most Popular",badgeIcon:Sparkles,name:"Event Florals",price:"Quote Basis",features:["Wedding & corporate events","Venue decoration","Bridal bouquets & boutonnieres","Consultation with expert florists"],buttons:[{text:"Book Consultation",href:"/#contact"}]},{id:"3",name:"Subscription Boxes",price:"From $40/month",features:["Weekly or bi-weekly fresh flowers","Exclusive seasonal selections","Flexible delivery schedule","Cancel anytime"],buttons:[{text:"Subscribe",href:"/#contact"}]}]}
           carouselMode="buttons"
           animationType="slide-up"
           textboxLayout="default"
@@ -126,7 +126,7 @@ export default function LandingPage() {
       </div>
       <div id="footer" data-section="footer">
         <FooterSimple
-          columns={[{title:"Studio",items:[{label:"About Us",href:"#about"},{label:"Our Story",href:"#about"},{label:"Team",href:"#team"}]},{title:"Shop",items:[{label:"Bouquets",href:"#shop"},{label:"Seasonal",href:"#shop"},{label:"Gifts",href:"#shop"}]},{title:"Services",items:[{label:"Weddings",href:"#services"},{label:"Events",href:"#services"},{label:"Subscriptions",href:"#services"}]},{title:"Help",items:[{label:"FAQ",href:"#faq"},{label:"Contact Us",href:"#contact"},{label:"Blog",href:"#blog"}]}]}
+          columns={[{title:"Studio",items:[{label:"About Us",href:"/#about"},{label:"Our Story",href:"/#about"},{label:"Team",href:"/#team"}]},{title:"Shop",items:[{label:"Bouquets",href:"/shop"},{label:"Seasonal",href:"/shop"},{label:"Gifts",href:"/shop"}]},{title:"Services",items:[{label:"Weddings",href:"/#services"},{label:"Events",href:"/#services"},{label:"Subscriptions",href:"/#services"}]},{title:"Help",items:[{label:"FAQ",href:"/#faq"},{label:"Contact Us",href:"/#contact"},{label:"Blog",href:"/blog"}]}]}
           bottomLeftText="© 2024 Life Flowers Studio. All rights reserved."
           bottomRightText="Crafted with Love & Nature"
         />
