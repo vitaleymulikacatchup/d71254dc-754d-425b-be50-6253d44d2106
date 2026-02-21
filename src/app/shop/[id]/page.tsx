@@ -90,13 +90,7 @@ function ProductPageContent({ params }: ProductPageProps) {
             <ReactLenis root>
                 <div id="navbar" data-section="navbar">
                     <NavbarStyleFullscreen
-                        navItems={[
-                            { name: "Home", id: "/" },
-                            { name: "About", id: "/#about" },
-                            { name: "Services", id: "/#services" },
-                            { name: "Contact", id: "/#contact" },
-                        ]}
-                        brandName="Life"
+                        navItems={[{ name: "Home", id: "/" }, { name: "About", id: "/#about" }, { name: "Shop", id: "/shop" }, { name: "Services", id: "/#services" }, { name: "Contact", id: "/#contact" }, { name: "Blog", id: "/blog" }]}                        brandName="Life"
                         bottomLeftText="Embrace Nature's Beauty"
                         bottomRightText="hello@lifestudio.com"
                     />
