@@ -40,7 +40,7 @@ export default function LandingPage() {
           tag="Where Beauty Blooms"
           title="Short Text"
           description="Discover exquisite floral arrangements for every occasion. Our passion for flowers transforms ordinary moments into extraordinary memories."
-          mediaItems={[{imageSrc:"https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_35vmIsFKiMtTSUSBP7nWGRgR0We/uploaded-1771681682299-99behvvy.png",imageAlt:"Luxurious bouquet of fresh, vibrant flowers."},{imageSrc:"https://img.b2bpic.net/free-photo/spring-composition-with-bouquet-flowers-vase-closeup_169016-29760.jpg",imageAlt:"Elegant floral display for an event."}]}
+          mediaItems={[{imageSrc:"https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_35vmIsFKiMtTSUSBP7nWGRgR0We/uploaded-1771681682299-99behvvy.png",imageAlt:"Luxurious bouquet of fresh, vibrant flowers."},{imageSrc:"https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_35vmIsFKiMtTSUSBP7nWGRgR0We/uploaded-1771432299287-i77c7bdk.mp4",imageAlt:"Elegant floral display for an event."}]}
           rating={5}
           ratingText="Loved by thousands of happy customers"
           buttons={[{text:"Shop Now",href:"/shop"},{text:"Our Story",href:"/#about"}]}
